@@ -1,0 +1,85 @@
+html {
+	height: 100%;
+	min-height: 100%;
+}
+
+body {
+	background: url(/img/background.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	margin: 0px;
+	min-height: 100%;
+	font-family: Helvetica, Arial, 'lucida grande', tahoma, verdana, arial, sans-serif;
+	overflow-y: hidden;
+}
+
+#container {
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+}
+
+#logo {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+	width: 200px;
+	height: 200px
+}
+
+#links {
+	position: absolute;
+	display: block;
+	top: 180px;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+}
+
+#links img {
+	margin: 10px;
+}
+
+#footercontainer {
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+}
+
+#foldbutton {
+	position: relative;
+	display: block;
+	margin: auto;
+	cursor: pointer;
+}
+
+#footer {
+	height: 0px;
+	position: relative;
+	background-color: #fff;
+}
+
+#footer div {
+	width: 250px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 20px;
+}
+
+h2 {
+	margin: 0px;
+}
+
+#social {
+	top: 20px;
+	right: 20px;
+	position: absolute;
+}
