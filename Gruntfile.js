@@ -38,7 +38,7 @@ module.exports = function ( grunt ) {
             password: process.env.FTP_PASSWORD
           },
           src: 'upload/',
-          dest: '/test'
+          dest: '/'
         }
       }
     }
