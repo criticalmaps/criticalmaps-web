@@ -15,6 +15,21 @@ module.exports = function ( grunt ) {
       }
     },
 
+    concat: {
+      js: {
+        src: 'js/vendor/*.js',
+        dest: 'js/vendor.js'
+      }
+    },
+
+    uglify: {
+      my_target: {
+        files: {
+          'js/vendor.js': ['js/vendor.js']
+        }
+      }
+    },
+
     clean: [
       "upload/img/psd",
       "upload/.git/",
@@ -46,6 +61,8 @@ module.exports = function ( grunt ) {
 
   grunt.registerTask( 'default', [
     'copy',
+    'concat',
+    'uglify',
     'clean',
     'smushit',
     'ftp-diff-deployer'
