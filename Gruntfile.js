@@ -48,7 +48,10 @@ module.exports = function ( grunt ) {
       "upload/img/psd",
       "upload/.git/",
       "upload/node_modules/",
-      "upload/.travis.yml"
+      "upload/.travis.yml",
+      "upload/css/.sass-cache",
+      "upload/css/lib",
+      "upload/css/sass"
     ],
 
     smushit: {
