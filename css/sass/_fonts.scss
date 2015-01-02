@@ -1,0 +1,9 @@
+@mixin font {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+
+}
+
+@mixin font-small {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 12px;
+}
