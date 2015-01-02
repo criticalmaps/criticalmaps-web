@@ -17,6 +17,9 @@ module.exports = function ( grunt ) {
 
     clean: [
       "upload/img/psd",
+      "upload/.git/",
+      "upload/node_modules/",
+      "upload/.travis.yml"
     ],
 
     smushit: {
