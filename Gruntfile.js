@@ -6,12 +6,16 @@ module.exports = function ( grunt ) {
 
     pkg: grunt.file.readJSON( 'package.json' ),
 
-    copy: {
-      main: {
-       src: ['**/*'],
-        expand: true,
-        dot: true,
-        dest: 'upload'
+    compass: {
+      dist: {
+        options: {
+          basePath: 'css',
+          force: true,
+          imagesPath: 'img/',
+          sassDir: 'sass',
+          cssDir: './',
+          environment: 'production'
+        }
       }
     },
 
@@ -29,6 +33,16 @@ module.exports = function ( grunt ) {
         }
       }
     },
+
+    copy: {
+      main: {
+        src: ['**/*'],
+        expand: true,
+        dot: true,
+        dest: 'upload'
+      }
+    },
+
 
     clean: [
       "upload/img/psd",
@@ -56,15 +70,28 @@ module.exports = function ( grunt ) {
           dest: '/'
         }
       }
+    },
+
+    'watch': {
+      css: {
+        'files': 'css/**/*.scss',
+        'tasks': ['compass']
+      }
     }
-  } ); 
+
+  } );
 
   grunt.registerTask( 'default', [
-    'copy',
+    'compass',
     'concat',
     'uglify',
+    'copy',
     'clean',
     'smushit',
     'ftp-diff-deployer'
+  ] );
+
+  grunt.registerTask( 'watchAll', [
+    'watch'
   ] );
 };
