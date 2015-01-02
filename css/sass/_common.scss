@@ -15,6 +15,11 @@ body {
   overflow-y: hidden;
 }
 
+ul{
+  list-style: none;
+  padding: 0;
+}
+
 #container {
   position: absolute;
   top: 30%;
