@@ -34,15 +34,16 @@
 
 
 <div id="app" class="mainframe">
-    <a href="https://www.facebook.com/criticalmaps">
-        <img src="/img/logo.png" alt="logo" class="logo"/>
-    </a>
-
-    <div class="links">
-        <a href="https://itunes.apple.com/de/app/critical-mass-berlin/id918669647"><img src="/img/apple-store.svg"
-                                                                                        alt="itunes"/></a>
-        <a href="https://play.google.com/store/apps/details?id=de.stephanlindauer.criticalmaps"><img
-                src="/img/google-play.svg" alt="play"/></a>
+    <div class="wrapper">
+        <a href="https://www.facebook.com/criticalmaps">
+            <img src="/img/logo.png" alt="logo" class="logo"/>
+        </a>
+        <div class="links">
+            <a href="https://itunes.apple.com/de/app/critical-mass-berlin/id918669647"><img src="/img/apple-store.svg"
+                                                                                            alt="itunes"/></a>
+            <a href="https://play.google.com/store/apps/details?id=de.stephanlindauer.criticalmaps"><img
+                    src="/img/google-play.svg" alt="play"/></a>
+        </div>
     </div>
 </div>
 
