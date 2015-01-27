@@ -5,25 +5,23 @@
 
     <title>critical maps</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
-    <meta name="description" content="critical maps are smartphone apps that help organize the critical mass"/>
-    <meta name="keywords" content="critical maps, gps tracking, "/>
+    <meta name="description"
+          content="critical maps are smartphone apps that help organize the critical mass bicycle protest"/>
+    <meta name="keywords" content="critical maps"/>
     <meta name="robots" content="index, follow"/>
-    <meta name="author" content="stephan lindauer"/>
-    <meta name="generator" content="http://www.stephanlindauer.de"/>
+    <meta name="author" content="stephan lindauer + norman sander"/>
 
     <meta property="og:title" content="critical maps"/>
     <meta property="og:url" content="http://criticalmaps.net/"/>
-    <meta property="og:description" content="critical maps are smartphone apps that help organize the critical mass"/>
-    <meta
-    < property="og:site_name" content="critical maps"/>
+    <meta property="og:description"
+          content="critical maps are smartphone apps that help organize the critical mass bicycle protest"/>
+    <meta property="og:site_name" content="critical maps"/>
 
     <meta name="twitter:card" content="summary">
     <meta name="twitter:url" content="http://criticalmaps.net/">
     <meta name="twitter:title" content="critical maps">
-    <meta name="twitter:description" content="critical maps are smartphone apps that help organize the critical mass">
-
-    <meta property="og:image" content="/apple-touch-icon.png"/>
-    <meta property="twitter:image" content="/apple-touch-icon.png"/>
+    <meta name="twitter:description"
+          content="critical maps are smartphone apps that help organize the critical mass bicycle protest">
 
     <link rel="stylesheet" href="/css/styles.css" type="text/css"/>
 
@@ -38,6 +36,7 @@
         <a href="https://www.facebook.com/criticalmaps">
             <img src="/img/logo.png" alt="logo" class="logo"/>
         </a>
+
         <div class="links">
             <a href="https://itunes.apple.com/de/app/critical-mass-berlin/id918669647"><img src="/img/apple-store.svg"
                                                                                             alt="itunes"/></a>
