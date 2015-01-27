@@ -1,4 +1,5 @@
 @import "lib/normalize";
+@import "lib/leaflet";
 
 @import "fonts";
 @import "colors";
@@ -7,6 +8,10 @@
 @import "common";
 
 @import "components/navigation";
+@import "components/app";
+@import "components/map";
+@import "components/footer";
+@import "components/social";
 
 @media (max-width: 999px) {
     @import "common";

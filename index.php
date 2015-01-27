@@ -14,7 +14,8 @@
     <meta property="og:title" content="critical maps"/>
     <meta property="og:url" content="http://criticalmaps.net/"/>
     <meta property="og:description" content="critical maps are smartphone apps that help organize the critical mass"/>
-    <meta property="og:site_name" content="critical maps"/>
+    <meta
+    < property="og:site_name" content="critical maps"/>
 
     <meta name="twitter:card" content="summary">
     <meta name="twitter:url" content="http://criticalmaps.net/">
@@ -31,6 +32,32 @@
 </head>
 <body>
 
+
+<div id="app" class="mainframe">
+    <a href="https://www.facebook.com/criticalmaps">
+        <img src="/img/logo.png" alt="logo" class="logo"/>
+    </a>
+
+    <div class="links">
+        <a href="https://itunes.apple.com/de/app/critical-mass-berlin/id918669647"><img src="/img/apple-store.svg"
+                                                                                        alt="itunes"/></a>
+        <a href="https://play.google.com/store/apps/details?id=de.stephanlindauer.criticalmaps"><img
+                src="/img/google-play.svg" alt="play"/></a>
+    </div>
+</div>
+
+<div id="map" class="mainframe">
+
+    <script>
+        <?php
+            $geoArray = unserialize(file_get_contents('http://www.geoplugin.net/php.gp?ip='.$_SERVER['REMOTE_ADDR']));
+            echo "var geoLatitude = " . $geoArray["geoplugin_latitude"] .";\n";
+            echo "var geoLongitude = " . $geoArray["geoplugin_longitude"] . ";\n";
+        ?>
+    </script>
+
+</div>
+
 <div id="navigation">
     <div id="wrapper">
         <img alt="logo" src="/img/logo-nav.png"/>
@@ -41,28 +68,14 @@
             <li>
                 <a href="#">map</a>
             </li>
-            <li>
-                <a href="#">source</a>
-            </li>
-            <li>
-                <a href="#">contact</a>
-            </li>
+            <!--        <li>
+                        <a href="#">source</a>
+                    </li>
+                    <li>
+                        <a href="#">contact</a>
+                    </li> -->
         </ul>
     </div>
-</div>
-
-<div id="container">
-    <a href="https://www.facebook.com/criticalmaps"><img src="/img/logo.png" alt="logo" id="logo"/></a>
-
-    <div id="links">
-        <a href="https://itunes.apple.com/de/app/critical-mass-berlin/id918669647">
-            <img src="/img/apple-store.svg" alt="itunes"/>
-        </a>
-        <a href="https://play.google.com/store/apps/details?id=de.stephanlindauer.criticalmaps">
-            <img src="/img/google-play.svg" alt="play"/>
-        </a>
-    </div>
-
 </div>
 
 <div id="footercontainer">
@@ -88,8 +101,9 @@
     <a href="https://twitter.com/CriticalMaps" target="_blank"><img src="/img/twitter.png"/></a>
 </div>
 
-<script src="/js/vendor.js"></script>
-<script src="/js/main.js"></script>
+
+<script data-main="js/main" src="js/vendor/require.js"/>
+
 
 <script type="text/javascript">
     var sc_project = 10089183;
@@ -98,6 +112,8 @@
     var scJsHost = (("https:" == document.location.protocol) ? "https://secure." : "http://www.");
     document.write( "<sc" + "ript type='text/javascript' src='" + scJsHost + "statcounter.com/counter/counter.js'></" + "script>" );
 </script>
+
+
 <noscript>
     <div class="statcounter">
         <img class="statcounter"
@@ -109,9 +125,9 @@
     (function ( i, s, o, g, r, a, m ) {
         i['GoogleAnalyticsObject'] = r;
         i[r] = i[r] ||
-                function () {
-                    (i[r].q = i[r].q || []).push( arguments )
-                }, i[r].l = 1 * new Date();
+            function () {
+                (i[r].q = i[r].q || []).push( arguments )
+            }, i[r].l = 1 * new Date();
         a = s.createElement( o ), m = s.getElementsByTagName( o )[0];
         a.async = 1;
         a.src = g;
