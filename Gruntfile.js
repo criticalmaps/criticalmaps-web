@@ -43,7 +43,6 @@ module.exports = function ( grunt ) {
       }
     },
 
-
     clean: [
       "upload/img/psd",
       "upload/.git/",
