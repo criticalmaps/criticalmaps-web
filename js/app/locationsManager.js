@@ -29,7 +29,7 @@ require( ["jquery", "app/map"], function ( $, map ) {
       map.setNewLocations( locationsModel );
     } );
   }
-  setInterval( function () { refreshLocationsFromServer() }, 5000 );
+  setInterval( function () { refreshLocationsFromServer() }, 20000 );
   refreshLocationsFromServer()
 } )
 ;
