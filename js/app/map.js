@@ -5,7 +5,7 @@ define( ["leaflet"], function ( L ) {
   var greenIcon = L.icon( {
     iconUrl: '/img/bike.png',
     iconSize: [20, 20],
-    iconAnchor: [10, 20]
+    iconAnchor: [10, 10]
   } );
 
   var zoom = ( geoLatitude == 0 && geoLongitude == 0 ) ? 3 : 11;
