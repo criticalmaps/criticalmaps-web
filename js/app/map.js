@@ -8,10 +8,10 @@ define( ["leaflet"], function ( L ) {
     iconAnchor: [10, 10]
   } );
 
-  var zoom = ( geoLatitude == 0 && geoLongitude == 0 ) ? 3 : 11;
+  var zoom = 3;
   var map = L.map( 'map', { zoomControl: false } );
 
-  map.setView( [geoLatitude, geoLongitude], zoom );
+  map.setView( [52.468209,13.425995], zoom );
 
   L.tileLayer( 'http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'

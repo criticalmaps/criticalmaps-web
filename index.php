@@ -48,14 +48,6 @@
 
 <div id="map" class="mainframe">
 
-    <script>
-        <?php
-            $geoArray = unserialize(file_get_contents('http://www.geoplugin.net/php.gp?ip='.$_SERVER['REMOTE_ADDR']));
-            echo "var geoLatitude = " . $geoArray["geoplugin_latitude"] .";\n";
-            echo "var geoLongitude = " . $geoArray["geoplugin_longitude"] . ";\n";
-        ?>
-    </script>
-
 </div>
 
 <div id="navigation">
