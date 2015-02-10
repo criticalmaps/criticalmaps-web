@@ -39,9 +39,9 @@
 
         <div class="links">
             <a href="https://itunes.apple.com/de/app/critical-mass-berlin/id918669647"><img src="/img/apple-store.svg"
-                                                                                            alt="itunes" target="_blank"/></a>
+                                                                                            alt="itunes"/></a>
             <a href="https://play.google.com/store/apps/details?id=de.stephanlindauer.criticalmaps"><img
-                    src="/img/google-play.svg" alt="play" target="_blank"/></a>
+                    src="/img/google-play.svg" alt="play"/></a>
         </div>
     </div>
 </div>
