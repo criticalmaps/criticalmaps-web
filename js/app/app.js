@@ -1,5 +1,6 @@
 require( ['app/footer'  ,
   "app/map" ,
   "app/locationsManager",
-  "app/navigationController"
+  "app/navigationController",
+  "app/shortcuts"
 ] );
