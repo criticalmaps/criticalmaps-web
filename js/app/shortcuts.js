@@ -4,6 +4,8 @@ define( ['jquery'], function ( $ ) {
       $( "#navigation" ).hide();
       $( "#social" ).hide();
       $( "#footercontainer" ).hide();
+      $( ".mainframe" ).css( "z-index", "-2" );
+      $( ".mainframe#map" ).css( "z-index", "-1" )
     }
   } );
 } );
