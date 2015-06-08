@@ -1,14 +1,12 @@
 #footer {
-  height: 0px;
+  height: 40px;
   position: relative;
-  background-color: #fff;
+  background-color: #F1F0F0;
 
-  div {
-    width: 250px;
+  .contact {
+    width: 600px;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 20px;
+    padding: 12px;
   }
 }
 
@@ -18,9 +16,4 @@
   width: 100%;
 }
 
-#foldbutton {
-  position: relative;
-  display: block;
-  margin: auto;
-  cursor: pointer;
 }

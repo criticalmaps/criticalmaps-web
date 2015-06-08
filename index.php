@@ -22,7 +22,7 @@
     <meta name="twitter:title" content="critical maps">
     <meta name="twitter:description"
           content="critical maps are smartphone apps that help organize the critical mass bicycle protest">
-	<meta name="google-site-verification" content="T8DYfxSVjZO9-CyDCt4OHUfykrd0HNSCB6sGYGWec98" />
+    <meta name="google-site-verification" content="T8DYfxSVjZO9-CyDCt4OHUfykrd0HNSCB6sGYGWec98"/>
     <link rel="stylesheet" href="/css/styles.css" type="text/css"/>
 
     <link rel="shortcut icon" href="/img/favicon.ico"/>
@@ -38,8 +38,9 @@
         </a>
 
         <div class="links">
-            <a href="https://itunes.apple.com/de/app/critical-mass-berlin/id918669647" target="_blank"><img src="/img/apple-store.svg"
-                                                                                            alt="itunes"/></a>
+            <a href="https://itunes.apple.com/de/app/critical-mass-berlin/id918669647" target="_blank"><img
+                    src="/img/apple-store.svg"
+                    alt="itunes"/></a>
             <a href="https://play.google.com/store/apps/details?id=de.stephanlindauer.criticalmaps" target="_blank"><img
                     src="/img/google-play.svg" alt="play"/></a>
         </div>
@@ -71,19 +72,12 @@
 </div>
 
 <div id="footercontainer">
-    <img src="/img/down.png" alt="go below the fold" id="foldbutton"/>
-
+    <!--    <img src="/img/down.png" alt="go below the fold" id="foldbutton"/>-->
     <div id="footer">
-        <div>
-            <h2>contact</h2>
-            <ul>
-                <li>
-                    iphone: <a href="http://www.pokuslabs.com/#contact">norman sander</a>
-                </li>
-                <li>
-                    android: <a href="http://www.stephanlindauer.de/contact">stephan lindauer</a>
-                </li>
-            </ul>
+        <div class="contact">
+            <strong>contact: </strong>
+            <a href="http://www.pokuslabs.com/#contact">norman sander</a> (iphone) &
+            <a href="http://www.stephanlindauer.de/contact">stephan lindauer</a> (android)
         </div>
     </div>
 </div>
