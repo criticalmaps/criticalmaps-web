@@ -11,7 +11,7 @@ define( ["leaflet"], function ( L ) {
   var zoom = 3;
   var map = L.map( 'map', { zoomControl: false } );
 
-  map.setView( [52.468209,13.425995], zoom );
+  map.setView( [52.468209, 13.425995], zoom );
 
   L.tileLayer( 'http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
@@ -19,7 +19,7 @@ define( ["leaflet"], function ( L ) {
 
   new L.Control.Zoom( { position: 'bottomleft' } ).addTo( map );
 
-  var public = {
+  return {
     setNewLocations: function ( locationsModel ) {
 
       //remove old markers
@@ -35,6 +35,4 @@ define( ["leaflet"], function ( L ) {
       } );
     }
   }
-
-  return public;
 } );

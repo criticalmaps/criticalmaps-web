@@ -1,4 +1,4 @@
-require( ["jquery", "app/map"], function ( $, map ) {
+define( ["jquery", "app/map"], function ( $, map ) {
 
   var locationsModel = [];
 
@@ -23,6 +23,7 @@ require( ["jquery", "app/map"], function ( $, map ) {
             longitude: convertCoordinateFormat( currentLocation.longitude )
           }
           locationsModel.push( coordinate );
+          console.log( "new coords: " + JSON.stringify( coordinate ) + " " + new Date().toString() );
         }
       }
 
@@ -31,5 +32,11 @@ require( ["jquery", "app/map"], function ( $, map ) {
   }
   setInterval( function () { refreshLocationsFromServer() }, 20000 );
   refreshLocationsFromServer()
-} )
-;
+
+  return {
+    startFasterLocationRetrieval: function () {
+      setInterval( function () { refreshLocationsFromServer() }, 2000 );
+    }
+  };
+
+} );
