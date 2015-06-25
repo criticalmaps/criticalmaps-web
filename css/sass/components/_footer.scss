@@ -4,8 +4,15 @@
   background-color: #F1F0F0;
 
   .contact {
-    width: 600px;
-    display: block;
+    left:0px;
+    top: 0px;
+    position: absolute;
+    padding: 12px;
+  }
+  .impressum{
+    right: 0px;
+    top: 0px;
+    position: absolute;
     padding: 12px;
   }
 }

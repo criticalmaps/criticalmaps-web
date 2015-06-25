@@ -79,6 +79,7 @@
             <a href="http://www.pokuslabs.com/#contact">norman sander</a> (iphone) &
             <a href="http://www.stephanlindauer.de/contact">stephan lindauer</a> (android)
         </div>
+        <div class="impressum">impressum</div>
     </div>
 </div>
 
