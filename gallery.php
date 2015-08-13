@@ -5,7 +5,7 @@
 </head>
 <body>
 
-<div class="gallerymap">
+<div id="gallerymap">
 
 </div>
 
@@ -13,8 +13,6 @@
 <script src="js/vendor/jquery.js"/>
 
 <script type="text/javascript">
-    define( ["leaflet"], function ( L ) {
-
         var currentMarkers = [];
 
         var greenIcon = L.icon( {
@@ -24,7 +22,7 @@
         } );
 
         var zoom = 3;
-        var map = L.map( 'map', { zoomControl: false } );
+        var map = L.map( 'gallerymap', { zoomControl: false } );
 
         map.setView( [52.468209, 13.425995], zoom );
 
@@ -34,7 +32,6 @@
 
         new L.Control.Zoom( { position: 'bottomleft' } ).addTo( map );
 
-    } );
 </script>
 
 
