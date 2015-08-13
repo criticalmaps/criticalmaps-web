@@ -50,7 +50,8 @@ module.exports = function ( grunt ) {
       "upload/.travis.yml",
       "upload/css/.sass-cache",
       "upload/css/lib",
-      "upload/css/sass"
+      "upload/css/sass",
+      "upload/.sass-cache"
     ],
 
     smushit: {
