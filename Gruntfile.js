@@ -51,7 +51,10 @@ module.exports = function ( grunt ) {
       "upload/css/.sass-cache",
       "upload/css/lib",
       "upload/css/sass",
-      "upload/.sass-cache"
+      "upload/.sass-cache",
+      "upload/.gitignore",
+      "upload/Gruntfile.js",
+      "upload/README.md"
     ],
 
     smushit: {
