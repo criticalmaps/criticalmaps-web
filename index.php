@@ -51,6 +51,14 @@
 
 </div>
 
+<div id="gallery" class="mainframe">
+    <iframe
+        src="http://criticalmaps.localhost.com/gallery.php"
+        scrolling="no"
+        frameborder="0"
+        ></iframe>
+</div>
+
 <div id="navigation">
     <div id="wrapper">
         <img alt="logo" src="/img/logo-nav.png"/>
@@ -79,7 +87,7 @@
             <a href="http://www.pokuslabs.com/#contact">norman sander</a> (iphone) &
             <a href="http://www.stephanlindauer.de/contact">stephan lindauer</a> (android)
         </div>
-        <div class="impressum"><a href="impressum.html" target="_blank">impressum</a> </div>
+        <div class="impressum"><a href="impressum.html" target="_blank">impressum</a></div>
     </div>
 </div>
 
