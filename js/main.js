@@ -2,7 +2,7 @@ require.config({
   baseUrl:"/js/",
   paths : {
     jquery : [
-      "vendor/jquery-2.1.3"
+      "vendor/jquery"
     ],
     leaflet : [
       "vendor/leaflet-src"
