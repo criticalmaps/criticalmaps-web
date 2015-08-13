@@ -52,11 +52,9 @@
 </div>
 
 <div id="gallery" class="mainframe">
-    <iframe
-        src="http://criticalmaps.localhost.com/gallery.php"
-        scrolling="no"
-        frameborder="0"
-        ></iframe>
+    <iframe src="http://criticalmaps.localhost.com/gallery.php"
+            scrolling="no"
+            frameborder="0"></iframe>
 </div>
 
 <div id="navigation">
@@ -69,6 +67,10 @@
             <li>
                 <a href="#">map</a>
             </li>
+            <li>
+                <a href="#">gallery</a>
+            </li>
+
             <!--        <li>
                         <a href="#">source</a>
                     </li>
