@@ -12,6 +12,9 @@
             height: 100%;
             background-color: #333333;
         }
+        .popupimage{
+            width: 100px;
+        }
     </style>
 </head>
 <body>
@@ -56,8 +59,7 @@
                             convertCoordinateFormat( currentImageObject.latitude ),
                             convertCoordinateFormat( currentImageObject.longitude )] )
                             .addTo( map )
-                            .bindPopup( 'A pretty CSS3 popup.<br> Easily customizable.' )
-                            .openPopup();
+                            .bindPopup( '<img class="popupimage" src="http://api.criticalmaps.net/gallery/images/' + currentImageObject.imageId + '.jpg"> ' );
                     }
                 }
 
