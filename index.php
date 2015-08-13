@@ -25,7 +25,7 @@
     <meta name="google-site-verification" content="T8DYfxSVjZO9-CyDCt4OHUfykrd0HNSCB6sGYGWec98"/>
     <link rel="stylesheet" href="/css/styles.css" type="text/css"/>
 
-    <link rel="shortcut icon" href="/img/favicon.ico"/>
+    <link rel="shortcut icon" href="/favicon.ico"/>
 
 </head>
 <body>
