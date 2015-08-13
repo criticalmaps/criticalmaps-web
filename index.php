@@ -67,9 +67,9 @@
             <li>
                 <a href="#">map</a>
             </li>
-            <li>
-                <a href="#">gallery</a>
-            </li>
+<!--            <li>-->
+<!--                <a href="#">gallery</a>-->
+<!--            </li>-->
 
             <!--        <li>
                         <a href="#">source</a>
