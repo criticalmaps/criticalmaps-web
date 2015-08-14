@@ -25,6 +25,7 @@
 
 <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
+<script src="/js/vendor/leaflet-hash.js"
 <script src="/js/vendor/jquery.magnific-popup.js"></script>
 
 <script type="text/javascript">
@@ -37,6 +38,11 @@
 
     $().ready( function () {
 
+        var cameraIcon = L.icon( {
+            iconUrl: '/img/map_marker_camera.png',
+            iconSize: [31, 49],
+            iconAnchor: [16, 49]
+        } );
 
         var zoom = 3;
         var map = L.map( 'gallerymap', { zoomControl: false } ).setView( [52.468209, 13.425995], zoom );
@@ -47,6 +53,7 @@
 
         new L.Control.Zoom( { position: 'bottomleft' } ).addTo( map );
 
+        var hash = new L.Hash(map);
 
         $.get( "http://api.criticalmaps.net/gallery/get.php",
             function ( jsonString ) {
@@ -58,7 +65,8 @@
 
                         L.marker( [
                             convertCoordinateFormat( currentImageObject.latitude ),
-                            convertCoordinateFormat( currentImageObject.longitude )] )
+                            convertCoordinateFormat( currentImageObject.longitude )],
+                            { icon: cameraIcon} )
                             .addTo( map )
                             .bindPopup( '<img class="popupimage" src="http://api.criticalmaps.net/gallery/images/' + currentImageObject.imageId + '.jpg"> ' );
                     }
