@@ -1,26 +1,22 @@
-<!doctype html>
-<html>
-<head>
-    <meta charset="utf-8"/>
+<?php
+    require("partials/wrapper_head.php");
+?>
 
-    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css"/>
-    <style type="text/css">
-        #gallerymap, html, body {
-            padding: 0px;
-            margin: 0px;
-            width: 100%;
-            height: 100%;
-            background-color: #333333;
-        }
-        .popupimage{
-            width: 100px;
-        }
-    </style>
-</head>
-<body>
+<style type="text/css">
+    #gallerymap, html, body {
+        padding: 0px;
+        margin: 0px;
+        width: 100%;
+        height: 100%;
+        background-color: #333333;
+    }
+
+    .popupimage {
+        width: 100px;
+    }
+</style>
 
 <div id="gallerymap">
-    asdsadsa
 </div>
 
 <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
@@ -53,7 +49,7 @@
 
         new L.Control.Zoom( { position: 'bottomleft' } ).addTo( map );
 
-        var hash = new L.Hash(map);
+        var hash = new L.Hash( map );
 
         $.get( "http://api.criticalmaps.net/gallery/get.php",
             function ( jsonString ) {
@@ -64,8 +60,8 @@
                         console.log( currentImageObject );
 
                         L.marker( [
-                            convertCoordinateFormat( currentImageObject.latitude ),
-                            convertCoordinateFormat( currentImageObject.longitude )],
+                                convertCoordinateFormat( currentImageObject.latitude ),
+                                convertCoordinateFormat( currentImageObject.longitude )],
                             { icon: cameraIcon} )
                             .addTo( map )
                             .bindPopup( '<img class="popupimage" src="http://api.criticalmaps.net/gallery/images/' + currentImageObject.imageId + '.jpg"> ' );
@@ -75,6 +71,6 @@
     } );
 </script>
 
-
-</body>
-</html>
+<?php
+    require("partials/wrapper_footer.php");
+?>

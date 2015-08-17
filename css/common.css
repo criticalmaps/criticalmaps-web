@@ -1,0 +1,121 @@
+body {
+    height: 100%;
+    min-height: 100%;
+    overflow-y: hidden
+}
+
+#app {
+    background: url(/img/background.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1
+}
+
+#app .wrapper {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    top: 50%
+}
+
+#app .wrapper .logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 200px
+}
+
+#app .wrapper .links {
+    position: absolute;
+    display: block;
+    top: 180px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+#app .wrapper .links img {
+    margin: 10px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 10px
+}
+
+#app .wrapper ul {
+    list-style: none;
+    padding: 0
+}
+
+#map {
+    background-color: #c8c8c8;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2
+}
+
+#footer {
+    height: 40px;
+    position: relative;
+    background-color: #F1F0F0
+}
+
+#footer .contact {
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    padding: 12px
+}
+
+#footer .impressum {
+    right: 0px;
+    top: 0px;
+    position: absolute;
+    padding: 12px
+}
+
+#footercontainer {
+    position: absolute;
+    bottom: 0px;
+    width: 100%
+}
+
+#social {
+    top: 24px;
+    right: 24px;
+    position: absolute
+}
+
+#gallery iframe {
+    z-index: -2;
+    border: 0px #FFFFFF none;
+    background-color: #c8c8c8;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%
+}
+
+@media (max-width: 999px) {
+    body {
+        height: 100%;
+        min-height: 100%;
+        overflow-y: hidden
+    }
+}
