@@ -19,10 +19,7 @@
 <div id="gallerymap">
 </div>
 
-<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
-<script src="/js/vendor/leaflet-hash.js"
-<script src="/js/vendor/jquery.magnific-popup.js"></script>
+
 
 <script type="text/javascript">
 

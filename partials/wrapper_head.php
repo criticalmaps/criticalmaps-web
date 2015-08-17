@@ -31,3 +31,8 @@
 
 </head>
 <body>
+
+<script src="/js/vendor/jquery-1.11.3.min.js"></script>
+<script src="/js/vendor/leaflet.js"></script>
+<script src="/js/vendor/leaflet-hash.js"
+<script src="/js/vendor/jquery.magnific-popup.js"></script>
