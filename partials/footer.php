@@ -1,4 +1,3 @@
-
 <div id="footercontainer">
     <div id="footer">
         <div class="contact">
@@ -14,17 +13,26 @@
 
 <style>
 
+    #footercontainer {
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+        background-color: rgba(20, 20, 20, 0.8);
+        overflow: hidden;
+        border-top: 1px solid #FAFAFA;
+    }
+
     #footer {
         height: 40px;
         position: relative;
-        background-color: #F1F0F0
     }
 
     #footer .contact {
         left: 0px;
         top: 0px;
         position: absolute;
-        padding: 12px
+        padding: 12px;
+        color: #ffffff;
     }
 
     #footer .impressum {
@@ -32,12 +40,6 @@
         top: 0px;
         position: absolute;
         padding: 12px
-    }
-
-    #footercontainer {
-        position: absolute;
-        bottom: 0px;
-        width: 100%
     }
 
 </style>

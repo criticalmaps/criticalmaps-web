@@ -3,23 +3,36 @@
         <img alt="logo" src="/img/logo-nav.png"/>
         <ul>
             <li>
-                <a href="#" class="active">app</a>
+                <a id="app" class="active" href="/app.php" target="mainframe">app</a>
             </li>
             <li>
-                <a href="#">map</a>
+                <a href="/gallery.php" target="mainframe">map</a>
             </li>
         </ul>
     </div>
 </div>
 
-<style>
+<script>
+    $().ready( function () {
+        event.preventDefault();
+        $( "#navigation #app" ).click(function(){
+            $( "#navigation #app" ).addClass("active");
+            $( "#mainframe iframe" ).attr('src', "/app.php")
+        })
 
+    } );
+
+</script>
+
+
+<style>
     #navigation {
+        position: absolute;
         height: 80px;
         width: 100%;
         background-color: rgba(20, 20, 20, 0.8);
         overflow: hidden;
-        border-bottom: 2px solid #FAFAFA;
+        border-bottom: 1px solid #FAFAFA;
     }
 
     #navigation #wrapper {
@@ -69,5 +82,4 @@
         transition: background-color .3s, color .3s;
 
     }
-
 </style>

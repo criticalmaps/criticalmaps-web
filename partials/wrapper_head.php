@@ -26,6 +26,8 @@
 
     <link rel="stylesheet" href="/css/common.css" type="text/css"/>
     <link rel="stylesheet" href="/css/normalize.css" type="text/css"/>
+    <link rel="stylesheet" href="/css/leaflet.css" type="text/css"/>
+    <link rel="stylesheet" href="/css/magnific-popup.css" type="text/css"/>
 
     <link rel="shortcut icon" href="/favicon.ico"/>
 
@@ -34,5 +36,5 @@
 
 <script src="/js/vendor/jquery-1.11.3.min.js"></script>
 <script src="/js/vendor/leaflet.js"></script>
-<script src="/js/vendor/leaflet-hash.js"
+<script src="/js/vendor/leaflet-hash.js"></script>
 <script src="/js/vendor/jquery.magnific-popup.js"></script>

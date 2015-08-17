@@ -4,8 +4,6 @@ define( ['jquery', "app/locationsManager"], function ( $, locationsManager ) {
       $( "#navigation" ).hide();
       $( "#social" ).hide();
       $( "#footercontainer" ).hide();
-      $( ".mainframe" ).css( "z-index", "-2" );
-      $( ".mainframe#map" ).css( "z-index", "-1" );
       locationsManager.startFasterLocationRetrieval();
     }
   } );

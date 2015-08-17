@@ -1,4 +1,4 @@
-<div id="home" class="mainframe">
+<div id="app">
     <div class="wrapper">
         <a href="https://www.facebook.com/criticalmaps">
             <img src="/img/logo.png" alt="logo" class="logo"/>
@@ -14,7 +14,7 @@
 </div>
 
 <style>
-    #home {
+    #app {
         background: url(/img/background.jpg) no-repeat center center fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
@@ -27,7 +27,7 @@
         left: 0;
     }
 
-    #home .wrapper {
+    #app .wrapper {
         position: absolute;
         top: 30%;
         left: 50%;
@@ -37,7 +37,7 @@
         top: 50%
     }
 
-    #home .wrapper .logo {
+    #app .wrapper .logo {
         position: absolute;
         top: 50%;
         left: 50%;
@@ -47,7 +47,7 @@
         height: 200px
     }
 
-    #home .wrapper .links {
+    #app .wrapper .links {
         position: absolute;
         display: block;
         top: 180px;
@@ -56,7 +56,7 @@
         transform: translate(-50%, -50%)
     }
 
-    #home .wrapper .links img {
+    #app .wrapper .links img {
         margin: 10px;
         height: 50px;
         border: 1px solid rgba(255, 255, 255, 0.5);

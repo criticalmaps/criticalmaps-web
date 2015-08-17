@@ -4,19 +4,7 @@ body {
     overflow-y: hidden
 }
 
-
-#map {
-    background-color: #c8c8c8;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -2
-}
-
 #gallery iframe {
-    z-index: -2;
     border: 0px #FFFFFF none;
     background-color: #c8c8c8;
     position: absolute;
