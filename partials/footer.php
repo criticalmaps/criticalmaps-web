@@ -11,3 +11,33 @@
         </div>
     </div>
 </div>
+
+<style>
+
+    #footer {
+        height: 40px;
+        position: relative;
+        background-color: #F1F0F0
+    }
+
+    #footer .contact {
+        left: 0px;
+        top: 0px;
+        position: absolute;
+        padding: 12px
+    }
+
+    #footer .impressum {
+        right: 0px;
+        top: 0px;
+        position: absolute;
+        padding: 12px
+    }
+
+    #footercontainer {
+        position: absolute;
+        bottom: 0px;
+        width: 100%
+    }
+
+</style>
