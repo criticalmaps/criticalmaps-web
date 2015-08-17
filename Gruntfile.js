@@ -19,13 +19,6 @@ module.exports = function ( grunt ) {
       }
     },
 
-    concat: {
-      js: {
-        src: 'js/vendor/*.js',
-        dest: 'js/vendor.js'
-      }
-    },
-
     uglify: {
       my_target: {
         files: {
