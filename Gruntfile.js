@@ -54,7 +54,6 @@ module.exports = function ( grunt ) {
   } );
 
   grunt.registerTask( 'default', [
-    'concat',
     'copy',
     'clean',
     'smushit',
