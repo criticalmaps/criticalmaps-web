@@ -6,28 +6,7 @@ module.exports = function ( grunt ) {
 
     pkg: grunt.file.readJSON( 'package.json' ),
 
-    compass: {
-      dist: {
-        options: {
-          basePath: 'css',
-          force: true,
-          imagesPath: 'img/',
-          sassDir: 'sass',
-          cssDir: './',
-          environment: 'production'
-        }
-      }
-    },
-
-    uglify: {
-      my_target: {
-        files: {
-          'js/vendor.js': ['js/vendor.js']
-        }
-      }
-    },
-
-    copy: {
+     copy: {
       main: {
         src: ['**/*'],
         expand: true,
@@ -69,28 +48,16 @@ module.exports = function ( grunt ) {
           dest: '/'
         }
       }
-    },
-
-    'watch': {
-      css: {
-        'files': 'css/**/*.scss',
-        'tasks': ['compass']
-      }
     }
+
 
   } );
 
   grunt.registerTask( 'default', [
-    'compass',
     'concat',
-    'uglify',
     'copy',
     'clean',
     'smushit',
     'ftp-diff-deployer'
-  ] );
-
-  grunt.registerTask( 'watchAll', [
-    'watch'
   ] );
 };

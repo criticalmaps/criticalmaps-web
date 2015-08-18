@@ -26,8 +26,4 @@
 <?php require("partials/footer.php"); ?>
 <?php require("partials/social.php"); ?>
 
-
-
-
-
 <?php require("partials/wrapper_footer.php"); ?>
