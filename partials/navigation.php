@@ -11,9 +11,9 @@
             <li>
                 <a href="/gallery.php" target="mainframe">gallery</a>
             </li>
-            <li>
-                <a href="/gallery.php" target="mainframe">timelapses</a>
-            </li>
+<!--            <li>-->
+<!--                <a href="/gallery.php" target="mainframe">timelapses</a>-->
+<!--            </li>-->
 
         </ul>
     </div>
