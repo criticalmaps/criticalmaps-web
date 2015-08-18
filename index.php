@@ -1,8 +1,18 @@
 <?php require("partials/wrapper_head.php"); ?>
+
     <iframe id="mainframe" name="mainframe" src="/app.php" scrolling="no" frameborder="0"></iframe>
 
+    <script>
+        criticalMapsMain = {
+            locationHash: "",
+            saveMapState: function ( locationHash ) {
+                this.locationHash = locationHash;
+            }
+        }
+
+    </script>
     <style>
-        #mainframe{
+        #mainframe {
             background-color: #c8c8c8;
             position: absolute;
             left: 0;

@@ -38,3 +38,4 @@
 <script src="/js/vendor/leaflet.js"></script>
 <script src="/js/vendor/leaflet-hash.js"></script>
 <script src="/js/vendor/jquery.magnific-popup.js"></script>
+<script src="/js/app/utils.js"></script>

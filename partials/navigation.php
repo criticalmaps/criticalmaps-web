@@ -3,22 +3,37 @@
         <img alt="logo" src="/img/logo-nav.png"/>
         <ul>
             <li>
-                <a id="app" class="active" href="/app.php" target="mainframe">app</a>
+                <a href="/app.php" target="mainframe" class="active">app</a>
             </li>
             <li>
-                <a href="/gallery.php" target="mainframe">map</a>
+                <a href="/map.php" target="mainframe">map</a>
             </li>
+            <li>
+                <a href="/gallery.php" target="mainframe">gallery</a>
+            </li>
+            <li>
+                <a href="/gallery.php" target="mainframe">timelapses</a>
+            </li>
+
         </ul>
     </div>
 </div>
 
 <script>
     $().ready( function () {
-        event.preventDefault();
-        $( "#navigation #app" ).click(function(){
-            $( "#navigation #app" ).addClass("active");
-            $( "#mainframe iframe" ).attr('src', "/app.php")
-        })
+
+        $( "#navigation #wrapper ul a" ).click( function ( event ) {
+            event.preventDefault()
+            $( "#navigation #wrapper ul a" ).removeClass( "active" );
+            $( event.target ).addClass( "active" );
+
+            var sectionToOpen = $( event.target ).text();
+            var pathToOpen = "/" + sectionToOpen + ".php" + criticalMapsMain.locationHash;
+
+            $( "#mainframe" ).attr( 'src', "/" + sectionToOpen + ".php" + criticalMapsMain.locationHash );
+
+            console.log( pathToOpen );
+        } )
 
     } );
 
@@ -66,7 +81,6 @@
         color: #fff;
         background: rgba(160, 160, 160, 0.6);
         font-weight: bold;
-
     }
 
     #navigation #wrapper ul a:hover {
