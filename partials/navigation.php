@@ -30,6 +30,8 @@
             var sectionToOpen = $( event.target ).text();
             var pathToOpen = "/" + sectionToOpen + ".php" + criticalMapsMain.locationHash;
 
+            location.hash = sectionToOpen;
+
             $( "#mainframe" ).attr( 'src', "/" + sectionToOpen + ".php" + criticalMapsMain.locationHash );
 
             console.log( pathToOpen );

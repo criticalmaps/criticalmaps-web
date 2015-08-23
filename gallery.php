@@ -76,12 +76,8 @@ require("partials/wrapper_head.php");
                                 '</a>' );
                     }
                 }
-
-
-                } );
-
-            } );
-
+            }
+        );
 
     } );
 </script>
