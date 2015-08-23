@@ -11,9 +11,9 @@
             <li>
                 <a href="/gallery.php" target="mainframe">gallery</a>
             </li>
-<!--            <li>-->
-<!--                <a href="/gallery.php" target="mainframe">timelapses</a>-->
-<!--            </li>-->
+            <!--            <li>-->
+            <!--                <a href="/gallery.php" target="mainframe">timelapses</a>-->
+            <!--            </li>-->
 
         </ul>
     </div>
@@ -22,16 +22,29 @@
 <script>
     $().ready( function () {
 
+        function openSection( sectionName ) {
+            criticalMapsMain.saveSectionState( sectionName );
+            $( "#mainframe" ).attr( 'src', "/" + sectionName + ".php/#" + criticalMapsMain.locationHash );
+        }
+
+        if ( location.hash == null ) {
+            openSection( "app" );
+        } else {
+            var hash = location.hash;
+            criticalMapsMain.saveMapState( hash.split( "/" ).splice( 1, 999 ).join( "/" ) );
+
+            openSection( hash.split( "/" )[0].replace( "#", "" ) );
+            location.hash.split( "/" )
+        }
+
+
         $( "#navigation #wrapper ul a" ).click( function ( event ) {
             event.preventDefault()
             $( "#navigation #wrapper ul a" ).removeClass( "active" );
             $( event.target ).addClass( "active" );
 
             var sectionToOpen = $( event.target ).text();
-
-            criticalMapsMain.saveSectionState( sectionToOpen );
-
-            $( "#mainframe" ).attr( 'src', "/" + sectionToOpen + ".php/#" + criticalMapsMain.locationHash );
+            openSection( sectionToOpen );
         } )
 
     } );
