@@ -27,16 +27,14 @@
             $( "#mainframe" ).attr( 'src', "/" + sectionName + ".php/#" + criticalMapsMain.locationHash );
         }
 
-        if ( location.hash == null ) {
-            openSection( "app" );
-        } else {
+        if ( location.hash ) {
             var hash = location.hash;
             criticalMapsMain.saveMapState( hash.split( "/" ).splice( 1, 999 ).join( "/" ) );
-
             openSection( hash.split( "/" )[0].replace( "#", "" ) );
             location.hash.split( "/" )
+        } else {
+            openSection( "app" );
         }
-
 
         $( "#navigation #wrapper ul a" ).click( function ( event ) {
             event.preventDefault()

@@ -14,7 +14,6 @@
             sectionHash: "",
             saveMapState: function ( locationHash ) {
                 this.locationHash = locationHash.replace( '#', '' );
-                ;
                 this.updateHash();
             },
             saveSectionState: function ( sectionHash ) {
