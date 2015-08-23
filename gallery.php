@@ -69,10 +69,24 @@ require("partials/wrapper_head.php");
                             { icon: cameraIcon}
                         )
                             .addTo( map )
-                            .bindPopup( '<img class="popupimage" src="http://api.criticalmaps.net/gallery/images/' + currentImageObject.imageId + '_thumb.jpg"> ' );
+                            .bindPopup(
+                                '<a class="image-popup-fit-width" href="http://api.criticalmaps.net/gallery/images/' + currentImageObject.imageId + '.jpg">' +
+                                '<img class="popupimage" src="http://api.criticalmaps.net/gallery/images/' + currentImageObject.imageId + '_thumb.jpg">' +
+                                '</a>' );
                     }
                 }
             } );
+
+        $('.popuplink').magnificPopup({
+            type: 'image',
+            closeOnContentClick: true,
+//            mainClass: 'mfp-img-mobile',
+            image: {
+                verticalFit: true
+            }
+
+        });
+
     } );
 </script>
 
