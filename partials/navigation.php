@@ -28,13 +28,10 @@
             $( event.target ).addClass( "active" );
 
             var sectionToOpen = $( event.target ).text();
-            var pathToOpen = "/" + sectionToOpen + ".php" + criticalMapsMain.locationHash;
 
-            location.hash = sectionToOpen;
+            criticalMapsMain.saveSectionState( sectionToOpen );
 
-            $( "#mainframe" ).attr( 'src', "/" + sectionToOpen + ".php" + criticalMapsMain.locationHash );
-
-            console.log( pathToOpen );
+            $( "#mainframe" ).attr( 'src', "/" + sectionToOpen + ".php/#" + criticalMapsMain.locationHash );
         } )
 
     } );

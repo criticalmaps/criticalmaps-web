@@ -33,16 +33,11 @@ require("partials/wrapper_head.php");
             iconAnchor: [16, 49]
         } );
 
-        var zoom = 3;
-        var map = L.map( 'gallerymap', { zoomControl: false } ).setView( [52.468209, 13.425995], zoom );
+        var map = L.map( 'gallerymap', { zoomControl: false } ).setView( [52.468209, 13.425995], 3 );
 
-        L.tileLayer( 'http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
-            attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-        } ).addTo( map );
-
+        L.tileLayer( 'http://{s}.tile.osm.org/{z}/{x}/{y}.png', {            attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'} ).addTo( map );
         new L.Control.Zoom( { position: 'bottomleft' } ).addTo( map );
-
-        var hash = new L.Hash( map );
+        new L.Hash( map );
 
         var saveHashToParent = function () {
             if ( parent.criticalMapsMain && typeof parent.criticalMapsMain.saveMapState == 'function' ) {
@@ -78,7 +73,6 @@ require("partials/wrapper_head.php");
                 }
             }
         );
-
     } );
 </script>
 

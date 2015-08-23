@@ -5,11 +5,19 @@
     <script>
         criticalMapsMain = {
             locationHash: "",
+            sectionHash: "",
             saveMapState: function ( locationHash ) {
-                this.locationHash = locationHash;
+                this.locationHash = locationHash.replace('#','');;
+                this.updateHash();
+            },
+            saveSectionState: function ( sectionHash ) {
+                this.sectionHash = sectionHash.replace('#','');
+                this.updateHash();
+            },
+            updateHash: function () {
+                location.hash = this.sectionHash + "/" + this.locationHash;
             }
         }
-
     </script>
     <style>
         #mainframe {
