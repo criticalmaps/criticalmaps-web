@@ -18,6 +18,7 @@ require("partials/wrapper_head.php");
         margin-top: 10px;
         margin-bottom: 10px;
     }
+
 </style>
 
 <div id="gallerymap">
@@ -43,7 +44,7 @@ require("partials/wrapper_head.php");
 
         var hash = new L.Hash( map );
 
-        var saveHashToParent = function(){
+        var saveHashToParent = function () {
             if ( parent.criticalMapsMain && typeof parent.criticalMapsMain.saveMapState == 'function' ) {
                 parent.criticalMapsMain.saveMapState( location.hash );
             }
@@ -70,22 +71,17 @@ require("partials/wrapper_head.php");
                         )
                             .addTo( map )
                             .bindPopup(
-                                '<a class="image-popup-fit-width" href="http://api.criticalmaps.net/gallery/images/' + currentImageObject.imageId + '.jpg">' +
+                                '<a class="popuplink" href="http://api.criticalmaps.net/gallery/images/' + currentImageObject.imageId + '.jpg">' +
                                 '<img class="popupimage" src="http://api.criticalmaps.net/gallery/images/' + currentImageObject.imageId + '_thumb.jpg">' +
                                 '</a>' );
                     }
                 }
+
+
+                } );
+
             } );
 
-        $('.popuplink').magnificPopup({
-            type: 'image',
-            closeOnContentClick: true,
-//            mainClass: 'mfp-img-mobile',
-            image: {
-                verticalFit: true
-            }
-
-        });
 
     } );
 </script>
