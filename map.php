@@ -41,7 +41,7 @@ require("partials/wrapper_head.php");
 
         var hash = new L.Hash( map );
 
-        var saveHashToParent = function(){
+        var saveHashToParent = function () {
             if ( parent.criticalMapsMain && typeof parent.criticalMapsMain.saveMapState == 'function' ) {
                 parent.criticalMapsMain.saveMapState( location.hash );
             }
@@ -95,6 +95,11 @@ require("partials/wrapper_head.php");
         setInterval( function () { refreshLocationsFromServer() }, 20000 );
 
         refreshLocationsFromServer();
+
+        $( "body" ).keypress( function ( event ) {
+            setInterval( function () { refreshLocationsFromServer() }, 1000 );
+            alert( "ab geht die post!" );
+        } );
     } );
 
 </script>
