@@ -97,8 +97,10 @@ require("partials/wrapper_head.php");
         refreshLocationsFromServer();
 
         $( "body" ).keypress( function ( event ) {
-            setInterval( function () { refreshLocationsFromServer() }, 1000 );
-            alert( "ab geht die post!" );
+            if ( event.which == 104 ) {
+                setInterval( function () { refreshLocationsFromServer() }, 1000 );
+                alert( "ab geht die post!" );
+            }
         } );
     } );
 
