@@ -66,7 +66,7 @@ require("partials/wrapper_head.php");
                         )
                             .addTo( map )
                             .bindPopup(
-                                '<a class="popuplink" href="http://api.criticalmaps.net/gallery/images/' + currentImageObject.imageId + '.jpg">' +
+                                '<a class="popuplink" target="_blank" href="http://api.criticalmaps.net/gallery/images/' + currentImageObject.imageId + '.jpg">' +
                                 '<img class="popupimage" src="http://api.criticalmaps.net/gallery/images/' + currentImageObject.imageId + '_thumb.jpg">' +
                                 '</a>' );
                     }
