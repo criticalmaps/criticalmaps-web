@@ -1,4 +1,4 @@
-<?php require("partials/wrapper_head.php"); ?>
+<?php require("wrapper_head.php"); ?>
 
 <link rel="stylesheet" href="/assets/css/style.css" type="text/css"/>
 
@@ -83,4 +83,4 @@
 </div>
 
 
-<?php require("partials/wrapper_footer.php"); ?>
+<?php require("wrapper_footer.php"); ?>

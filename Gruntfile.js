@@ -27,6 +27,15 @@ module.exports = function ( grunt ) {
 					],
 					cwd: 'src/images/',
 					expand: true
+				},{
+					dest: '',
+					src: [
+						'*.php',
+						'*.txt',
+						'*.xml'
+					],
+					cwd: 'src/',
+					expand: true
 				}]
 			 },
 			 dist: {
@@ -46,14 +55,25 @@ module.exports = function ( grunt ) {
 						'*.txt',
 						'*.xml'
 					],
+					cwd: 'src/',
 					expand: true
 				}]
 			 }
 		},
 		clean: {
-			dev: ['assets'],
-			dist: ['upload'],
-			all: ['assets', 'upload']
+			dev: [
+				'assets',
+				'*.php',
+				'*.txt',
+				'*.xml'
+			],
+			dist: [
+				'upload',
+				'assets',
+				'*.php',
+				'*.txt',
+				'*.xml'
+			]
 		},
 		sass: {
 			dev: {
@@ -190,6 +210,16 @@ module.exports = function ( grunt ) {
 				tasks : [
 					'copy:dev'
 				]
+			},
+			files: {
+				files: [
+					'src/**/*.php',
+					'src/**/*.txt',
+					'src/**/*.xml'
+				],
+				tasks : [
+					'copy:dev'
+				]
 			}
 		},
 		smushit: {
@@ -221,15 +251,13 @@ module.exports = function ( grunt ) {
 		'copy:dev',
 		'watch'
 	]);
-	grunt.registerTask('build', [
+	grunt.registerTask('default', [
 		'clean:dist',
 		'sass:dist',
 		'postcss:dist',
 		'cssmin:dist',
 		'uglify:dist',
-		'copy:dist'
-	]);
-	grunt.registerTask('default', [
+		'copy:dist',
 	    'smushit',
 	    'ftp-diff-deployer'
 	]);

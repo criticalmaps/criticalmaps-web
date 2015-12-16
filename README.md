@@ -24,7 +24,3 @@ Install Components
 Compile sources and start watch task
 
 	$ grunt dev
-
-Compile a build for the `upload/` folder.
-
-	$ grunt build

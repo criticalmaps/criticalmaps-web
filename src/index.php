@@ -1,4 +1,4 @@
-<?php require("partials/wrapper_head.php"); ?>
+<?php require("wrapper_head.php"); ?>
 
 	<header id="header">
 	
@@ -85,4 +85,4 @@
         }
     </script>
 
-<?php require("partials/wrapper_footer.php"); ?>
+<?php require("wrapper_footer.php"); ?>

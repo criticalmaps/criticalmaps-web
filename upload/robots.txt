@@ -1,4 +1,0 @@
-User-agent: *
-
-Disallow: /gallery.php
-Disallow: /map.php

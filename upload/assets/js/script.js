@@ -1,1 +1,0 @@
-criticalMapsUtils={convertCoordinateFormat:function(a){var b=a.split("");return b.splice(-6,0,"."),b.join("")}};
