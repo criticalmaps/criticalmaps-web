@@ -20,10 +20,10 @@
 	            	<a href="/info.php" data-action="replace" target="mainframe">Info</a>
 				</li>
 	            <li>
-	            	<a class="facebook" href="https://www.facebook.com/criticalmaps" target="_blank"><img alt="Facebook" src="/img/social-facebook.svg" width="32" height="32" /></a>
+	            	<a class="facebook" href="https://www.facebook.com/criticalmaps" target="_blank"><img alt="Facebook" src="/assets/images/social-facebook.svg" width="32" height="32" /></a>
 				</li>
 	            <li>
-	            	<a class="twitter" href="https://twitter.com/CriticalMaps" target="_blank"><img alt="Twitter" src="/img/social-twitter.svg" width="32" height="32" /></a>
+	            	<a class="twitter" href="https://twitter.com/CriticalMaps" target="_blank"><img alt="Twitter" src="/assets/images/social-twitter.svg" width="32" height="32" /></a>
 				</li>
 	        </ul>
 		</div>

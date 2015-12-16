@@ -24,17 +24,13 @@
 		<meta name="twitter:title" content="critical maps">
 		<meta name="twitter:description" content="critical maps are smartphone apps that help organize the critical mass bicycle protest">
 		
-		<link rel="stylesheet" href="/css/style.css" type="text/css"/>
-		<link rel="stylesheet" href="/css/normalize.css" type="text/css"/>
-		<link rel="stylesheet" href="/css/leaflet.css" type="text/css"/>
+		<link rel="stylesheet" href="/assets/css/style.css" type="text/css"/>
 		
-		<link href="/img/logo-favicon.png" rel="icon" type="image/png">
-		<link href="/img/logo-touchicon.png" rel="apple-touch-icon">
+		<link href="/assets/images/logo-favicon.png" rel="icon" type="image/png">
+		<link href="/assets/images/logo-touchicon.png" rel="apple-touch-icon">
 		
-		<script src="/js/vendor/jquery-1.11.3.min.js"></script>
-		<script src="/js/vendor/leaflet.js"></script>
-		<script src="/js/vendor/leaflet-hash.js"></script>
-		<script src="/js/app/utils.js"></script>
+		<script src="/assets/js/libs.js"></script>
+		<script src="/assets/js/script.js"></script>
 	
 	</head>
 	<body>

@@ -1,6 +1,6 @@
 <?php require("partials/wrapper_head.php"); ?>
 
-<link rel="stylesheet" href="/css/style.css" type="text/css"/>
+<link rel="stylesheet" href="/assets/css/style.css" type="text/css"/>
 
 <div id="map"></div>
 
@@ -9,7 +9,7 @@
         var currentMarkers = [];
 
         var greenIcon = L.icon( {
-            iconUrl: '/img/marker-bike.png',
+            iconUrl: '/assets/images/marker-bike.png',
             iconSize: [24, 24],
             iconAnchor: [12, 12]
         } );

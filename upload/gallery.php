@@ -1,36 +1,15 @@
-<?php
-require("partials/wrapper_head.php");
-?>
+<?php require("partials/wrapper_head.php"); ?>
 
-<style type="text/css">
-    #gallerymap, html, body {
-        padding: 0px;
-        margin: 0px;
-        width: 100%;
-        height: 100%;
-        background-color: #333333;
-        left: 0;
-        top: 0;
-    }
+<link rel="stylesheet" href="/assets/css/style.css" type="text/css"/>
 
-    .popupimage {
-        width: 100px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-
-</style>
-
-<div id="gallerymap">
-
-</div>
+<div id="gallerymap"></div>
 
 <script type="text/javascript">
     $().ready( function () {
         var cameraIcon = L.icon( {
-            iconUrl: '/img/map_marker_camera.png',
-            iconSize: [31, 49],
-            iconAnchor: [16, 49]
+            iconUrl: '/assets/images/marker-photo.png',
+            iconSize: [24, 24],
+            iconAnchor: [12, 12]
         } );
 
         var map = L.map( 'gallerymap', { zoomControl: false } ).setView( [52.468209, 13.425995], 3 );
@@ -76,6 +55,4 @@ require("partials/wrapper_head.php");
     } );
 </script>
 
-<?php
-require("partials/wrapper_footer.php");
-?>
+<?php require("partials/wrapper_footer.php"); ?>

@@ -1,0 +1,27 @@
+{
+	"name": "Critical Maps",
+	"description": "...",
+	"version": "0.0.2",
+	"authors": [
+		"Peter Amende <xoxo@zutrinken.com>"
+	],
+	"main": [
+		"upload/*"
+	],
+	"keywords": [
+		"portfolio"
+	],
+	"homepage": "http://criticalmaps.net/",
+	"ignore": [
+		"**/.*",
+		"bower_components",
+		"node_modules",
+		"tests",
+		"test"
+	],
+	"dependencies": {
+		"jquery": "1.11.3",
+		"normalize.css": "~3.0.3",
+		"modernizr": "~2.8.3"
+	}
+}
