@@ -149,6 +149,16 @@ module.exports = function ( grunt ) {
 					]
 				}
 			},
+			devlight: {
+				options: {
+					mangle: false
+				},
+				files: {
+					'assets/js/script.js': [
+						'src/js/**/*.js'
+					]
+				}
+			},
 			dist: {
 				files: {
 					'upload/assets/js/script.js': [
@@ -177,7 +187,7 @@ module.exports = function ( grunt ) {
 					'src/js/**/*.js'
 				],
 				tasks: [
-					'uglify:dev'
+					'uglify:devlight'
 				]
 			},
 			images: {
