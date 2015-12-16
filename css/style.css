@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,300,700,500');
+
+html, body {
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+    background: #262626;
+	text-rendering: optimizeLegibility;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+    color: #999;
+}
+
+.content a {
+	font-weight: 400;
+	color: #ccc;
+	text-decoration: none;
+}
+.content a:hover,
+.content a:focus {
+	text-decoration: underline;
+}
+
+.content h1,
+.content h2,
+.content h3,
+.content h4 {
+	color: #fff;
+	margin: 2em 0;
+}
+
+.content p {
+	margin: 2em 0;
+}
+
+.content h3 {
+	margin-top: 4em;
+}
+
+
+.wrapper {
+	max-width: 960px;
+	margin: auto;
+	padding: 8em 2em;
+}
+
+
+
+#mainframe {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.imageoverlaycontainer {
+    display: none;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-top: 80px;;
+    padding-bottom: 40px;;
+    height: auto;
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+}
+
+.imageoverlaycontainer .imagepopup {
+    background: #262626;
+    width: 100%;
+    height: 100%;
+}
+
+#header {
+    position: absolute;
+    height: 4em;
+    width: 100%;
+    background-color: rgba(20, 20, 20, 0.8);
+    overflow: hidden;
+    z-index: 100;
+}
+
+#navigation {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+}
+#navigation ul {
+	list-style: none;
+	padding: 0 0 0 4em;
+	margin: 0;
+	overflow: hidden;
+	text-align: center;
+}
+#navigation ul li {
+	display: inline-block;
+}
+#navigation ul a {
+	display: block;
+	height: 4em;
+	line-height: 2em;
+	padding: 1em;
+	font-weight: 400;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	color: rgba(255,255,255,0.7);
+	border-bottom: 2px solid transparent;
+	-webkit-transition: all ease-out .2s;
+	transition: all ease-out .2s;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+#navigation ul li:hover a,
+#navigation ul li:focus a {
+	color: rgba(255,255,255,0.8);
+	background: rgba(255,255,255,0.05);
+}
+#navigation ul a.active {
+	font-weight: 500;
+	border-bottom-color: #fff;
+	color: #fff;
+}
+#navigation ul a img {
+	position: relative;
+	top: 0.125em;
+	width: 1em;
+	height: auto;
+}
+
+#app {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #262626;
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes fadeIn {
+	0%, 10% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0.8;
+	}
+}
+
+#app .cover {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: url('../img/background.jpg') scroll no-repeat center center / cover transparent;
+	z-index: 1;
+	opacity: 0;
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-animation: forwards fadeIn 1.5s;
+	animation: forwards fadeIn 1.5s;
+}
+
+#app .logo {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -50px;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	width: 400px;
+	height: auto;
+	z-index: 2;
+	opacity: 0.8;
+}
+
+#app .links {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	display: block;
+	width: 100%;
+	margin-top: 150px;
+	text-align: center;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	z-index: 3;
+}
+#app .links .button {
+	display: inline-block;
+	margin: 10px;
+	width: 12em;
+	
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	
+	-webkit-transition: all cubic-bezier(.5, 1.75, .75, .75) 0.5s;
+	transition: all cubic-bezier(.5, 1.75, .75, .75) 0.5s;
+}
+#app .links .button:hover,
+#app .links .button:focus {
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+#app .links .button img {
+    width: 100%;
+    height: auto;
+}
+
+#gallerymap {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    background: #B5D0D0;
+    left: 0;
+    top: 0;
+}
+.popuplink {
+	
+}
+.popupimage {
+	display: block;
+    width: 160px;
+    margin: 20px auto;
+}
+
+#map {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    background: #B5D0D0;
+    left: 0;
+    top: 0;
+}
+
+#videos {
+	position: relative;
+	height: 100%;
+    overflow-y: scroll;
+}
+#videos .video-title {
+	margin-top: 3em;
+	margin-bottom: 1em;
+	font-weight: 500;
+}
+#videos .video-title em {
+	font-style: inherit;
+	font-weight: 300;
+	color: rgba(255,255,255,0.5);
+}
+#videos .video {
+	position: relative;
+	width: 100%;
+	height: 0;
+	margin: 0;
+	padding-bottom: 56.25%;
+	background: rgba(0,0,0,0.5);
+}
+#videos .video iframe {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#info {
+	position: relative;
+	height: 100%;
+    overflow-y: scroll;
+}

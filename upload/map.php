@@ -1,17 +1,31 @@
-<?php require("partials/wrapper_head.php"); ?>
+<?php
+require("partials/wrapper_head.php");
+?>
 
-<link rel="stylesheet" href="/css/style.css" type="text/css"/>
+<style type="text/css">
+    #map, html, body {
+        padding: 0px;
+        margin: 0px;
+        width: 100%;
+        height: 100%;
+        background-color: #333333;
+        left: 0;
+        top: 0;
+    }
+</style>
 
-<div id="map"></div>
+<div id="map">
+
+</div>
 
 <script type="text/javascript">
     $().ready( function () {
         var currentMarkers = [];
 
         var greenIcon = L.icon( {
-            iconUrl: '/img/marker-bike.png',
-            iconSize: [24, 24],
-            iconAnchor: [12, 12]
+            iconUrl: '/img/bike.png',
+            iconSize: [20, 20],
+            iconAnchor: [10, 10]
         } );
 
         var zoom = 3;
@@ -92,4 +106,6 @@
 
 </script>
 
-<?php require("partials/wrapper_footer.php"); ?>
+<?php
+require("partials/wrapper_footer.php");
+?>

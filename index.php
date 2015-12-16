@@ -1,12 +1,71 @@
 <?php require("partials/wrapper_head.php"); ?>
 
-    <iframe id="mainframe" name="mainframe" src="/app.php" scrolling="no" frameborder="0"></iframe>
-    <div class="imageoverlaycontainer">
-        <div class="imagepopup">
-            <img src="img/background.jpg">
-        </div>
-    </div>
+	<header id="header">
+	
+		<div id="navigation">
+	        <ul>
+	            <li>
+	                <a href="/app.php" data-action="replace" target="mainframe" class="active">App</a>
+	            </li>
+	            <li>
+	                <a href="/map.php" data-action="replace" target="mainframe">Map</a>
+	            </li>
+	            <li>
+	                <a href="/gallery.php" data-action="replace" target="mainframe">Gallery</a>
+	            </li>
+	            <li>
+	            	<a href="/videos.php" data-action="replace" target="mainframe">Videos</a>
+				</li>
+	            <li>
+	            	<a href="/info.php" data-action="replace" target="mainframe">Info</a>
+				</li>
+	            <li>
+	            	<a class="facebook" href="https://www.facebook.com/criticalmaps" target="_blank"><img alt="Facebook" src="/img/social-facebook.svg" width="32" height="32" /></a>
+				</li>
+	            <li>
+	            	<a class="twitter" href="https://twitter.com/CriticalMaps" target="_blank"><img alt="Twitter" src="/img/social-twitter.svg" width="32" height="32" /></a>
+				</li>
+	        </ul>
+		</div>
+	
+	</header>
+	
+	<script>
+	    $().ready( function () {
+	
+	        function openSection( sectionName ) {
+	            criticalMapsMain.saveSectionState( sectionName );
+	            $( "#mainframe" ).attr( 'src', "/" + sectionName + ".php/#" + criticalMapsMain.locationHash );
+	        }
+	
+	        if ( location.hash ) {
+	            var hash = location.hash;
+	            criticalMapsMain.saveMapState( hash.split( "/" ).splice( 1, 999 ).join( "/" ) );
+	            openSection( hash.split( "/" )[0].replace( "#", "" ) );
+	            location.hash.split( "/" )
+	        } else {
+	            openSection( "app" );
+	        }
+	
+	        $( "#navigation ul a" ).click( function ( event ) {
+		        if( this.getAttribute('data-action') == 'replace' ) {
+		            event.preventDefault()
+		            $( "#navigation ul a" ).removeClass( "active" );
+		            $( event.target ).addClass( "active" );
+		
+		            var sectionToOpen = $( event.target ).text();
+		            openSection( sectionToOpen );
+	            }
+	        } )
+	
+	    } );
+	
+	</script>
 
+	<iframe id="mainframe" name="mainframe" src="/app.php" scrolling="no" frameborder="0"></iframe>
+	<div class="imageoverlaycontainer">
+		<div class="imagepopup"></div>
+	</div>
 
     <script>
         criticalMapsMain = {
@@ -25,53 +84,5 @@
             }
         }
     </script>
-
-    <style>
-        #mainframe {
-            background-color: #c8c8c8;
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-        }
-
-        .imageoverlaycontainer {
-            display: none;
-            bottom: 0;
-            top: 0;
-            left: 0;
-            right: 0;
-            padding-top: 80px;;
-            padding-bottom: 40px;;
-            height: auto;
-            width: 100%;
-            position: absolute;
-            overflow: hidden;
-        }
-
-        .imageoverlaycontainer .imagepopup {
-            background-color: rgba(20, 20, 20, 0.4);
-            width: 100%;
-            height: 100%;
-        }
-
-        .imageoverlaycontainer .imagepopup img {
-            max-width: 100%;
-            max-height: 100%;
-            display: block;
-            margin: 0 auto;
-            vertical-align: middle;
-        }
-
-
-    </style>
-
-
-
-
-<?php require("partials/navigation.php"); ?>
-<?php require("partials/footer.php"); ?>
-<?php require("partials/social.php"); ?>
 
 <?php require("partials/wrapper_footer.php"); ?>
