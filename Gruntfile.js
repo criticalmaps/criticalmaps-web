@@ -27,13 +27,6 @@ module.exports = function ( grunt ) {
 					],
 					cwd: 'src/images/',
 					expand: true
-				},{
-					dest: 'assets/js/',
-					src: [
-						'*/**'
-					],
-					cwd: 'src/js/',
-					expand: true
 				}]
 			 },
 			 dist: {
