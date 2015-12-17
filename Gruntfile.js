@@ -10,7 +10,8 @@ module.exports = function ( grunt ) {
 				'bower_components/modernizr/modernizr.js',
 				'bower_components/jquery/dist/jquery.min.js',
 				'bower_components/leaflet/leaflet.js',
-				'bower_components/leaflet-hash/leaflet-hash.js'
+				'bower_components/leaflet-hash/leaflet-hash.js',
+				'bower_components/lazyloadxt/dist/jquery.lazyloadxt.extra.min.js'
 			],
 			'cssDependencies': [
 				'bower_components/normalize.css/normalize.css',
