@@ -9,6 +9,7 @@ module.exports = function ( grunt ) {
 			'jsDependencies': [
 				'bower_components/modernizr/modernizr.js',
 				'bower_components/jquery/dist/jquery.min.js',
+				'bower_components/history.js/scripts/bundled/html4+html5/jquery.history.js',
 				'bower_components/leaflet/leaflet.js',
 				'bower_components/leaflet-hash/leaflet-hash.js',
 				'bower_components/lazyloadxt/dist/jquery.lazyloadxt.extra.min.js'
