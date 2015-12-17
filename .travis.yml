@@ -8,10 +8,11 @@ before_install:
   - gem install compass
   - npm install -g grunt-cli
 
-install: npm install
+install:
+  - npm install
+  - bower install
 
 before_script:
-  - bower install
   - grunt build
 
 env:

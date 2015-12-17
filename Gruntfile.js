@@ -175,6 +175,9 @@ module.exports = function ( grunt ) {
 				}
 			},
 			dist: {
+				options: {
+					mangle: false
+				},
 				files: {
 					'upload/assets/js/script.js': [
 						'src/js/**/*.js'
