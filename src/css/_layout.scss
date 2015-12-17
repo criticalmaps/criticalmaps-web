@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,300,700,500');
+
+html, body {
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+    background: #262626;
+	text-rendering: optimizeLegibility;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+    color: #999;
+}
+
+.content {
+
+	a {
+		font-weight: 400;
+		color: #ccc;
+		text-decoration: none;
+	
+		&:hover,
+		&:focus {
+			text-decoration: underline;
+		}
+	}
+	
+	h1,
+	h2,
+	h3,
+	h4 {
+		color: #fff;
+		margin: 2em 0;
+	}
+	
+	h3 {
+		margin-top: 4em;
+	}
+
+	p {
+		margin: 2em 0;
+	}
+}
+
+
+
+.wrapper {
+	max-width: 960px;
+	margin: auto;
+	padding: 8em 2em;
+}
+
+#mainframe {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.imageoverlaycontainer {
+    display: none;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-top: 80px;;
+    padding-bottom: 40px;;
+    height: auto;
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+
+	.imagepopup {
+	    background: #262626;
+	    width: 100%;
+	    height: 100%;
+	}
+}
+
+#header {
+    position: absolute;
+    height: 4em;
+    width: 100%;
+    background-color: rgba(20, 20, 20, 0.8);
+    overflow: hidden;
+    z-index: 100;
+}
+
+#navigation {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+
+	ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		overflow: hidden;
+		text-align: center;
+	
+		li {
+			display: inline-block;
+
+			a {
+				display: block;
+				height: 4em;
+				line-height: 2em;
+				padding: 1em;
+				font-weight: 400;
+				text-decoration: none;
+				text-transform: uppercase;
+				letter-spacing: 0.5px;
+				color: rgba(255,255,255,0.7);
+				border-bottom: 2px solid transparent;
+				transition: all ease-out .2s;
+				box-sizing: border-box;
+
+				&:hover,
+				&:focus {
+					color: rgba(255,255,255,0.8);
+					background: rgba(255,255,255,0.05);
+				}
+				
+				&.active {
+					font-weight: 500;
+					border-bottom-color: #fff;
+					color: #fff;
+				}
+				
+				img {
+					position: relative;
+					top: 0.125em;
+					width: 1em;
+					height: auto;
+				}
+			}
+		}
+	}
+}
+
+@keyframes fadeIn {
+	0%, 10% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0.8;
+	}
+}
+
+#app {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #262626;
+    width: 100%;
+    height: 100%;
+
+
+	.cover {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background: url('../images/background.jpg') scroll no-repeat center center / cover transparent;
+		z-index: 1;
+		opacity: 0;
+		transform-style: preserve-3d;
+		animation: forwards fadeIn 1.5s;
+	}
+	
+	.logo {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin-top: -50px;
+		transform: translate(-50%, -50%);
+		width: 400px;
+		height: auto;
+		z-index: 2;
+		opacity: 0.8;
+	}
+	
+	.links {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		display: block;
+		width: 100%;
+		margin-top: 150px;
+		text-align: center;
+		transform: translate(-50%, -50%);
+		z-index: 3;
+
+		.button {
+			display: inline-block;
+			margin: 10px;
+			width: 12em;
+
+			transform: scale(1);
+			transition: all cubic-bezier(.5, 1.75, .75, .75) 0.5s;
+
+			&:hover,
+			&:focus {
+				transform: scale(1.1);
+			}
+			
+			img {
+			    width: 100%;
+			    height: auto;
+			}
+		}
+	}
+}
+
+
+#gallerymap {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    background: #B5D0D0;
+    left: 0;
+    top: 0;
+}
+.popuplink {
+	
+}
+.popupimage {
+	display: block;
+    width: 160px;
+    margin: 20px auto;
+}
+
+#map {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    background: #B5D0D0;
+    left: 0;
+    top: 0;
+}
+
+#videos {
+	position: relative;
+	height: 100%;
+    overflow-y: scroll;
+
+	.video-title {
+		margin-top: 3em;
+		margin-bottom: 1em;
+		font-weight: 500;
+
+		em {
+			font-style: inherit;
+			font-weight: 300;
+			color: rgba(255,255,255,0.5);
+		}
+	}
+	
+	.video {
+		position: relative;
+		width: 100%;
+		height: 0;
+		margin: 0;
+		padding-bottom: 56.25%;
+		background: rgba(0,0,0,0.5);
+
+		iframe {
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+		}
+	}
+}
+
+#info {
+	position: relative;
+	height: 100%;
+    overflow-y: scroll;
+}
