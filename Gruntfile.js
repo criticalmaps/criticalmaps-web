@@ -176,6 +176,9 @@ module.exports = function ( grunt ) {
 				}
 			},
 			dist: {
+				options: {
+					mangle: false
+				},
 				files: {
 					'upload/assets/js/script.js': [
 						'src/js/**/*.js'
@@ -245,7 +248,7 @@ module.exports = function ( grunt ) {
 			}
 		}
 	});
-	grunt.registerTask('dev', [
+	grunt.registerTask('default', [
 		'clean:dev',
 		'sass:dev',
 		'postcss:dev',
@@ -254,7 +257,7 @@ module.exports = function ( grunt ) {
 		'copy:dev',
 		'watch'
 	]);
-	grunt.registerTask('default', [
+	grunt.registerTask('build', [
 		'clean:dist',
 		'sass:dist',
 		'postcss:dist',
