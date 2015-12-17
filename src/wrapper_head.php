@@ -24,6 +24,7 @@
 		<meta name="twitter:title" content="critical maps">
 		<meta name="twitter:description" content="critical maps are smartphone apps that help organize the critical mass bicycle protest">
 		
+		<link rel="stylesheet" href="/assets/css/libs.css" type="text/css"/>
 		<link rel="stylesheet" href="/assets/css/style.css" type="text/css"/>
 		
 		<link href="/assets/images/logo-favicon.png" rel="icon" type="image/png">

@@ -13,7 +13,8 @@ module.exports = function ( grunt ) {
 				'bower_components/leaflet-hash/leaflet-hash.js'
 			],
 			'cssDependencies': [
-				'bower_components/normalize.css/normalize.css'
+				'bower_components/normalize.css/normalize.css',
+				'bower_components/leaflet/leaflet.css'
 			]
 		},
 		copy: {

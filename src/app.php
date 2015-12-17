@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="/assets/css/libs.css" type="text/css"/>
 <link rel="stylesheet" href="/assets/css/style.css" type="text/css"/>
 
 <div id="app">
