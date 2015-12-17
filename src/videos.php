@@ -1,8 +1,5 @@
 <?php require("wrapper_head.php"); ?>
 
-<link rel="stylesheet" href="/assets/css/libs.css" type="text/css"/>
-<link rel="stylesheet" href="/assets/css/style.css" type="text/css"/>
-
 <div id="videos">
 	<div class="wrapper content">
 		
@@ -82,6 +79,5 @@
 		
 	</div>
 </div>
-
 
 <?php require("wrapper_footer.php"); ?>

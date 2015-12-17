@@ -1,5 +1,4 @@
-<link rel="stylesheet" href="/assets/css/libs.css" type="text/css"/>
-<link rel="stylesheet" href="/assets/css/style.css" type="text/css"/>
+<?php require("wrapper_head.php"); ?>
 
 <div id="app">
 	<div class="wrapper content">
@@ -11,3 +10,5 @@
 	</div>
 	<div class="cover">
 </div>
+
+<?php require("wrapper_footer.php"); ?>

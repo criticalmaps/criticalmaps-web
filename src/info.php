@@ -1,11 +1,9 @@
-<link rel="stylesheet" href="/assets/css/libs.css" type="text/css"/>
-<link rel="stylesheet" href="/assets/css/style.css" type="text/css"/>
+<?php require("wrapper_head.php"); ?>
 
 <div id="info">
 	<div class="wrapper content">
 		<h3>Contact</h3>
 		<p><a href="http://www.pokuslabs.com/#contact" target="_blank">Norman Sander</a> <span>(iOS)</span><br /><a href="http://www.stephanlindauer.de/contact" target="_blank">Stephan Lindauer</a> <span>(Android)</span></p>
-		
 		
 		<h3>Impressum</h3>
 		
@@ -67,6 +65,7 @@
 		
 		<p><a href="http://rechtsanwalt-schwenke.de/smmr-buch/datenschutz-muster-generator-fuer-webseiten-blogs-und-social-media/">Datenschutz-Muster von Rechtsanwalt Thomas Schwenke</a></p>
 		
-		
 	</div>
 </div>
+
+<?php require("wrapper_footer.php"); ?>
