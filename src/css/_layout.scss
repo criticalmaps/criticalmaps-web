@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,300,700,500');
 
 html, body {
-	min-height: 100%;
+	height: 100%;
 	padding: 0;
 	margin: 0;
     background: #262626;
@@ -189,7 +189,6 @@ body {
 	}
 }
 
-
 #gallerymap {
     padding: 0px;
     margin: 0px;
@@ -221,7 +220,6 @@ body {
 #videos {
 	position: relative;
 	height: 100%;
-    overflow-y: scroll;
 
 	.video-title {
 		margin-top: 3em;
