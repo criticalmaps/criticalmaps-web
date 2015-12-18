@@ -36,6 +36,7 @@
 	</head>
 	<body>
 		<header id="header">
+			<a id="nav-toggle">Menu</a>
 			<div id="navigation">
 		        <ul>
 		            <li>

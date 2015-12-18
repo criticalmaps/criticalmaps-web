@@ -7,4 +7,8 @@ $().ready( function () {
 			link.addClass('active');
 		}
 	});
+	
+	$('#nav-toggle').click(function() {
+		$('html').toggleClass('show-menu');
+	});
 });

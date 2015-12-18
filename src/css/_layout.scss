@@ -50,42 +50,100 @@ body {
 	max-width: 960px;
 	margin: auto;
 	padding: 8em 2em;
+	
+	@media only screen and (max-width: $breakpoint-phone) {
+		padding: 4em 1em;
+	}
 }
 
 #header {
-    position: absolute;
-    height: 4em;
+    position: fixed;
     width: 100%;
-    background-color: rgba(20, 20, 20, 0.8);
+    background: rgba(20, 20, 20, 0.8);
     overflow: hidden;
     z-index: 100;
 }
 
+#nav-toggle {
+	display: none;
+	height: 3em;
+	line-height: 3em;
+	font-weight: 400;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	color: rgba(255,255,255,0.7);
+	transition: all ease-out .2s;
+	box-sizing: border-box;
+	cursor: pointer;
+	
+	@media only screen and (max-width: $breakpoint-phone) {
+		display: block;
+	}
+
+	&:hover,
+	&:focus {
+		color: rgba(255,255,255,0.8);
+		background: rgba(255,255,255,0.05);
+	}				
+}
+
+.show-menu {
+	
+	#header {
+	    background: rgba(20,20,20,0.95);
+	}
+
+	#navigation {
+		display: block !important;
+	}
+}
+
 #navigation {
-	position: absolute;
-	left: 0;
-	bottom: 0;
-	width: 100%;
+	float: right;
+	position: relative;
+	left: -50%;
+	
+	@media only screen and (max-width: $breakpoint-phone) {
+		float: none;
+		left: auto;
+		display: none;
+	}
 
 	ul {
+		position: relative;
+		left: 50%;
 		list-style: none;
 		padding: 0;
 		margin: 0;
-		overflow: hidden;
-		text-align: center;
+		
+		@media only screen and (max-width: $breakpoint-phone) {
+			left: auto;
+		}
+		
+		&:after {
+			clear: both;
+			content: '';
+			display: table;
+		}
 	
 		li {
-			display: inline-block;
+			display: block;
+			float: left;
+			
+			@media only screen and (max-width: $breakpoint-phone) {
+				float: none;
+			}
 
 			a {
 				display: block;
-				height: 4em;
-				line-height: 2em;
-				padding: 1em;
+				height: 3em;
+				line-height: 3em;
+				padding: 0 1em;
 				font-weight: 400;
 				text-decoration: none;
 				text-transform: uppercase;
-				letter-spacing: 0.5px;
+				text-align: center;
 				color: rgba(255,255,255,0.7);
 				border-bottom: 2px solid transparent;
 				transition: all ease-out .2s;
@@ -101,6 +159,11 @@ body {
 					font-weight: 500;
 					border-bottom-color: #fff;
 					color: #fff;
+					
+					@media only screen and (max-width: $breakpoint-phone) {
+						border-bottom-color: transparent;
+						background: rgba(0,0,0,0.5);
+					}
 				}
 				
 				img {
