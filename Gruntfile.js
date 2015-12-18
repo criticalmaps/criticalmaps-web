@@ -7,16 +7,16 @@ module.exports = function ( grunt ) {
 		pkg: grunt.file.readJSON( 'package.json' ),
 		config: {
 			'jsDependencies': [
-				'bower_components/modernizr/modernizr.js',
+				'bower_components/modernizer/modernizr.js',
 				'bower_components/jquery/dist/jquery.min.js',
 				'bower_components/history.js/scripts/bundled/html4+html5/jquery.history.js',
-				'bower_components/leaflet/leaflet.js',
+				'bower_components/leaflet/dist/leaflet.js',
 				'bower_components/leaflet-hash/leaflet-hash.js',
 				'bower_components/lazyloadxt/dist/jquery.lazyloadxt.extra.min.js'
 			],
 			'cssDependencies': [
-				'bower_components/normalize.css/normalize.css',
-				'bower_components/leaflet/leaflet.css'
+				'bower_components/normalize-css/normalize.css',
+				'bower_components/leaflet/dist/leaflet.css'
 			]
 		},
 		copy: {
