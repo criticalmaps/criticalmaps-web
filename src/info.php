@@ -2,6 +2,19 @@
 
 <div id="info">
 	<div class="wrapper content">
+		<h3>Contributors</h3>
+		<p>
+			Gitti la Mar <span>(Logo)</span><br />
+			Jan Rabe <span>(Code)</span><br />
+			Christian Balster <span>(Code)</span><br />
+			Ligi <span>(Code)</span><br />
+			Caner Ba&#351;aran <span>(Translation)</span><br />
+			Tobias Preuss <span>(Code)</span><br />
+			Luca Gemini <span>(Translation)</span><br />
+			Lena Osswald <span>(Translation)</span><br />
+			Peter Amende <span>(Code)</span><br />
+		</p>
+				
 		<h3>Contact</h3>
 		<p><a href="http://www.pokuslabs.com/#contact" target="_blank">Norman Sander</a> <span>(iOS)</span><br /><a href="http://www.stephanlindauer.de/contact" target="_blank">Stephan Lindauer</a> <span>(Android)</span></p>
 		
