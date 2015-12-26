@@ -2,21 +2,25 @@
 
 <div id="info">
 	<div class="wrapper content">
-		<h3>Contributors</h3>
-		<p>
-			Gitti la Mar <span>(Logo)</span><br />
-			Jan Rabe <span>(Code)</span><br />
-			Christian Balster <span>(Code)</span><br />
-			Ligi <span>(Code)</span><br />
-			Caner Ba&#351;aran <span>(Translation)</span><br />
-			Tobias Preuss <span>(Code)</span><br />
-			Luca Gemini <span>(Translation)</span><br />
-			Lena Osswald <span>(Translation)</span><br />
-			Peter Amende <span>(Code)</span><br />
-		</p>
-				
+		
 		<h3>Contact</h3>
-		<p><a href="http://www.pokuslabs.com/#contact" target="_blank">Norman Sander</a> <span>(iOS)</span><br /><a href="http://www.stephanlindauer.de/contact" target="_blank">Stephan Lindauer</a> <span>(Android)</span></p>
+		<ul>
+			<li><a href="http://www.pokuslabs.com/#contact" target="_blank">Norman Sander</a> <span>(iOS)</span></li>
+			<li><a href="http://www.stephanlindauer.de/contact" target="_blank">Stephan Lindauer</a> <span>(Android)</span></li>
+		</ul>
+		
+		<h3>Contributors</h3>
+		<ul>
+			<li>Gitti la Mar <span>(Logo)</span></li>
+			<li><a href="https://github.com/kibotu" target="_blank">Jan Rabe</a> <span>(Code)</span></li>
+			<li><a href="https://github.com/cbalster" target="_blank">Christian Balster</a> <span>(Code)</span></li>
+			<li><a href="https://github.com/ligi" target="_blank">Ligi</a> <span>(Code)</span></li>
+			<li><a href="https://github.com/canerbasaran" target="_blank">Caner Ba&#351;aran</a> <span>(Translation)</span></li>
+			<li><a href="https://github.com/johnjohndoe" target="_blank">Tobias Preuss</a> <span>(Code)</span></li>
+			<li>Luca Gemini <span>(Translation)</span></li>
+			<li>Lena Osswald <span>(Translation)</span></li>
+			<li><a href="http://zutrinken.com/" target="_blank">Peter Amende</a> <span>(Code)</span></li>
+		</ul>
 		
 		<h3>Impressum</h3>
 		
