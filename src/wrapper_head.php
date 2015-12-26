@@ -39,26 +39,29 @@
 			<a id="nav-toggle">Menu</a>
 			<div id="navigation">
 		        <ul>
-		            <li>
+		            <li class="label">
 		                <a href="/">App</a>
 		            </li>
-		            <li>
+		            <li class="label">
 		                <a href="/map.php">Map</a>
 		            </li>
-		            <li>
+		            <li class="label">
 		                <a href="/gallery.php">Gallery</a>
 		            </li>
-		            <li>
+		            <li class="label">
 		            	<a href="/videos.php">Videos</a>
 					</li>
-		            <li>
+		            <li class="label">
 		            	<a href="/info.php">Info</a>
 					</li>
-		            <li>
+		            <li class="icon">
 		            	<a class="facebook" href="https://www.facebook.com/criticalmaps" target="_blank"><img alt="Facebook" src="/assets/images/social-facebook.svg" width="32" height="32" /></a>
 					</li>
-		            <li>
+		            <li class="icon">
 		            	<a class="twitter" href="https://twitter.com/CriticalMaps" target="_blank"><img alt="Twitter" src="/assets/images/social-twitter.svg" width="32" height="32" /></a>
+					</li>
+		            <li class="icon">
+		            	<a class="github" href="https://github.com/criticalmaps" target="_blank"><img alt="GitHub" src="/assets/images/social-github.svg" width="32" height="32" /></a>
 					</li>
 		        </ul>
 			</div>
