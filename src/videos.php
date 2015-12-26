@@ -5,6 +5,11 @@
 		
 		<h3>Critical Mass Berlin</h3>
 		
+		<h4 class="video-title">December 2015 <em>Critical Mass Berlin</em></h4>
+		<div class="video">
+			<iframe width="1280" height="720" data-src="https://www.youtube.com/embed/iDF06FO77Ns?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+		</div>
+		
 		<h4 class="video-title">November 2015 <em>Critical Mass Berlin</em></h4>
 		<div class="video">
 			<iframe width="1280" height="720" data-src="https://www.youtube.com/embed/-J9MkWRDNw4?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
