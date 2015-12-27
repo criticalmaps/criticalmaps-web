@@ -35,10 +35,12 @@ module.exports = function ( grunt ) {
 					src: [
 						'*.php',
 						'*.txt',
-						'*.xml'
+						'*.xml',
+						'.htaccess'
 					],
 					cwd: 'src/',
-					expand: true
+					expand: true,
+					dot: true
 				}]
 			 },
 			 dist: {
@@ -56,10 +58,12 @@ module.exports = function ( grunt ) {
 					src: [
 						'*.php',
 						'*.txt',
-						'*.xml'
+						'*.xml',
+						'.htaccess'
 					],
 					cwd: 'src/',
-					expand: true
+					expand: true,
+					dot: true
 				}]
 			 }
 		},
@@ -68,14 +72,16 @@ module.exports = function ( grunt ) {
 				'assets',
 				'*.php',
 				'*.txt',
-				'*.xml'
+				'*.xml',
+				'.htaccess'
 			],
 			dist: [
 				'upload',
 				'assets',
 				'*.php',
 				'*.txt',
-				'*.xml'
+				'*.xml',
+				'.htaccess'
 			]
 		},
 		sass: {
