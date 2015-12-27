@@ -43,16 +43,16 @@
 		                <a href="/">App</a>
 		            </li>
 		            <li class="label">
-		                <a href="/map.php">Map</a>
+		                <a href="/map">Map</a>
 		            </li>
 		            <li class="label">
-		                <a href="/gallery.php">Gallery</a>
+		                <a href="/gallery">Gallery</a>
 		            </li>
 		            <li class="label">
-		            	<a href="/videos.php">Videos</a>
+		            	<a href="/videos">Videos</a>
 					</li>
 		            <li class="label">
-		            	<a href="/info.php">Info</a>
+		            	<a href="/info">Info</a>
 					</li>
 		            <li class="icon">
 		            	<a class="facebook" href="https://www.facebook.com/criticalmaps" target="_blank"><img alt="Facebook" src="/assets/images/social-facebook.svg" width="32" height="32" /></a>
