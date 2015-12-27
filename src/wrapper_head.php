@@ -18,6 +18,7 @@
 		<meta property="og:url" content="http://criticalmaps.net/"/>
 		<meta property="og:description" content="critical maps are smartphone apps that help organize the critical mass bicycle protest"/>
 		<meta property="og:site_name" content="critical maps"/>
+		<meta property="og:image" content="http://criticalmaps.net/assets/images/facebook-og-image.png" />
 		
 		<meta name="twitter:card" content="summary">
 		<meta name="twitter:url" content="http://criticalmaps.net/">
