@@ -14,16 +14,19 @@
 		<meta name="robots" content="index, follow"/>
 		<meta name="author" content="Stephan Lindauer, Norman Sander"/>
 		
-		<meta property="og:title" content="critical maps"/>
+		<meta property="og:title" content="Critical Maps"/>
 		<meta property="og:url" content="http://criticalmaps.net/"/>
-		<meta property="og:description" content="critical maps are smartphone apps that help organize the critical mass bicycle protest"/>
-		<meta property="og:site_name" content="critical maps"/>
+		<meta property="og:description" content="Critical Maps is a smartphone app that helps organizing the critical mass bicycle protest."/>
+		<meta property="og:site_name" content="Critical Maps"/>
 		<meta property="og:image" content="http://criticalmaps.net/assets/images/facebook-og-image.png?cache-bust" />
 		
-		<meta name="twitter:card" content="summary">
-		<meta name="twitter:url" content="http://criticalmaps.net/">
-		<meta name="twitter:title" content="critical maps">
-		<meta name="twitter:description" content="critical maps are smartphone apps that help organize the critical mass bicycle protest">
+		<meta name="twitter:card" content="app">
+		<meta name="twitter:site" content="@CriticalMaps">
+		<meta name="twitter:description" content="Critical Maps is a smartphone app that helps organizing the critical mass bicycle protest.">
+		<meta name="twitter:app:name:iphone" content="Critical Maps">
+		<meta name="twitter:app:id:iphone" content="918669647">
+		<meta name="twitter:app:name:googleplay" content="Critical Maps">
+		<meta name="twitter:app:id:googleplay" content="de.stephanlindauer.criticalmaps">
 		
 		<link rel="stylesheet" href="/assets/css/libs.css" type="text/css"/>
 		<link rel="stylesheet" href="/assets/css/style.css" type="text/css"/>
