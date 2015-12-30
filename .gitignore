@@ -1,5 +1,6 @@
 .DS_Store
 .idea
+.htaccess
 node_modules/
 bower_components/
 upload/
@@ -11,3 +12,4 @@ assets/
 !/*/.php
 !/*/.xml
 !/*/.txt
+!/*/.htaccess
