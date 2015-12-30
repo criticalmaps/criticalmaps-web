@@ -19,22 +19,8 @@
 	    } ).addTo( bikeMap );
 	
 	    new L.Control.Zoom( { position: 'bottomleft' } ).addTo( bikeMap );
-	    var hash = new L.Hash( bikeMap );
-	
-	    var saveHashToParent = function () {
-	        if ( parent.criticalMapsMain && typeof parent.criticalMapsMain.saveMapState == 'function' ) {
-	            parent.criticalMapsMain.saveMapState( location.hash );
-	        }
-	    }
-	
-	    bikeMap.on( "moveend", function () {
-	        saveHashToParent()
-	    }, this );
-	
-	    bikeMap.on( "zoomend", function () {
-	        saveHashToParent()
-	    }, this );
-	
+	    new L.Hash( bikeMap );
+
 	    function setNewLocations( locationsArray ) {
 	
 	        //remove old markers
