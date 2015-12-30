@@ -18,7 +18,7 @@
 		<meta property="og:url" content="http://criticalmaps.net/"/>
 		<meta property="og:description" content="Critical Maps is a smartphone app that helps organizing the critical mass bicycle protest."/>
 		<meta property="og:site_name" content="Critical Maps"/>
-		<meta property="og:image" content="http://criticalmaps.net/assets/images/facebook-og-image.png?cache-bust" />
+		<meta property="og:image" content="http://criticalmaps.net/assets/images/facebook-og-image.png?<?php echo date("Y-m-d"); ?>" />
 		
 		<meta name="twitter:card" content="app">
 		<meta name="twitter:site" content="@CriticalMaps">
