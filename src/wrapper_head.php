@@ -22,6 +22,7 @@
 		
 		<meta name="twitter:card" content="app">
 		<meta name="twitter:site" content="@CriticalMaps">
+		<meta name="twitter:title" content="Critical Maps for iOS and Android">
 		<meta name="twitter:description" content="Critical Maps is a smartphone app that helps organizing the critical mass bicycle protest.">
 		<meta name="twitter:app:name:iphone" content="Critical Maps">
 		<meta name="twitter:app:id:iphone" content="918669647">
