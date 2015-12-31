@@ -19,20 +19,6 @@
 	    new L.Control.Zoom( { position: 'bottomleft' } ).addTo( cameraMap );
 	    new L.Hash( cameraMap );
 	
-	    var saveHashToParent = function () {
-	        if ( parent.criticalMapsMain && typeof parent.criticalMapsMain.saveMapState == 'function' ) {
-	            parent.criticalMapsMain.saveMapState( location.hash );
-	        }
-	    }
-	
-	    cameraMap.on( "moveend", function () {
-	        saveHashToParent()
-	    }, this );
-	
-	    cameraMap.on( "zoomend", function () {
-	        saveHashToParent()
-	    }, this );
-	
 	    $.get( "http://api.criticalmaps.net/gallery/get.php",
 	        function ( jsonString ) {
 	            var jsonObject = jQuery.parseJSON( jsonString );
