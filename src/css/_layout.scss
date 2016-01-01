@@ -61,7 +61,7 @@ body {
     width: 100%;
     background: rgba(20, 20, 20, 0.8);
     overflow: hidden;
-    z-index: 100;
+    z-index: 9999;
 }
 
 #nav-toggle {
@@ -285,6 +285,36 @@ body {
     background: #B5D0D0;
     left: 0;
     top: 0;
+}
+#map-share {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 480px;
+	max-width: 75%;
+	margin-left: 46px;
+	margin-bottom: 10px;
+	padding: 0.667em;
+	border-radius: 4px;
+	box-shadow: 0 1px 5px rgba(0,0,0,0.65);
+	font-size: 0.75em;
+	font-weight: 400;
+	background: #f4f4f4;
+	color: #000;
+	z-index: 100;
+	
+	p {
+		margin-top: 0.25em;
+	}
+	
+	pre {
+		margin: -0.334em;
+		padding: 0.667em;
+		overflow-x: scroll;
+		overflow-y: hidden;
+		background: #ddd;
+		border-radius: 2px;
+	}
 }
 
 #videos {
