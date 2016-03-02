@@ -60,13 +60,13 @@
 		            	<a href="/info">Info</a>
 					</li>
 		            <li class="icon">
-		            	<a class="facebook" href="https://www.facebook.com/criticalmaps" target="_blank"><img alt="Facebook" src="/assets/images/social-facebook.svg" width="32" height="32" /></a>
+		            	<a class="facebook" href="https://www.facebook.com/criticalmaps" target="_blank"><i class="icon-facebook"></i></a>
 					</li>
 		            <li class="icon">
-		            	<a class="twitter" href="https://twitter.com/CriticalMaps" target="_blank"><img alt="Twitter" src="/assets/images/social-twitter.svg" width="32" height="32" /></a>
+		            	<a class="twitter" href="https://twitter.com/CriticalMaps" target="_blank"><i class="icon-twitter"></i></a>
 					</li>
 		            <li class="icon">
-		            	<a class="github" href="https://github.com/criticalmaps" target="_blank"><img alt="GitHub" src="/assets/images/social-github.svg" width="32" height="32" /></a>
+		            	<a class="github" href="https://github.com/criticalmaps" target="_blank"><i class="icon-github"></i></a>
 					</li>
 		        </ul>
 			</div>

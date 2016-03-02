@@ -6,8 +6,8 @@
     $().ready( function () {
 	    var cameraIcon = L.icon( {
 	        iconUrl: '/assets/images/marker-photo.png',
-	        iconSize: [24, 24],
-	        iconAnchor: [12, 12]
+	        iconSize: [40, 40],
+	        iconAnchor: [20, 20]
 	    } );
 	
 	    var cameraMap = new L.map( 'gallerymap', { zoomControl: false } ).setView( [52.468209, 13.425995], 3 );

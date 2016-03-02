@@ -31,6 +31,16 @@ module.exports = function ( grunt ) {
 					cwd: 'src/images/',
 					expand: true
 				},{
+					dest: 'assets/font/',
+					src: [
+						'*.eot',
+						'*.svg',
+						'*.ttf',
+						'*.woff'
+					],
+					cwd: 'src/font/',
+					expand: true
+				},{
 					dest: '',
 					src: [
 						'*.php',
@@ -52,6 +62,16 @@ module.exports = function ( grunt ) {
 						'*.svg'
 					],
 					cwd: 'src/images/',
+					expand: true
+				},{
+					dest: 'upload/assets/font/',
+					src: [
+						'*.eot',
+						'*.svg',
+						'*.ttf',
+						'*.woff'
+					],
+					cwd: 'src/font/',
 					expand: true
 				},{
 					dest: 'upload/',
