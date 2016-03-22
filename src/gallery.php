@@ -9,16 +9,16 @@
 	        iconSize: [24, 24],
 	        iconAnchor: [12, 12]
 	    } );
-	
+
 	    var cameraMap = new L.map( 'gallerymap', { zoomControl: false } ).setView( [52.468209, 13.425995], 3 );
-	
+
 	    L.tileLayer( 'http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
 		    attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
 		} ).addTo( cameraMap );
-		
+
 	    new L.Control.Zoom( { position: 'bottomleft' } ).addTo( cameraMap );
 	    new L.Hash( cameraMap );
-	
+
 	    $.get( "http://api.criticalmaps.net/gallery/get.php",
 	        function ( jsonString ) {
 	            var jsonObject = jQuery.parseJSON( jsonString );

@@ -5,7 +5,7 @@
 		    var scJsHost = (("https:" == document.location.protocol) ? "https://secure." : "http://www.");
 		    document.write( "<sc" + "ript type='text/javascript' src='" + scJsHost + "statcounter.com/counter/counter.js'></" + "script>" );
 		</script>
-		
+
 		<script>
 		    (function ( i, s, o, g, r, a, m ) {
 		        i['GoogleAnalyticsObject'] = r;
@@ -18,7 +18,7 @@
 		        a.src = g;
 		        m.parentNode.insertBefore( a, m )
 		    })( window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga' );
-		
+
 		    ga( 'create', 'UA-23025246-4', 'auto' );
 		    ga( 'send', 'pageview' );
 		</script>
