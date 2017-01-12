@@ -3,7 +3,7 @@
 <div id="info">
 	<div class="wrapper content">
 
-		<h3>testing auto deployment</h3>
+		<h3>Contact</h3>
 		
 		<ul>
 			<li><a href="http://nsander.de" target="_blank">Norman Sander</a> <span>(iOS)</span></li>
