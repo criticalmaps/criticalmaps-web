@@ -22,12 +22,6 @@
   font-weight: 700;
   src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v15/d-6IYplOFocCacKzxwXSOJBw1xU1rKptJj_0jans920.woff2) format('woff2');
 }
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 900;
-  src: local('Roboto Black'), local('Roboto-Black'), url(https://fonts.gstatic.com/s/roboto/v15/mnpfi9pxYH-Go5UiibESIpBw1xU1rKptJj_0jans920.woff2) format('woff2');
-}
 
 @font-face {
   font-family: 'Roboto';
@@ -48,12 +42,13 @@
   src: local('Roboto Bold Italic'), local('Roboto-BoldItalic'), url(https://fonts.gstatic.com/s/roboto/v15/t6Nd4cfPRhZP44Q5QAjcC4gp9Q8gbYrhqGlRav_IXfk.woff2) format('woff2');
 }
 
-$color-green:		#3DCC85;
-$color-gray:		#262626;
+$color-green:			#3DCC85;
+$color-green-active:	#45E695;
+$color-gray:			#262626;
 
-$breakpoint-phone:	30em;
-$breakpoint-tablet:	50em;
-$breakpoint-laptop:	70em;
+$breakpoint-phone:		30em;
+$breakpoint-tablet:		50em;
+$breakpoint-laptop:		70em;
 
 @import "icons";
 @import "base";
