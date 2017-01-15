@@ -85,7 +85,14 @@ module.exports = function ( grunt ) {
 					expand: true,
 					dot: true
 				}]
-			 }
+			},
+			docker: {
+			  expand: true,
+				cwd: 'upload',
+				src: '**',
+			  dest: '/var/www/html/',
+				dot: true
+			},
 		},
 		clean: {
 			dev: [
@@ -290,7 +297,7 @@ module.exports = function ( grunt ) {
 		'cssmin:dist',
 		'uglify:dist',
 		'copy:dist',
-	    'smushit',
-	    'ftp-diff-deployer'
+    'smushit',
+    'copy:docker'
 	]);
 };

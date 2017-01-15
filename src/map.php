@@ -10,44 +10,44 @@
 <script type="text/javascript">
     $().ready( function () {
 	    var currentMarkers = [];
-	
+
 	    var bikeIcon = L.icon( {
 	        iconUrl: '/assets/images/marker-bike.png',
 	        iconSize: [40, 40],
 	        iconAnchor: [20, 20]
 	    } );
-	
+
 	    var bikeMap = new L.map( 'map', { zoomControl: false } ).setView( [52.468209, 13.425995], 3 );
-	
+
 	    L.tileLayer( 'http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
 	        attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
 	    } ).addTo( bikeMap );
-	
+
 	    new L.Control.Zoom( { position: 'bottomleft' } ).addTo( bikeMap );
 	    new L.Hash( bikeMap );
 
 	    function setNewLocations( locationsArray ) {
-	
+
 	        //remove old markers
 	        currentMarkers.forEach( function ( marker ) {
 	            bikeMap.removeLayer( marker )
 	        } );
-	
+
 	        //add new markes
 	        locationsArray.forEach( function ( coordinate ) {
 	            var marker = L.marker( [coordinate.latitude, coordinate.longitude], {icon: bikeIcon} ).addTo( bikeMap );
 	            currentMarkers.push( marker );
-	
+
 	        } );
 	    }
-	
+
 	    var refreshLocationsFromServer = function () {
 	        $.getJSON( "//api.criticalmaps.net/postv2", function ( data ) {
-	
+
 	            locationsArray = [];
-	
+
 	            var locations = data.locations;
-	
+
 	            for ( var key in locations ) {
 	                if ( locations.hasOwnProperty( key ) ) {
 	                    var currentLocation = locations[key];
@@ -59,14 +59,14 @@
 	                    console.log( "new coords: " + JSON.stringify( coordinate ) + " " + new Date().toString() );
 	                }
 	            }
-	
+
 	            setNewLocations( locationsArray );
 	        } );
 	    }
 	    setInterval( function () { refreshLocationsFromServer() }, 20000 );
-	
+
 	    refreshLocationsFromServer();
-	
+
 	    $( "body" ).keypress( function ( event ) {
 	        if ( event.which == 104 ) {
 	            setInterval( function () { refreshLocationsFromServer() }, 1000 );
