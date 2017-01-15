@@ -1,4 +1,6 @@
 $().ready( function () {
+	
+	$('html').addClass($('#page-id').attr('class'));
 
 	var isMobile = {
 	    Android: function() {
@@ -21,6 +23,12 @@ $().ready( function () {
 	    }
 	};
 
+	if(isMobile.iOS()) {
+		$('html').addClass('ios');
+	} else if(isMobile.Android()) {
+		$('html').addClass('android');
+	}
+
 	$('#navigation ul a').each(function() {
 		var link = $(this);
 		link.removeClass('active');
@@ -30,7 +38,10 @@ $().ready( function () {
 		}
 	});
 	
+
+/*	
 	$('#nav-toggle').click(function() {
 		$('html').toggleClass('show-menu');
 	});
+*/
 });

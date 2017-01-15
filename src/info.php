@@ -1,5 +1,7 @@
 <?php require("wrapper_head.php"); ?>
 
+<div id="page-id" class="info"></div>
+
 <div id="wrapper">
 	<div class="inner content">
 

@@ -1,5 +1,7 @@
 <?php require("wrapper_head.php"); ?>
 
+<div id="page-id" class="gallery"></div>
+
 <div id="gallerymap"></div>
 
 <script type="text/javascript">

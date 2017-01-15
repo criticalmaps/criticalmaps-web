@@ -41,33 +41,34 @@
 	</head>
 	<body>
 		<header id="header">
-			<a id="nav-toggle">Menu</a>
-			<div id="navigation">
-		        <ul>
-		            <li class="label">
-		                <a href="/">App</a>
-		            </li>
-		            <li class="label">
-		                <a href="/map">Map</a>
-		            </li>
-		            <li class="label">
-		                <a href="/gallery">Gallery</a>
-		            </li>
-		            <li class="label">
-		            	<a href="/videos">Videos</a>
-					</li>
-		            <li class="label">
-		            	<a href="/info">Info</a>
-					</li>
-		            <li class="icon">
-		            	<a class="facebook" href="https://www.facebook.com/criticalmaps" target="_blank"><i class="icon-facebook"></i></a>
-					</li>
-		            <li class="icon">
-		            	<a class="twitter" href="https://twitter.com/CriticalMaps" target="_blank"><i class="icon-twitter"></i></a>
-					</li>
-		            <li class="icon">
-		            	<a class="github" href="https://github.com/criticalmaps" target="_blank"><i class="icon-github"></i></a>
-					</li>
-		        </ul>
+			<div class="inner">
+				<div id="logo">
+					<span class="label">Critical Maps</span>
+				</div>
+				<div id="navigation">
+			        <ul>
+			            <li class="label">
+			                <a href="/">App</a>
+			            </li>
+			            <li class="label">
+			                <a href="/map">Map</a>
+			            </li>
+			            <li class="label">
+			                <a href="/gallery">Gallery</a>
+			            </li>
+			            <li class="label">
+			            	<a href="/videos">Videos</a>
+						</li>
+			            <li class="label">
+			            	<a href="/info">Info</a>
+						</li>
+			            <li class="icon">
+			            	<a class="facebook" href="https://www.facebook.com/criticalmaps" target="_blank"><i class="icon-facebook"></i></a>
+						</li>
+			            <li class="icon">
+			            	<a class="twitter" href="https://twitter.com/CriticalMaps" target="_blank"><i class="icon-twitter"></i></a>
+						</li>
+			        </ul>
+				</div>
 			</div>
 		</header>
