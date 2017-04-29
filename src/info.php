@@ -3,14 +3,13 @@
 <div id="info">
 	<div class="wrapper content">
 
-		<h3>Contact</h3>
-		
+		<h3><a name="Contact">Contact</a></h3>
 		<ul>
 			<li><a href="http://nsander.de" target="_blank">Norman Sander</a> <span>(iOS)</span></li>
 			<li><a href="http://www.stephanlindauer.de/contact" target="_blank">Stephan Lindauer</a> <span>(Android, API, Web)</span></li>
 		</ul>
 
-		<h3>Contributors</h3>
+		<h3><a name="Contributors">Contributors</a></h3>
 		<ul>
 			<li>Gitti la Mar <span>(Logo)</span></li>
 			<li><a href="https://github.com/kibotu" target="_blank">Jan Rabe</a> <span>(Code)</span></li>
@@ -23,13 +22,13 @@
 			<li><a href="http://zutrinken.com/" target="_blank">Peter Amende</a> <span>(Code)</span></li>
 		</ul>
 
-		<h3>Impressum</h3>
+		<h3><a name="Impressum">Impressum</a></h3>
 
 		<p>Angaben gemäß § 5 TMG</p>
 		<p>Stephan Lindauer </p>
 		<p>Vertreten durch: Stephan Lindauer und Norman Sander<br /> Kontakt: <a href='mailto:stephanlindauer@posteo.de'>stephanlindauer@posteo.de</a></p>
 
-		<h3>Haftungsausschluss</h3>
+		<h3><a name="Haftungsausschluss">Haftungsausschluss</a></h3>
 
 		<h4>Haftung für Inhalte</h4>
 		<p>Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.</p>
@@ -52,7 +51,7 @@
 
 
 
-		<h3>Datenschutzerklärung</h3>
+		<h3><a name="Datenschutzerklärung">Datenschutzerklärung</a></h3>
 
 		<h4>Geltungsbereich</h4>
 		<p>Diese Datenschutzerklärung klärt Nutzer über die Art, den Umfang und Zwecke der Erhebung und Verwendung personenbezogener Daten durch den verantwortlichen Anbieter Stephan Lindauer (stephan.lindauer@gmail.com) auf. Die rechtlichen Grundlagen des Datenschutzes finden sich im Bundesdatenschutzgesetz (BDSG) und dem Telemediengesetz (TMG).</p>
