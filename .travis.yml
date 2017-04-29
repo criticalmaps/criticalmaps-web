@@ -19,3 +19,6 @@ env:
   global:
   - secure: "WvOdlnEoas1UCef9K42nrx7WsT9f+0OltGp+DW6936NLvBENvoter+T3pFdjdiVRuIBrSsVmtqlbn0Hnhd9b/36Ftizg6CFK8WqA5Sbs5NFLCGfX+G0HiYn9xIRiqPRzIDkQe5uNdTHQYfu6QSJcUsGpNVYexOFTf4SC5K5yPng="
   - secure: "cQwn3LOlR42h6oWElWxpMjMmUr9kXZhO1jpZSRjUZx0dNYi79JXLohLcSikYpqI04PM4nVFh7gIEUXOZL6jJPBK0phQGvZCuj4tQkzHu+7/eZSHBTpVEFWTSC1uTdMJ1Vz6YrBCYgFddF5X+gu/v7WmtVCURfmfHfTiizi+Shac="
+
+notifications:
+  slack: criticalmaps:2y9ZNnVGwTV68d47IUPXzlRB
