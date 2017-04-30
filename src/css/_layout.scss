@@ -320,6 +320,7 @@ body {
 #videos {
 	position: relative;
 	height: 100%;
+    overflow-y: scroll;
 
 	.video-title {
 		margin-top: 3em;
