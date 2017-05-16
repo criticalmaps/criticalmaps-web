@@ -209,7 +209,7 @@ html, body {
 			width: auto;
 			line-height: 1em;
 			background: $color-primary;
-			color: $color-gray;
+			color: #000;
 			font-weight: 700;
 			text-decoration: none;
 			border-radius: 3em;
@@ -229,8 +229,13 @@ html, body {
 			
 			&.button-github {
 				background: rgba(19,19,19,0.8);
-				color: #ccc;
+				color: #fff;
 				font-weight: 600;
+				
+				&:hover,
+				&:focus {
+					background: rgba(19,19,19,1);
+				}
 			}
 			
 			i {
