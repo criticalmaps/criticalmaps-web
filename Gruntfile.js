@@ -3,6 +3,7 @@ module.exports = function ( grunt ) {
 	require('load-grunt-tasks')(grunt, {
 		pattern: ['grunt-*']
 	});
+    grunt.loadNpmTasks('grunt-sass-lint');
 	grunt.initConfig( {
 		pkg: grunt.file.readJSON( 'package.json' ),
 		config: {
@@ -279,7 +280,13 @@ module.exports = function ( grunt ) {
 					dest: '/'
 				}
 			}
-		}
+		},
+        sasslint: {
+            options: {
+                configFile: '.sass-lint.yml'
+            },
+            target: ['src/css/*.scss']
+        }
 	});
 	grunt.registerTask('default', [
 		'clean:dev',
@@ -297,7 +304,8 @@ module.exports = function ( grunt ) {
 		'cssmin:dist',
 		'uglify:dist',
 		'copy:dist',
-    'smushit',
-    'copy:docker'
+    	'smushit',
+    	'copy:docker'
 	]);
+    grunt.registerTask('lint', ['sasslint']);
 };
