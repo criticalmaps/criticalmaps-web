@@ -1,5 +1,7 @@
 <?php require("wrapper_head.php"); ?>
 
+<div id="page-id" class="map"></div>
+
 <div id="map-share">
 	<p>Embed this map on your website:</p>
 	<pre><code>&lt;iframe width=&quot;1280&quot; height=&quot;720&quot; src=&quot;http://criticalmaps.net/map-embed&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;</code></pre>
@@ -13,8 +15,8 @@
 
 	    var bikeIcon = L.icon( {
 	        iconUrl: '/assets/images/marker-bike.png',
-	        iconSize: [24, 24],
-	        iconAnchor: [12, 12]
+	        iconSize: [40, 40],
+	        iconAnchor: [20, 20]
 	    } );
 
 	    var bikeMap = new L.map( 'map', { zoomControl: false } ).setView( [52.468209, 13.425995], 3 );

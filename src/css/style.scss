@@ -1,5 +1,5 @@
-$breakpoint-phone:	30em;
-$breakpoint-tablet:	50em;
-$breakpoint-laptop:	70em;
-
-@import "layout";
+@import 'vars';
+@import 'fonts';
+@import 'icons';
+@import 'base';
+@import 'layout';

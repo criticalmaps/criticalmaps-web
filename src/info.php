@@ -1,7 +1,9 @@
 <?php require("wrapper_head.php"); ?>
 
-<div id="info">
-	<div class="wrapper content">
+<div id="page-id" class="info"></div>
+
+<div id="wrapper">
+	<div class="inner content">
 
 		<h3><a name="Contact">Contact</a></h3>
 		<ul>
@@ -19,7 +21,7 @@
 			<li><a href="https://github.com/johnjohndoe" target="_blank">Tobias Preuss</a> <span>(Code)</span></li>
 			<li>Luca Gemini <span>(Translation)</span></li>
 			<li>Lena Osswald <span>(Translation)</span></li>
-			<li><a href="http://zutrinken.com/" target="_blank">Peter Amende</a> <span>(Code)</span></li>
+			<li><a href="http://zutrinken.com/" target="_blank">Peter Amende</a> <span>(Code, Design)</span></li>
 		</ul>
 
 		<h3><a name="Impressum">Impressum</a></h3>
