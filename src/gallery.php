@@ -21,7 +21,7 @@
 	    new L.Control.Zoom( { position: 'bottomleft' } ).addTo( cameraMap );
 	    new L.Hash( cameraMap );
 
-	    $.get( "http://api.criticalmaps.net/gallery/get.php",
+	    $.get( "https://api.criticalmaps.net/gallery/",
 	        function ( jsonString ) {
 	            var jsonObject = jQuery.parseJSON( jsonString );
 	            for ( var key in jsonObject ) {
