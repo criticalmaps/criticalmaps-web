@@ -11,15 +11,14 @@ body {
 }
 
 .content {
-
   a {
     font-weight: 400;
     color: #ccc;
     text-decoration: none;
     transition: all ease-out 0.2s;
 
-    &:hover,
-    &:focus {
+    &:focus,
+    &:hover {
       text-decoration: underline;
     }
   }
@@ -78,8 +77,8 @@ body {
     position: relative;
   }
 
-  ul > li,
-  ol > li {
+  ol > li,
+  ul > li {
     &:before {
       position: absolute;
       width: 2em;
@@ -178,8 +177,8 @@ body {
     color: #fff;
   }
 
-  strong,
-  b {
+  b,
+  strong {
     font-weight: 700;
     color: #fff;
   }
@@ -216,7 +215,6 @@ body {
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.25);
 
-
     td,
     th {
       position: relative;
@@ -245,4 +243,8 @@ body {
   iframe {
     margin: 2.5em auto;
   }
+}
+
+.map-marker-bike {
+  opacity: 0.8;
 }
