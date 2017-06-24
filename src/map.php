@@ -4,7 +4,7 @@
 
 <div id="map-share">
 	<p>Embed this map on your website:</p>
-	<pre><code>&lt;iframe width=&quot;1280&quot; height=&quot;720&quot; src=&quot;http://criticalmaps.net/map-embed&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;</code></pre>
+	<pre><code>&lt;iframe width=&quot;1280&quot; height=&quot;720&quot; src=&quot;https://criticalmaps.net/map-embed&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;</code></pre>
 </div>
 
 <div id="map"></div>
