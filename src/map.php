@@ -22,7 +22,7 @@
 
 	    var bikeMap = new L.map( 'map', { zoomControl: false } ).setView( [52.468209, 13.425995], 3 );
 
-	    L.tileLayer( 'https://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+	    L.tileLayer( 'http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
 	        attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
 	    } ).addTo( bikeMap );
 
