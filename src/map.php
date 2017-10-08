@@ -45,7 +45,7 @@
 	    }
 
 	    var refreshLocationsFromServer = function () {
-	        $.getJSON( "https://criticalmaps-api.stephanlindauer.de/postv2", function ( data ) {
+	        $.getJSON( "https://api.criticalmaps.net/postv2", function ( data ) {
 
 	            locationsArray = [];
 
