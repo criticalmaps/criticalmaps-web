@@ -18,6 +18,8 @@ RUN mkdir /dist
 WORKDIR /dist
 
 COPY package.json /dist
+RUN npm install node-sass request@2.81.0
+
 RUN npm install
 
 RUN echo '{ "allow_root": true }' > /root/.bowerrc
