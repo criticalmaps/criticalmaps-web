@@ -7,11 +7,14 @@ RUN apt-get update -y && \
                        git \
                        ruby-full \
                        nodejs \
-                       npm
+                       npm \
+                       automake \
+                       libtool
 
 RUN ln -s /usr/bin/nodejs /usr/bin/node
 
-RUN gem install compass
+RUN gem update --system && \
+    gem install compass
 RUN npm install -g grunt-cli bower
 
 RUN mkdir /dist
