@@ -3,15 +3,18 @@ FROM php:7.0-apache
 RUN ln -s /etc/apache2/mods-available/rewrite.load /etc/apache2/mods-enabled/rewrite.load
 
 RUN apt-get update -y && \
-    apt-get install -y build-essential \
-                       git \
+    apt-get install -y build-essential  -my wget gnupg
+RUN curl -sL https://deb.nodesource.com/setup_9.x | bash -
+
+RUN apt-get update -y && \
+        apt-get install -y                    git \
                        ruby-full \
                        nodejs \
                        npm \
                        automake \
                        libtool
 
-RUN ln -s /usr/bin/nodejs /usr/bin/node
+# RUN ln -s /usr/bin/nodejs /usr/bin/node
 
 RUN gem update --system && \
     gem install compass
