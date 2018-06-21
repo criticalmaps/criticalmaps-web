@@ -1,20 +1,16 @@
-FROM php:7.0-apache
-
-RUN ln -s /etc/apache2/mods-available/rewrite.load /etc/apache2/mods-enabled/rewrite.load
+FROM php:7.2.6-apache as builder
 
 RUN apt-get update -y && \
     apt-get install -y build-essential  -my wget gnupg
 RUN curl -sL https://deb.nodesource.com/setup_9.x | bash -
 
 RUN apt-get update -y && \
-        apt-get install -y                    git \
+        apt-get install -y git \
                        ruby-full \
                        nodejs \
                        npm \
                        automake \
                        libtool
-
-# RUN ln -s /usr/bin/nodejs /usr/bin/node
 
 RUN gem update --system && \
     gem install compass
@@ -34,5 +30,11 @@ RUN bower install
 
 COPY . /dist
 RUN grunt build
+
+FROM php:7.2.6-apache
+
+RUN ln -s /etc/apache2/mods-available/rewrite.load /etc/apache2/mods-enabled/rewrite.load
+
+COPY --from=builder /var/www/html/ /var/www/html/
 
 WORKDIR /var/www/html/
