@@ -35,8 +35,8 @@
                     )
                         .addTo(cameraMap)
                         .bindPopup(
-                            '<a class="popuplink" target="_blank" href="http://api.criticalmaps.net/gallery/image/' + currentImageObject.id + '">' +
-                            '<img class="popupimage" src="http://api.criticalmaps.net/gallery/thumbnail/' + currentImageObject.id + '">' +
+                            '<a class="popuplink" target="_blank" href="https://api.criticalmaps.net/gallery/image/' + currentImageObject.id + '">' +
+                            '<img class="popupimage" src="https://api.criticalmaps.net/gallery/thumbnail/' + currentImageObject.id + '">' +
                             '</a>');
                 }
             }
