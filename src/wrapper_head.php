@@ -57,9 +57,6 @@
 			                <a href="/gallery">Gallery</a>
 			            </li>
 			            <li class="label">
-			            	<a href="/videos">Videos</a>
-						</li>
-			            <li class="label">
 			            	<a href="/info">Info</a>
 						</li>
 			            <li class="icon">
