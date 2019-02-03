@@ -17,7 +17,8 @@
 			<li><a href="https://github.com/cbalster" target="_blank">Christian Balster</a> <span>(Android)</span></li>
 			<li><a href="https://github.com/ligi" target="_blank">Ligi</a> <span>(Android)</span></li>
 			<li><a href="https://github.com/johnjohndoe" target="_blank">Tobias Preuss</a> <span>(Android)</span></li>
-			<li><a href="http://zutrinken.com/" target="_blank">Peter Amende</a> <span>(Web, Design)</span></li>
+			<li><a href="https://github.com/lennet" target="_blank">Leo Thomas</a> <span>(iOS)</span></li>
+			<li><a href="https://peteramende.de/" target="_blank">Peter Amende</a> <span>(Design)</span></li>
 			<li>Gitti la Mar <span>(Logo)</span></li>
 			<li><a href="https://github.com/canerbasaran" target="_blank">Caner Ba&#351;aran</a> <span>(Translation)</span></li>
 			<li>Luca Gemini <span>(Translation)</span></li>
