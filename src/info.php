@@ -1,3 +1,5 @@
+<?php $title = "About | Critical Maps"; ?>
+
 <?php require("wrapper_head.php"); ?>
 
 <div id="page-id" class="info"></div>

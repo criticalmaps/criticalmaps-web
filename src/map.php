@@ -1,3 +1,5 @@
+<?php $title = "Live Map | Critical Maps"; ?>
+
 <?php require("wrapper_head.php"); ?>
 
 <div id="page-id" class="map"></div>

@@ -1,3 +1,5 @@
+<?php $title = "Gallery | Critical Maps"; ?>
+
 <?php require("wrapper_head.php"); ?>
 
 <div id="page-id" class="gallery"></div>

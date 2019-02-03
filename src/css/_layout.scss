@@ -68,6 +68,11 @@ body {
     line-height: 3em;
     font-weight: 700;
     color: #fff;
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
   }
 }
 
@@ -184,7 +189,7 @@ body {
     font-style: italic;
     text-align: center;
     color: #fff;
-    
+
     @media only screen and (max-width: $breakpoint) {
       width: auto;
     }
