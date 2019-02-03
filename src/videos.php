@@ -1,10 +1,12 @@
+<?php $title = "Videos | Critical Maps"; ?>
+
 <?php require("wrapper_head.php"); ?>
 
 <div id="page-id" class="videos"></div>
 
 <div id="wrapper">
 	<div class="inner content">
-		
+
 		<h3>Critical Mass Berlin</h3>
 
 		<div class="video-post">
@@ -18,7 +20,7 @@
 				</div>
 			</div>
 		</div>
-		
+
 		<div class="video-post">
 			<div class="video-info">
 				<h4 class="video-title">January 2016</h4>
@@ -42,7 +44,7 @@
 				</div>
 			</div>
 		</div>
-		
+
 		<div class="video-post">
 			<div class="video-info">
 				<h4 class="video-title">November 2015</h4>
@@ -54,7 +56,7 @@
 				</div>
 			</div>
 		</div>
-		
+
 		<div class="video-post">
 			<div class="video-info">
 				<h4 class="video-title">Oktober 2015</h4>
@@ -66,7 +68,7 @@
 				</div>
 			</div>
 		</div>
-		
+
 		<div class="video-post">
 			<div class="video-info">
 				<h4 class="video-title">September 2015</h4>
@@ -78,7 +80,7 @@
 				</div>
 			</div>
 		</div>
-		
+
 		<div class="video-post">
 			<div class="video-info">
 				<h4 class="video-title">August 2015</h4>
@@ -90,7 +92,7 @@
 				</div>
 			</div>
 		</div>
-		
+
 		<div class="video-post">
 			<div class="video-info">
 				<h4 class="video-title">Juli 2015</h4>
@@ -102,7 +104,7 @@
 				</div>
 			</div>
 		</div>
-		
+
 		<div class="video-post">
 			<div class="video-info">
 				<h4 class="video-title">Juni 2015</h4>
@@ -114,7 +116,7 @@
 				</div>
 			</div>
 		</div>
-		
+
 		<div class="video-post">
 			<div class="video-info">
 				<h4 class="video-title">Mai 2015</h4>
@@ -126,7 +128,7 @@
 				</div>
 			</div>
 		</div>
-		
+
 		<div class="video-post">
 			<div class="video-info">
 				<h4 class="video-title">April 2015</h4>
@@ -138,7 +140,7 @@
 				</div>
 			</div>
 		</div>
-		
+
 		<div class="video-post">
 			<div class="video-info">
 				<h4 class="video-title">März 2015</h4>
@@ -150,7 +152,7 @@
 				</div>
 			</div>
 		</div>
-		
+
 		<div class="video-post">
 			<div class="video-info">
 				<h4 class="video-title">Februar 2015</h4>
@@ -162,7 +164,7 @@
 				</div>
 			</div>
 		</div>
-		
+
 		<div class="video-post">
 			<div class="video-info">
 				<h4 class="video-title">Januar 2015</h4>
@@ -176,7 +178,7 @@
 		</div>
 
 		<h3>Critical Mass Wien</h3>
-		
+
 		<div class="video-post">
 			<div class="video-info">
 				<h4 class="video-title">April 2015</h4>
@@ -188,7 +190,7 @@
 				</div>
 			</div>
 		</div>
-		
+
 		<div class="video-post">
 			<div class="video-info">
 				<h4 class="video-title">März 2015</h4>
@@ -200,7 +202,7 @@
 				</div>
 			</div>
 		</div>
-		
+
 		<div class="video-post">
 			<div class="video-info">
 				<h4 class="video-title">Februar 2015</h4>
