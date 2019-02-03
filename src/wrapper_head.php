@@ -38,7 +38,7 @@
 		  "url": "https://criticalmaps.net",
 		  "image": "http://criticalmaps.net/assets/images/facebook-og-image.png",
 		  "sameAs": [
-			  "https://github.com/criticalmaps"
+			  "https://github.com/criticalmaps",
 			  "https://twitter.com/criticalmaps",
 			  "https://www.facebook.com/criticalmaps"
 		  ]
