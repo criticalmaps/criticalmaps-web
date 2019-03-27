@@ -7,31 +7,123 @@
 <div id="wrapper">
 	<div class="inner content">
 
-		<h3><a name="Contact">Contact</a></h3>
-		<ul>
-			<li><a href="http://www.stephanlindauer.de/contact" target="_blank">Stephan Lindauer</a> <span>(Android, API, Web)</span></li>
-			<li><a href="http://nsander.de" target="_blank">Norman Sander</a> <span>(iOS)</span></li>
+		<h3><a name="Team">Team</a></h3>
+		<ul class="team-list">
+			<li>
+				<a href="https://github.com/stephanlindauer" target="_blank">
+					<figure class="team-avatar">
+						<img src="https://avatars3.githubusercontent.com/u/1323145?s=96" />
+					</figure>
+					<span class="team-name">Stephan Lindauer</span>
+					<span class="team-user">stephanlindauer</span>
+					<span class="team-project">Android, API</span>
+				</a>
+			</li>
+			<li>
+				<a href="https://github.com/headione" target="_blank">
+					<figure class="team-avatar">
+						<img src="https://avatars1.githubusercontent.com/u/1220469?s=96" />
+					</figure>
+					<span class="team-name">Norman Sander</span>
+					<span class="team-user">headione</span>
+					<span class="team-project">iOS</span>
+				</a>
+			</li>
+			<li>
+				<a href="https://github.com/cbalster" target="_blank">
+					<figure class="team-avatar">
+						<img src="https://avatars1.githubusercontent.com/u/9266843?s=96" />
+					</figure>
+					<span class="team-name">Christian Balster</span>
+					<span class="team-user">cblaster</span>
+					<span class="team-project">Android</span>
+				</a>
+			</li>
+			<li>
+				<a href="https://github.com/lennet" target="_blank">
+					<figure class="team-avatar">
+						<img src="https://avatars3.githubusercontent.com/u/7677738?s=96" />
+					</figure>
+					<span class="team-name">Leo Thomas</span>
+					<span class="team-user">lennet</span>
+					<span class="team-project">iOS</span>
+				</a>
+			</li>
+			<li>
+				<a href="https://github.com/zutrinken" target="_blank">
+					<figure class="team-avatar">
+						<img src="https://avatars0.githubusercontent.com/u/888679?s=96" />
+					</figure>
+					<span class="team-name">Peter Amende</span>
+					<span class="team-user">zutrinken</span>
+					<span class="team-project">Design</span>
+				</a>
+			</li>
+			<li>
+				<a href="https://github.com/ligi" target="_blank">
+					<figure class="team-avatar">
+						<img src="https://avatars2.githubusercontent.com/u/111600?s=96" />
+					</figure>
+					<span class="team-name">ligi</span>
+					<span class="team-user">ligi</span>
+					<span class="team-project">Android</span>
+				</a>
+			</li>
+			<li>
+				<a href="https://github.com/johnjohndoe" target="_blank">
+					<figure class="team-avatar">
+						<img src="https://avatars0.githubusercontent.com/u/144518?s=96" />
+					</figure>
+					<span class="team-name">Tobias Preuss</span>
+					<span class="team-user">johnjohndoe</span>
+					<span class="team-project">Android</span>
+				</a>
+			</li>
+			<li>
+				<a href="https://github.com/kibotu" target="_blank">
+					<figure class="team-avatar">
+						<img src="https://avatars3.githubusercontent.com/u/3336447?s=96" />
+					</figure>
+					<span class="team-name">Jan Rabe</span>
+					<span class="team-user">kibotu</span>
+					<span class="team-project">Android</span>
+				</a>
+			</li>
+			<li>
+				<a href="https://github.com/mltbnz" target="_blank">
+					<figure class="team-avatar">
+						<img src="https://avatars1.githubusercontent.com/u/14075359?s=96" />
+					</figure>
+					<span class="team-name">Malte Bünz</span>
+					<span class="team-user">mltbnz</span>
+					<span class="team-project">iOS</span>
+				</a>
+			</li>
+			<li class="contribute">
+				<a href="https://github.com/criticalmaps" target="_blank">
+					<span class="contribute-title">Critical Maps is Open Source</span>
+					<span class="contribute-copy">We’re always looking for more people to help making this project even better!</span>
+					<span class="contribute-link">See Project</span>
+				</a>
+			</li>
 		</ul>
 
 		<h3><a name="Contributors">Contributors</a></h3>
 		<ul>
-			<li><a href="https://github.com/kibotu" target="_blank">Jan Rabe</a> <span>(Android)</span></li>
-			<li><a href="https://github.com/cbalster" target="_blank">Christian Balster</a> <span>(Android)</span></li>
-			<li><a href="https://github.com/ligi" target="_blank">Ligi</a> <span>(Android)</span></li>
-			<li><a href="https://github.com/johnjohndoe" target="_blank">Tobias Preuss</a> <span>(Android)</span></li>
-			<li><a href="https://github.com/lennet" target="_blank">Leo Thomas</a> <span>(iOS)</span></li>
-			<li><a href="https://peteramende.de/" target="_blank">Peter Amende</a> <span>(Design)</span></li>
-			<li>Gitti la Mar <span>(Logo)</span></li>
+			<li>Gitti la Mar <span>(First Logo)</span></li>
 			<li><a href="https://github.com/canerbasaran" target="_blank">Caner Ba&#351;aran</a> <span>(Translation)</span></li>
 			<li>Luca Gemini <span>(Translation)</span></li>
 			<li>Lena Osswald <span>(Translation)</span></li>
+			<li>Rodrigo Aguilera <span>(Translation)</span></li>
+			<li>Helen Sawyer <span>(Translation)</span></li>
 		</ul>
 
 		<h3><a name="Impressum">Impressum</a></h3>
 
 		<p>Angaben gemäß § 5 TMG</p>
-		<p>Stephan Lindauer </p>
-		<p>Vertreten durch: Stephan Lindauer und Norman Sander<br /> Kontakt: <a href='mailto:stephanlindauer@posteo.de'>stephanlindauer@posteo.de</a></p>
+		<p>Stephan Lindauer<br> Warthestr. 55 120<br>51 Berlin</p>
+		<p>Vertreten durch: Stephan Lindauer und Norman Sander</p>
+		<p>Kontakt: <a href='mailto:stephanlindauer@posteo.de'>stephanlindauer@posteo.de</a></p>
 
 		<h3><a name="Haftungsausschluss">Haftungsausschluss</a></h3>
 
