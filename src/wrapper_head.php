@@ -57,34 +57,37 @@
 	</head>
 	<body>
 
-		<header id="header">
-			<div class="inner">
-				<div id="logo">
-					<span class="label">
-						<a href="/"><img src="/assets/images/logo.svg" alt="Critical Maps" /></a>
-					</span>
-				</div>
-				<div id="navigation">
-			        <ul>
-			            <li class="label">
-			                <a href="/map">Map</a>
-			            </li>
-			            <li class="label">
-			                <a href="/gallery">Gallery</a>
-			            </li>
-			            <li class="label">
-			            	<a href="/info">About</a>
-						</li>
-			            <li class="icon">
-			            	<a class="facebook" href="https://www.facebook.com/criticalmaps" target="_blank"><i class="icon-facebook"></i></a>
-						</li>
-			            <li class="icon">
-			            	<a class="twitter" href="https://twitter.com/criticalmaps" target="_blank"><i class="icon-twitter"></i></a>
-						</li>
-						<li class="icon">
-			            	<a class="twitter" href="https://github.com/criticalmaps" target="_blank"><i class="icon-github"></i></a>
-						</li>
-			        </ul>
-				</div>
+		<header id="navigation">
+			<div class="nav-logo">
+				<a href="/"><img src="/assets/images/logo.svg" alt="Critical Maps" /></a>
+			</div>
+			<div class="nav-menu">
+		        <ul>
+					<li class="label">
+		                <a href="/">App</a>
+		            </li>
+		            <li class="label">
+		                <a href="/map">Map</a>
+		            </li>
+		            <li class="label">
+		                <a href="/gallery">Gallery</a>
+		            </li>
+		            <li class="label">
+		            	<a href="/info">About</a>
+					</li>
+		        </ul>
+			</div>
+			<div class="nav-social">
+		        <ul>
+		            <li class="icon">
+		            	<a class="facebook" href="https://www.facebook.com/criticalmaps" target="_blank"><i class="icon-facebook"></i></a>
+					</li>
+		            <li class="icon">
+		            	<a class="twitter" href="https://twitter.com/criticalmaps" target="_blank"><i class="icon-twitter"></i></a>
+					</li>
+					<li class="icon">
+		            	<a class="twitter" href="https://github.com/criticalmaps" target="_blank"><i class="icon-github"></i></a>
+					</li>
+		        </ul>
 			</div>
 		</header>
