@@ -164,52 +164,18 @@ body {
 .title {
   position: relative;
   z-index: 10;
-  padding-top: 5%;
 
   .tagline {
     position: relative;
-    font-size: 2em;
-    width: 50%;
-    max-width: 8em;
-    margin: 1em auto;
-    padding: 0;
-    font-weight: 700;
-    text-align: center;
-    color: #fff;
-
-    .logo {
-      display: block;
-      width: 100%;
-      height: 0;
-      padding-bottom: 75%;
-      margin: auto;
-      color: transparent;
-
-      background: url('../images/logo.svg') scroll no-repeat center center / contain transparent;
-    }
   }
 
   .subline {
     position: relative;
-    width: 80%;
-    font-size: 1.5em;
-    line-height: 1.5em;
-    margin: 2em auto;
-    padding: 0;
-    font-weight: 400;
-    font-style: italic;
-    text-align: center;
-    color: #fff;
-
-    @media only screen and (max-width: $breakpoint) {
-      width: auto;
-    }
   }
 
   .download {
     display: block;
     z-index: 3;
-    text-align: center;
 
     &.download-dektop {
       display: block;
@@ -225,78 +191,35 @@ body {
       padding: 0.667em 1em;
       width: auto;
       line-height: 1em;
-      background: $color-primary;
+      background: $color-yellow100;
       color: #000;
       font-weight: 700;
       text-decoration: none;
       border-radius: 3em;
-      box-shadow: 0 0.25em 1em rgba(0, 0, 0, 0.1);
+      span {
+          display: block;
 
-      transform-style: preserve-3d;
-      transform: scale(1);
-
-      transition: all cubic-bezier(0.5, 1.75, 0.5, 1) 0.5s;
+            &:after {
+                position: relative;
+                content: '';
+                display: inline-block;
+                width: 16px;
+                height: 16px;
+                margin: -2px 0 -2px 8px;
+                background: url('../images/icon-arrow.svg') center center / contain transparent;
+                transform-style: preserve-3d;
+                transform: translate3d(0,0,0);
+                transition: all ease-out 0.3s;
+            }
+      }
 
       &:hover,
       &:focus {
-        background: $color-primary-active;
-        transform: scale(1.1);
-        box-shadow: 0 0.25em 1.5em rgba(0, 0, 0, 0.2);
-      }
-
-      &.button-github {
-        background: rgba(19, 19, 19, 0.8);
-        color: #fff;
-        font-weight: 600;
-
-        &:hover,
-        &:focus {
-          background: rgba(19, 19, 19, 1);
-        }
-      }
-
-      i {
-        display: inline-block;
-        margin-left: -0.2em;
-        margin-top: -0.1em;
-        font-size: 1.25em;
-        color: inherit;
+          span:after {
+              transform: translate3d(4px,0,0);
+          }
       }
     }
-  }
-}
-
-.cover {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100vh;
-  background: url('../images/map.jpg') scroll no-repeat center center / cover transparent;
-  opacity: 0;
-  transform-style: preserve-3d;
-  animation: forwards fadeIn 1s;
-  z-index: 5;
-
-  &:before {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 50vh;
-    background-image: (linear-gradient(rgba(38, 38, 38, 0), rgba(38, 38, 38, 1)));
-  }
-}
-
-@keyframes fadeIn {
-  0%,
-  10% {
-    opacity: 0 // sass-lint:disable-line trailing-semicolon
-  }
-
-  100% {
-    opacity: 0.8 // sass-lint:disable-line trailing-semicolon
   }
 }
 
