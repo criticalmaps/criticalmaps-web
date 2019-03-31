@@ -3,17 +3,17 @@ html {
 }
 
 body {
-  color: #999;
+  color: $color-gray300;
   font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,Arial,sans-serif;
-  font-weight: 300;
-  font-size: 1.5em;
-  line-height: 1.334em;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
 }
 
 .content {
   a {
-    font-weight: 400;
-    color: #ccc;
+    font-weight: 500;
+    color: $color-blue100;
     text-decoration: none;
     transition: all ease-out 0.2s;
 
@@ -30,10 +30,16 @@ body {
   h5,
   h6 {
     text-rendering: optimizeLegibility;
-    color: #fff;
+    color: $color-gray100;
 
     a {
       font-weight: inherit;
+      color: inherit;
+
+      &:focus,
+      &:hover {
+        text-decoration: none;
+      }
     }
   }
 
@@ -45,28 +51,28 @@ body {
   }
 
   h2 {
-    font-size: 1.75em;
-    line-height: 1.143em;
-    margin: 2.286em 0 -0.571em;
+    font-size: 32px;
+    line-height: 48px;
+    margin: 40px 0 24px;
     font-weight: 700;
   }
 
   h3 {
-    font-size: 1.5em;
-    line-height: 1.334em;
-    margin: 2em 0 -0.667em;
+    font-size: 24px;
+    line-height: 32px;
+    margin: 24px 0;
     font-weight: 600;
   }
 
   h4 {
-    font-size: 1.25em;
-    line-height: 1.2em;
-    margin: 2.4em 0 -0.8em;
+    font-size: 20px;
+    line-height: 28px;
+    margin: 16px 0;
     font-weight: 600;
   }
 
   p {
-    margin: 2em auto;
+    margin: 16px 0;
   }
 
   ul {
@@ -81,20 +87,17 @@ body {
   ul > li {
     &:before {
       position: absolute;
-      width: 2em;
-      margin-left: -3em;
-      font-size: 1em;
+      width: 16px;
+      margin-left: -32px;
       font-weight: 400;
-      line-height: 1.5em;
-      text-align: right;
-      color: $color-primary;
+      text-align: center;
+      color: $color-gray300;
     }
   }
 
   ul > li {
     &:before {
-      margin-top: 0.125em;
-      content: '*';
+      content: '•';
     }
   }
 
@@ -110,18 +113,17 @@ body {
 
   ol,
   ul {
-    padding-left: 3em;
-    margin: 2em auto;
+    padding-left: 32px;
+    margin: 16px 0;
 
     ol,
     ul {
-      padding-left: 1.5em;
-      margin: 1em auto;
+      margin: 8px 0;
     }
   }
 
   dl {
-    margin: 2em auto;
+    margin: 16px 0;
 
     dt {
       font-size: 0.875em;
@@ -147,7 +149,7 @@ body {
   }
 
   blockquote {
-    margin: 2em auto;
+    margin: 16px 0;
     padding: 0 1em;
     -moz-box-sizing: border-box; // sass-lint:disable-line no-vendor-prefixes
     box-sizing: border-box;
@@ -174,17 +176,17 @@ body {
   i {
     font-weight: 400;
     font-style: italic;
-    color: #fff;
   }
 
   b,
   strong {
     font-weight: 700;
-    color: #fff;
+    color: $color-gray200;
   }
 
   small {
-    font-size: 0.9em;
+    font-size: inherit;
+    color: $color-gray400;
   }
 
   mark {
@@ -211,7 +213,7 @@ body {
   table {
     width: 100%;
     max-width: 100%;
-    margin: 2em 0;
+    margin: 16px 0;
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.25);
 
@@ -237,11 +239,11 @@ body {
     display: block;
     max-width: 100%;
     height: auto;
-    margin: 2.5em auto;
+    margin: 16px 0;
   }
 
   iframe {
-    margin: 2.5em auto;
+    margin: 16px 0;
   }
 }
 
