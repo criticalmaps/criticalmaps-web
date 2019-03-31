@@ -38,6 +38,11 @@ body {
     content: '';
     display: table;
   }
+
+  .inner {
+      max-width: none;
+      padding: 0 12px 0 0;
+  }
 }
 
 .gallery,
@@ -133,6 +138,10 @@ body {
           width: 40px;
           padding-left: 12px;
           padding-right: 12px;
+
+          i:before {
+              margin: 0;
+          }
       }
     }
   }
