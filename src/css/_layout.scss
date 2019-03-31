@@ -389,30 +389,36 @@ body {
   position: fixed;
   left: 0;
   bottom: 0;
-  width: 480px;
-  max-width: 75%;
+  width: calc(100vw - 56px);
+  max-width: 480px;
   margin-left: 46px;
+  margin-right: 10px;
   margin-bottom: 10px;
-  padding: 0.667em;
+  padding: 8px 16px 0;
   border-radius: 4px;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.65);
-  font-size: 0.75em;
+  font-size: 14px;
+  line-height: 16px;
   font-weight: 400;
-  background: #f4f4f4;
-  color: #000;
+  background: rgba(0,0,0,0.8);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  color: rgba(255,255,255,0.8);
   z-index: 100;
+  box-sizing: border-box;
 
   p {
     margin-top: 0.25em;
   }
 
   pre {
-    margin: -0.334em;
-    padding: 0.667em;
+    color: #FFF;
+    margin: -8px -16px 0;
+    padding: 16px;
     overflow-x: scroll;
     overflow-y: hidden;
-    background: #ddd;
-    border-radius: 2px;
+    background: rgba(0,0,0,0.4);
+    border-radius: 0 0 4px 4px;
   }
 }
 
