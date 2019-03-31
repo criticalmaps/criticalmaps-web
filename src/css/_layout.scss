@@ -319,7 +319,7 @@ body {
             display: block;
             height: 80px;
             padding: 16px;
-            border: 1px solid #DADCE0;
+            border: 1px solid $color-gray500;
             border-radius: 3px;
             box-sizing: border-box;
 
@@ -341,8 +341,8 @@ body {
             padding-right: 33%;
             border: 0;
             border-radius: 6px;
-            background: url('../images/icon-github.svg') no-repeat scroll 84% 16px / contain #FFD633;
-            color: #1A1A1A;
+            background: url('../images/icon-github.svg') no-repeat scroll 84% 16px / contain $color-yellow100;
+            color: $color-gray100;
         }
 
         .contribute-title {
@@ -398,7 +398,7 @@ body {
         font-weight: 700;
         font-size: 14px;
         line-height: 18px;
-        color: #262626;
+        color: $color-gray200;
     }
 
     .team-user {
@@ -406,7 +406,7 @@ body {
         font-weight: 400;
         font-size: 12px;
         line-height: 16px;
-        color: #45474D;
+        color: $color-gray300;
     }
 
     .team-project {
@@ -414,7 +414,7 @@ body {
         font-weight: 500;
         font-size: 10px;
         line-height: 14px;
-        color: #909399;
+        color: $color-gray400;
     }
 }
 
