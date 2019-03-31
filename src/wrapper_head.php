@@ -61,7 +61,7 @@
 			<div class="inner">
 				<div id="logo">
 					<span class="label">
-						<a href="/">Critical Maps</a>
+						<a href="/"><img src="/assets/images/logo.svg" alt="Critical Maps" /></a>
 					</span>
 				</div>
 				<div id="navigation">
