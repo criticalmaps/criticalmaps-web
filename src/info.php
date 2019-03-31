@@ -50,16 +50,6 @@
 				</a>
 			</li>
 			<li>
-				<a href="https://github.com/zutrinken" target="_blank">
-					<figure class="team-avatar">
-						<img src="https://avatars0.githubusercontent.com/u/888679?s=96" />
-					</figure>
-					<span class="team-name">Peter Amende</span>
-					<span class="team-user">zutrinken</span>
-					<span class="team-project">Design</span>
-				</a>
-			</li>
-			<li>
 				<a href="https://github.com/ligi" target="_blank">
 					<figure class="team-avatar">
 						<img src="https://avatars2.githubusercontent.com/u/111600?s=96" />
@@ -67,6 +57,16 @@
 					<span class="team-name">ligi</span>
 					<span class="team-user">ligi</span>
 					<span class="team-project">Android</span>
+				</a>
+			</li>
+			<li>
+				<a href="https://github.com/zutrinken" target="_blank">
+					<figure class="team-avatar">
+						<img src="https://avatars0.githubusercontent.com/u/888679?s=96" />
+					</figure>
+					<span class="team-name">Peter Amende</span>
+					<span class="team-user">zutrinken</span>
+					<span class="team-project">Design</span>
 				</a>
 			</li>
 			<li>
@@ -80,16 +80,6 @@
 				</a>
 			</li>
 			<li>
-				<a href="https://github.com/kibotu" target="_blank">
-					<figure class="team-avatar">
-						<img src="https://avatars3.githubusercontent.com/u/3336447?s=96" />
-					</figure>
-					<span class="team-name">Jan Rabe</span>
-					<span class="team-user">kibotu</span>
-					<span class="team-project">Android</span>
-				</a>
-			</li>
-			<li>
 				<a href="https://github.com/mltbnz" target="_blank">
 					<figure class="team-avatar">
 						<img src="https://avatars1.githubusercontent.com/u/14075359?s=96" />
@@ -97,6 +87,16 @@
 					<span class="team-name">Malte Bünz</span>
 					<span class="team-user">mltbnz</span>
 					<span class="team-project">iOS</span>
+				</a>
+			</li>
+			<li>
+				<a href="https://github.com/kibotu" target="_blank">
+					<figure class="team-avatar">
+						<img src="https://avatars3.githubusercontent.com/u/3336447?s=96" />
+					</figure>
+					<span class="team-name">Jan Rabe</span>
+					<span class="team-user">kibotu</span>
+					<span class="team-project">Android</span>
 				</a>
 			</li>
 			<li class="contribute">

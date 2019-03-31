@@ -73,7 +73,7 @@
 		                <a href="/gallery">Gallery</a>
 		            </li>
 		            <li class="label">
-		            	<a href="/info">About</a>
+		            	<a href="/info">Info</a>
 					</li>
 		        </ul>
 			</div>

@@ -259,6 +259,7 @@ body {
             &:hover,
             &:focus {
                 text-decoration: none;
+                border-color: $color-gray400;
             }
         }
     }
