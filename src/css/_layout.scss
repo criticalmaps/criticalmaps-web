@@ -11,11 +11,7 @@ body {
   position: relative;
   max-width: 560px;
   margin: auto;
-  padding: 0 80px;
-
-  @media only screen and (max-width: $breakpoint) {
-    padding: 0 32px;
-  }
+  padding: 0 40px;
 
   &:after {
     clear: both;
@@ -316,6 +312,11 @@ body {
         float: left;
         padding: 8px;
         box-sizing: border-box;
+
+        @media only screen and (max-width: $breakpoint) {
+            width: auto;
+            float: none;
+        }
 
         &:before {
             display: none;
