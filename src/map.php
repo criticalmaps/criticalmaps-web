@@ -17,8 +17,8 @@
 
 	    var bikeIcon = L.icon( {
 	        iconUrl: '/assets/images/marker-bike.png',
-	        iconSize: [40, 40],
-	        iconAnchor: [20, 20],
+	        iconSize: [48, 48],
+	        iconAnchor: [24, 24],
 					className: 'map-marker-bike',
 	    } );
 
