@@ -9,12 +9,12 @@ body {
 
 .inner {
   position: relative;
-  max-width: 50em;
+  max-width: 560px;
   margin: auto;
-  padding: 0 2em;
+  padding: 0 80px;
 
   @media only screen and (max-width: $breakpoint) {
-    padding: 0 1em;
+    padding: 0 32px;
   }
 
   &:after {
