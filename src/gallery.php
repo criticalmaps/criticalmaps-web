@@ -16,9 +16,9 @@
 
         var cameraMap = new L.map('gallerymap', {zoomControl: false}).setView([52.468209, 13.425995], 3);
 
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-        }).addTo(cameraMap);
+        L.tileLayer( 'https://maps.wikimedia.org/osm-intl/{z}/{x}/{y}.png', {
+            attribution: '<a href="https://foundation.wikimedia.org/wiki/Maps_Terms_of_Use">Wikimedia maps</a> | &copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+        } ).addTo( cameraMap );
 
         new L.Control.Zoom({position: 'bottomleft'}).addTo(cameraMap);
         new L.Hash(cameraMap);
