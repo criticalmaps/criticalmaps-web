@@ -5,6 +5,7 @@ body {
   margin: 0;
   background: #FFFFFF;
   text-rendering: optimizeLegibility;
+  overflow-x: hidden;
 }
 
 .inner {
@@ -73,6 +74,7 @@ body {
 
         @media only screen and (max-width: $breakpoint) {
           order: 3;
+          flex-grow: 1;
         }
     }
 
@@ -99,13 +101,13 @@ body {
 
   ul {
       display: flex;
-      align-content: space-between;
+      justify-content: space-around;
       flex-direction: row;
       margin: 0;
       padding: 0;
 
     li {
-      display: block;
+      display: flex;
 
       a {
         position: relative;
