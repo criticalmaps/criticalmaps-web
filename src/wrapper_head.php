@@ -62,20 +62,20 @@
 				<a href="/"><img src="/assets/images/logo.svg" alt="Critical Maps" /></a>
 			</div>
 			<div class="nav-menu">
-		        <ul>
+				<ul>
 					<li class="label">
-		                <a href="/">App</a>
-		            </li>
-		            <li class="label">
-		                <a href="/map">Map</a>
-		            </li>
-		            <li class="label">
-		                <a href="/gallery">Gallery</a>
-		            </li>
-		            <li class="label">
-		            	<a href="/info">Info</a>
+						<a class="<?php if ($index) echo "active"; ?>" href="/">App</a>
 					</li>
-		        </ul>
+					<li class="label">
+						<a class="<?php if ($map) echo "active"; ?>" href="/map">Map</a>
+					</li>
+					<li class="label">
+						<a class="<?php if ($gallery) echo "active"; ?>" href="/gallery">Gallery</a>
+					</li>
+					<li class="label">
+						<a class="<?php if ($info) echo "active"; ?>" href="/info">Info</a>
+					</li>
+				</ul>
 			</div>
 			<div class="nav-social">
 		        <ul>

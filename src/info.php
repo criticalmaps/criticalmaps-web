@@ -1,6 +1,7 @@
 <?php
 	$title = "About | Critical Maps";
 	$pagetype = "info";
+	$info = true;
 ?>
 
 <?php require("wrapper_head.php"); ?>

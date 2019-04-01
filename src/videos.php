@@ -1,6 +1,7 @@
 <?php
 	$title = "Videos | Critical Maps";
 	$pagetype = "videos";
+	$videos = true;
 ?>
 
 <?php require("wrapper_head.php"); ?>

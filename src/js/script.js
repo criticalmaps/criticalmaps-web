@@ -1,5 +1,4 @@
 $().ready( function () {
-
 	var isMobile = {
 	    Android: function() {
 	        return navigator.userAgent.match(/Android/i);
@@ -20,26 +19,9 @@ $().ready( function () {
 	        return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
 	    }
 	};
-
 	if(isMobile.iOS()) {
 		$('html').addClass('ios');
 	} else if(isMobile.Android()) {
 		$('html').addClass('android');
 	}
-
-	$('#navigation ul a').each(function() {
-		var link = $(this);
-		link.removeClass('active');
-
-		if(link.attr('href') == window.location.pathname) {
-			link.addClass('active');
-		}
-	});
-
-
-/*
-	$('#nav-toggle').click(function() {
-		$('html').toggleClass('show-menu');
-	});
-*/
 });

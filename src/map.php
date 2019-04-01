@@ -1,6 +1,7 @@
 <?php
 	$title = "Live Map | Critical Maps";
 	$pagetype = "map";
+	$map = true;
 ?>
 
 <?php require("wrapper_head.php"); ?>

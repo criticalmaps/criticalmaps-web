@@ -1,6 +1,7 @@
 <?php
 	$title = "Critical Maps – Critical Mass App for Android and iOS";
 	$pagetype = "index";
+	$index = true;
 ?>
 
 <?php require("wrapper_head.php"); ?>

@@ -1,6 +1,7 @@
 <?php
   $title = "Gallery | Critical Maps";
   $pagetype = "gallery";
+  $gallery = true;
 ?>
 
 <?php require("wrapper_head.php"); ?>
