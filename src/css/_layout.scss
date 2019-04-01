@@ -344,8 +344,12 @@ body {
             padding-right: 33%;
             border: 0;
             border-radius: 6px;
-            background: url('../images/icon-github.svg') no-repeat scroll 84% 16px / contain $color-yellow100;
+            background: url('../images/icon-github.svg') no-repeat scroll right 24px bottom -16px / contain $color-yellow100;
             color: $color-gray100;
+
+            @media only screen and (max-width: $breakpoint) {
+              background-position: right -64px bottom -16px;
+            }
         }
 
         .contribute-title {
