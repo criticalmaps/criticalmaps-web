@@ -113,7 +113,7 @@
 		<h2><a name="Contributors">Contributors</a></h2>
 		<ul>
 			<li>Gitti la Mar <small>(First Logo)</small></li>
-			<li><a href="https://github.com/canerbasaran" target="_blank">Caner Ba&#351;aran</a> <small>(Translation)</small></li>
+			<li>Caner Ba&#351;aran <small>(Translation)</small></li>
 			<li>Luca Gemini <small>(Translation)</small></li>
 			<li>Lena Osswald <small>(Translation)</small></li>
 			<li>Rodrigo Aguilera <small>(Translation)</small></li>
