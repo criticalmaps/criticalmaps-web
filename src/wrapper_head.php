@@ -18,7 +18,7 @@
 		<meta property="og:url" content="http://criticalmaps.net/"/>
 		<meta property="og:description" content="An open source Android and iOS App to organise the monthly critical mass movement around the world."/>
 		<meta property="og:site_name" content="Critical Maps"/>
-		<meta property="og:image" content="http://criticalmaps.net/assets/images/facebook-og-image.png?<?php echo date("Y-m-d"); ?>" />
+		<meta property="og:image" content="http://criticalmaps.net/assets/images/logo-opengraph.png?<?php echo date("Y-m-d"); ?>" />
 
 		<meta name="twitter:card" content="app">
 		<meta name="twitter:site" content="@CriticalMaps">
@@ -36,7 +36,7 @@
 		  "name": "Critical Maps",
 		  "description": "An open source Android and iOS App to organise the monthly critical mass movement around the world.",
 		  "url": "https://criticalmaps.net",
-		  "image": "http://criticalmaps.net/assets/images/facebook-og-image.png",
+		  "image": "http://criticalmaps.net/assets/images/logo-opengraph.png",
 		  "sameAs": [
 			  "https://github.com/criticalmaps",
 			  "https://twitter.com/criticalmaps",
