@@ -1,8 +1,9 @@
-<?php $title = "Gallery | Critical Maps"; ?>
+<?php
+  $title = "Gallery | Critical Maps";
+  $pagetype = "gallery";
+?>
 
 <?php require("wrapper_head.php"); ?>
-
-<div id="page-id" class="gallery"></div>
 
 <div id="gallerymap"></div>
 

@@ -1,5 +1,5 @@
 <!doctype html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-EN">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-EN" class="<?php echo $pagetype; ?>">
 	<head profile="http://gmpg.org/xfn/11">
 
 		<title><?php echo $title; ?></title>

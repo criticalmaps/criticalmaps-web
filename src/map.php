@@ -1,8 +1,9 @@
-<?php $title = "Live Map | Critical Maps"; ?>
+<?php
+	$title = "Live Map | Critical Maps";
+	$pagetype = "map";
+?>
 
 <?php require("wrapper_head.php"); ?>
-
-<div id="page-id" class="map"></div>
 
 <div id="map-share">
 	<p>Embed this map on your website:</p>
