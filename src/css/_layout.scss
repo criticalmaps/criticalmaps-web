@@ -465,6 +465,27 @@ body {
   top: 0;
 }
 
+#map-count {
+  position: fixed;
+  height: 32px;
+  left: 0;
+  bottom: 0;
+  margin-left: 46px;
+  margin-bottom: 96px;
+  padding: 8px 12px;
+  border-radius: 4px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.65);
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  background: rgba(255,255,255,0.8);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  color: $color-gray200;
+  z-index: 100;
+  box-sizing: border-box;
+}
+
 #map-share {
   position: fixed;
   left: 0;
@@ -474,16 +495,16 @@ body {
   margin-left: 46px;
   margin-right: 10px;
   margin-bottom: 10px;
-  padding: 8px 16px 0;
+  padding: 8px 12px 0;
   border-radius: 4px;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.65);
   font-size: 14px;
   line-height: 16px;
   font-weight: 400;
-  background: rgba(0,0,0,0.8);
+  background: rgba(255,255,255,0.8);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
-  color: rgba(255,255,255,0.8);
+  color: $color-gray200;
   z-index: 100;
   box-sizing: border-box;
 
@@ -492,12 +513,12 @@ body {
   }
 
   pre {
-    color: #FFF;
-    margin: -8px -16px 0;
-    padding: 16px;
+    color: $color-gray300;
+    margin: -4px -12px 0;
+    padding: 12px;
     overflow-x: scroll;
     overflow-y: hidden;
-    background: rgba(0,0,0,0.4);
+    background: #FFF;
     border-radius: 0 0 4px 4px;
   }
 }

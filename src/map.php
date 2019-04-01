@@ -6,6 +6,8 @@
 
 <?php require("wrapper_head.php"); ?>
 
+<div id="map-count">Online: <span id="activeusers"></span></div>
+
 <div id="map-share">
 	<p>Embed this map on your website:</p>
 	<pre><code>&lt;iframe width=&quot;1280&quot; height=&quot;720&quot; src=&quot;https://criticalmaps.net/map-embed&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;</code></pre>
@@ -48,6 +50,18 @@
 	        } );
 	    }
 
+			function countMarkerInView() {
+			  var counter = 0;
+			  bikeMap.eachLayer( function(layer) {
+			    if(layer instanceof L.Marker) {
+			      if(bikeMap.getBounds().contains(layer.getLatLng())) {
+			        counter++;
+			      }
+			    }
+			  });
+			  return counter;
+			};
+
 	    var refreshLocationsFromServer = function () {
 	        $.getJSON( "https://api.criticalmaps.net/postv2", function ( data ) {
 
@@ -80,6 +94,13 @@
 	            alert( "ab geht die post!" );
 	        }
 	    } );
+
+			setInterval( function () {
+			    refreshLocationsFromServer();
+			    var nBikes = countMarkerInView();
+			    document.getElementById("activeusers").innerHTML = nBikes;
+			  }, 2000 );
+
     } );
 </script>
 
