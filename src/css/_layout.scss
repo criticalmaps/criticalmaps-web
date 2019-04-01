@@ -237,7 +237,10 @@ body {
   .download {
     display: block;
     z-index: 3;
-    margin: 0 -40px;
+
+    @media only screen and (max-width: $breakpoint) {
+      margin: 0 -40px;
+    }
 
     &.download-dektop {
       display: block;
@@ -249,10 +252,9 @@ body {
 
     .button {
       display: inline-block;
-      margin: 8px;
       padding: 10px 24px;
       width: auto;
-      font-size: 18px;
+      font-size: 14px;
       line-height: 28px;
       background: $color-yellow100;
       color: #000;
