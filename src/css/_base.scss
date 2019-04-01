@@ -144,8 +144,7 @@ body {
 
   blockquote {
     margin: 16px 0;
-    padding: 0 1em;
-    -moz-box-sizing: border-box; // sass-lint:disable-line no-vendor-prefixes
+    padding: 0 16px;
     box-sizing: border-box;
     border-left: 0.25em solid rgba(255, 255, 255, 0.25);
     font-style: italic;
@@ -184,7 +183,7 @@ body {
   }
 
   mark {
-    background-color: $color-primary;
+    background-color: $color-yellow100;
   }
 
   code,
@@ -199,7 +198,6 @@ body {
     line-height: 1.143em;
     white-space: pre;
     background: rgba(255, 255, 255, 0.1);
-    color: #fff;
     font-weight: 400;
     border-radius: 2px;
   }
@@ -225,7 +223,6 @@ body {
       font-size: 0.75em;
       line-height: 1.334em;
       padding: 1.334em;
-      color: #fff;
     }
   }
 
@@ -239,8 +236,4 @@ body {
   iframe {
     margin: 16px 0;
   }
-}
-
-.map-marker-bike {
-  opacity: 0.8;
 }
