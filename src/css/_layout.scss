@@ -184,8 +184,8 @@ body {
   margin: 0;
 
   @media only screen and (max-width: $breakpoint) {
-    width: 80%;
-    margin: -80px 10% 80px;
+    width: 75%;
+    margin: -64px 12.5% 0;
   }
 
   img {
@@ -202,15 +202,8 @@ body {
   box-sizing: border-box;
 
   @media only screen and (max-width: $breakpoint) {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    padding: 24px 40px;
-    background: linear-gradient(rgba(255,255,255,.7),#FFFFFF);
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
-    box-shadow: 0 0 4px rgba(0,0,0,0.1);
+    width: auto;
+    padding: 0 40px;
     text-align: center;
   }
 
@@ -239,7 +232,7 @@ body {
     z-index: 3;
 
     @media only screen and (max-width: $breakpoint) {
-      margin: 0 -40px;
+
     }
 
     &.download-dektop {
@@ -253,6 +246,7 @@ body {
     .button {
       display: inline-block;
       padding: 10px 24px;
+      margin-bottom: 8px;
       width: auto;
       font-size: 14px;
       line-height: 28px;

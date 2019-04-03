@@ -10,7 +10,7 @@
 	<div class="inner content">
 		<div class="front">
 			<figure class="front-image">
-				<img src="/assets/images/app.jpg" width="430" height="608" alt="Critical Maps on iPhoneX" />
+				<img src="/assets/images/app.jpg" width="480" height="640" alt="Critical Maps on iPhoneX" />
 			</figure>
 			<div class="front-text">
 				<h1 class="front-title">Critical Maps</h1>
