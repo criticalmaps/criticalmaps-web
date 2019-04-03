@@ -478,6 +478,10 @@ body {
   color: $color-gray200;
   z-index: 100;
   box-sizing: border-box;
+
+  @media only screen and (max-width: $breakpoint) {
+    display: none;
+  }
 }
 
 #map-share {
@@ -501,6 +505,10 @@ body {
   color: $color-gray200;
   z-index: 100;
   box-sizing: border-box;
+
+  @media only screen and (max-width: $breakpoint) {
+    display: none;
+  }
 
   p {
     margin-top: 0.25em;
