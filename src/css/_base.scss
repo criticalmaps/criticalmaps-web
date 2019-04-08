@@ -186,6 +186,10 @@ body {
     background-color: $color-yellow100;
   }
 
+  pre {
+    color: $color-gray300;
+  }
+
   code,
   tt {
     display: inline-block;

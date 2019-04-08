@@ -123,7 +123,9 @@
 		<h2><a name="Impressum">Impressum</a></h2>
 
 		<p>Angaben gemäß § 5 TMG</p>
-		<p>Stephan Lindauer<br> Warthestr. 55 120<br>51 Berlin</p>
+<pre>Stephan Lindauer
+Warthestr. 55
+12051 Berlin</pre>
 		<p>Vertreten durch: Stephan Lindauer und Norman Sander</p>
 		<p>Kontakt: <a href='mailto:stephanlindauer@posteo.de'>stephanlindauer@posteo.de</a></p>
 

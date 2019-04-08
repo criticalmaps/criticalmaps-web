@@ -11,7 +11,7 @@ body {
 
 .inner {
   position: relative;
-  max-width: 560px;
+  max-width: 720px;
   margin: auto;
   padding: 0 40px;
 
@@ -48,8 +48,14 @@ body {
     align-content: space-between;
     flex-direction: row;
 
-    @media only screen and (max-width: $breakpoint) {
-      flex-wrap: wrap;
+    .inner {
+      max-width: 1280px;
+      display: flex;
+      flex-grow: 1;
+
+      @media only screen and (max-width: $breakpoint) {
+        flex-wrap: wrap;
+      }
     }
 
     .nav-logo {
@@ -164,7 +170,7 @@ body {
 //============================================================
 
 .index .inner {
-  max-width: 760px;
+  max-width: 960px;
   padding: 0;
 }
 
