@@ -307,7 +307,7 @@ html.android .download .button-ios {
     }
 
     li {
-        width: 50%;
+        width: 33.334%;
         float: left;
         padding: 8px;
         box-sizing: border-box;
@@ -408,7 +408,6 @@ html.android .download .button-ios {
     }
 
     .team-name {
-        display: block;
         font-weight: 700;
         font-size: 14px;
         line-height: 18px;
@@ -416,7 +415,6 @@ html.android .download .button-ios {
     }
 
     .team-user {
-        display: block;
         font-weight: 400;
         font-size: 12px;
         line-height: 16px;
@@ -424,11 +422,19 @@ html.android .download .button-ios {
     }
 
     .team-project {
-        display: block;
         font-weight: 500;
         font-size: 10px;
         line-height: 14px;
         color: $color-gray400;
+    }
+
+    .team-name,
+    .team-user,
+    .team-project {
+      display: block;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
 }
 
