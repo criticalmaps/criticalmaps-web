@@ -187,7 +187,7 @@ body {
   position: relative;
   float: left;
   width: 50%;
-  margin: 0;
+  margin: -5% 0 -10%;
 
   @media only screen and (max-width: $breakpoint) {
     width: 75%;
@@ -205,10 +205,12 @@ body {
   z-index: 10;
   align-self: center;
   padding-right: 40px;
+  margin-left: -40px;
   box-sizing: border-box;
 
   @media only screen and (max-width: $breakpoint) {
     width: auto;
+    margin: 0;
     padding: 0 40px;
     text-align: center;
   }
@@ -216,16 +218,17 @@ body {
   .front-title {
     position: relative;
     margin-top: 0;
+    margin-bottom: 8px;
 
     @media only screen and (max-width: $breakpoint) {
       font-size: 24px;
       line-height: 32px;
-      margin-bottom: 16px;
     }
   }
 
   .front-description {
     position: relative;
+    margin-top: 0;
 
     @media only screen and (max-width: $breakpoint) {
       font-size: 16px;
@@ -236,31 +239,21 @@ body {
   .download {
     display: block;
     z-index: 3;
-
-    @media only screen and (max-width: $breakpoint) {
-
-    }
-
-    &.download-dektop {
-      display: block;
-    }
-
-    &.download-mobile {
-      display: none;
-    }
+    margin: 0 -4px;
 
     .button {
       display: inline-block;
       padding: 10px 24px;
-      margin-bottom: 8px;
+      margin: 4px;
       width: auto;
       font-size: 14px;
-      line-height: 28px;
+      line-height: 24px;
       background: $color-yellow100;
       color: #000;
       font-weight: 700;
       text-decoration: none;
       border-radius: 3em;
+
       span {
           display: block;
 
@@ -286,6 +279,14 @@ body {
       }
     }
   }
+}
+
+html.ios .download .button-android {
+  display: none;
+}
+
+html.android .download .button-ios {
+  display: none;
 }
 
 //============================================================
