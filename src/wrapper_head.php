@@ -48,8 +48,14 @@
 		<link rel="stylesheet" href="/assets/css/libs.css" type="text/css"/>
 		<link rel="stylesheet" href="/assets/css/style.css" type="text/css"/>
 
-		<link href="/assets/images/logo-favicon.png" rel="icon" type="image/png">
-		<link href="/assets/images/logo-touchicon.png" rel="apple-touch-icon">
+		<link rel="apple-touch-icon-precomposed" sizes="76x76" href="/assets/images/logo-touch-icon-76.png">
+		<link rel="apple-touch-icon-precomposed" sizes="120x120" href="/assets/images/logo-touch-icon-120.png">
+		<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/assets/images/logo-touch-icon-152.png">
+		<link rel="apple-touch-icon-precomposed" sizes="167x167" href="/assets/images/logo-touch-icon-167.png">
+		<link rel="apple-touch-icon-precomposed" sizes="180x180" href="/assets/images/logo-touch-icon-180.png">
+		<link rel="icon" sizes="192x192" href="/assets/images/logo-icon-192.png">
+		<link rel="mask-icon" color="#000000" href="/assets/images/logo-mask-icon.svg">
+		<link rel="shortcut icon" type="image/png" href="/assets/images/logo-favicon.png">
 
 		<script src="/assets/js/libs.js"></script>
 		<script src="/assets/js/script.js"></script>
