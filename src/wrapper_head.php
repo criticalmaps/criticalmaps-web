@@ -87,13 +87,13 @@
 				<div class="nav-social">
 			    <ul>
 			      <li class="icon">
-			        <a class="facebook" href="https://www.facebook.com/criticalmaps" target="_blank"><i class="icon-facebook"></i></a>
+			        <a class="facebook" href="https://www.facebook.com/criticalmaps" target="_blank" title="Critical Maps on Facebook"><i class="icon-facebook"></i></a>
 						</li>
 			      <li class="icon">
-			        <a class="twitter" href="https://twitter.com/criticalmaps" target="_blank"><i class="icon-twitter"></i></a>
+			        <a class="twitter" href="https://twitter.com/criticalmaps" target="_blank" title="Critical Maps on Twitter"><i class="icon-twitter"></i></a>
 						</li>
 						<li class="icon">
-			        <a class="twitter" href="https://github.com/criticalmaps" target="_blank"><i class="icon-github"></i></a>
+			        <a class="twitter" href="https://github.com/criticalmaps" target="_blank" title="Critical Maps on GitHub"><i class="icon-github"></i></a>
 						</li>
 			    </ul>
 				</div>
