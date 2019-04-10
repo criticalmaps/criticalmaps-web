@@ -442,7 +442,7 @@ Warthestr. 55
 
 		<h3>Fragen an den Datenschutzbeauftragten</h3>
 		<p>Wenn Sie Fragen zum Datenschutz haben, schreiben Sie uns bitte eine E-Mail oder wenden Sie sich direkt an die für den Datenschutz verantwortliche Person in unserer Organisation:</p>
-		<p><em>Die Datenschutzerklärung wurde mit dem <a href="https://www.activemind.de/datenschutz/datenschutzhinweis-generator/" target="_blank" rel="noopener">Datenschutzerklärungs-Generator der activeMind AG erstellt</em>.</p>
+		<p><em>Die Datenschutzerklärung wurde mit dem <a href="https://www.activemind.de/datenschutz/datenschutzhinweis-generator/" target="_blank" rel="noopener">Datenschutzerklärungs-Generator</a> der activeMind AG erstellt</em>.</p>
 	</div>
 </div>
 
