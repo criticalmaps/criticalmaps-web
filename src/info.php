@@ -12,9 +12,9 @@
 		<h2><a name="Team">Team</a></h2>
 		<ul class="team-list">
 			<li>
-				<a href="https://github.com/stephanlindauer" target="_blank">
+				<a href="https://github.com/stephanlindauer" target="_blank" rel="noopener">
 					<figure class="team-avatar">
-						<img src="https://avatars3.githubusercontent.com/u/1323145?s=96" />
+						<img src="https://avatars3.githubusercontent.com/u/1323145?s=96" alt="Avatar of Stephan Lindauer" />
 					</figure>
 					<span class="team-name">Stephan Lindauer</span>
 					<span class="team-user">stephanlindauer</span>
@@ -22,9 +22,9 @@
 				</a>
 			</li>
 			<li>
-				<a href="https://github.com/headione" target="_blank">
+				<a href="https://github.com/headione" target="_blank" rel="noopener">
 					<figure class="team-avatar">
-						<img src="https://avatars1.githubusercontent.com/u/1220469?s=96" />
+						<img src="https://avatars1.githubusercontent.com/u/1220469?s=96" alt="Avatar of Norman Sander" />
 					</figure>
 					<span class="team-name">Norman Sander</span>
 					<span class="team-user">headione</span>
@@ -32,9 +32,9 @@
 				</a>
 			</li>
 			<li>
-				<a href="https://github.com/cbalster" target="_blank">
+				<a href="https://github.com/cbalster" target="_blank" rel="noopener">
 					<figure class="team-avatar">
-						<img src="https://avatars1.githubusercontent.com/u/9266843?s=96" />
+						<img src="https://avatars1.githubusercontent.com/u/9266843?s=96" alt="Avatar of Christian Balster" />
 					</figure>
 					<span class="team-name">Christian Balster</span>
 					<span class="team-user">cbalster</span>
@@ -42,9 +42,9 @@
 				</a>
 			</li>
 			<li>
-				<a href="https://github.com/lennet" target="_blank">
+				<a href="https://github.com/lennet" target="_blank" rel="noopener">
 					<figure class="team-avatar">
-						<img src="https://avatars3.githubusercontent.com/u/7677738?s=96" />
+						<img src="https://avatars3.githubusercontent.com/u/7677738?s=96" alt="Avatar of Leo Thomas" />
 					</figure>
 					<span class="team-name">Leo Thomas</span>
 					<span class="team-user">lennet</span>
@@ -52,9 +52,9 @@
 				</a>
 			</li>
 			<li>
-				<a href="https://github.com/ligi" target="_blank">
+				<a href="https://github.com/ligi" target="_blank" rel="noopener">
 					<figure class="team-avatar">
-						<img src="https://avatars2.githubusercontent.com/u/111600?s=96" />
+						<img src="https://avatars2.githubusercontent.com/u/111600?s=96" alt="Avatar of ligi" />
 					</figure>
 					<span class="team-name">ligi</span>
 					<span class="team-user">ligi</span>
@@ -62,9 +62,9 @@
 				</a>
 			</li>
 			<li>
-				<a href="https://github.com/zutrinken" target="_blank">
+				<a href="https://github.com/zutrinken" target="_blank" rel="noopener">
 					<figure class="team-avatar">
-						<img src="https://avatars0.githubusercontent.com/u/888679?s=96" />
+						<img src="https://avatars0.githubusercontent.com/u/888679?s=96" alt="Avatar of Peter Amende" />
 					</figure>
 					<span class="team-name">Peter Amende</span>
 					<span class="team-user">zutrinken</span>
@@ -72,9 +72,9 @@
 				</a>
 			</li>
 			<li>
-				<a href="https://github.com/johnjohndoe" target="_blank">
+				<a href="https://github.com/johnjohndoe" target="_blank" rel="noopener">
 					<figure class="team-avatar">
-						<img src="https://avatars0.githubusercontent.com/u/144518?s=96" />
+						<img src="https://avatars0.githubusercontent.com/u/144518?s=96" alt="Avatar of Tobias Preuss" />
 					</figure>
 					<span class="team-name">Tobias Preuss</span>
 					<span class="team-user">johnjohndoe</span>
@@ -82,9 +82,9 @@
 				</a>
 			</li>
 			<li>
-				<a href="https://github.com/mltbnz" target="_blank">
+				<a href="https://github.com/mltbnz" target="_blank" rel="noopener">
 					<figure class="team-avatar">
-						<img src="https://avatars1.githubusercontent.com/u/14075359?s=96" />
+						<img src="https://avatars1.githubusercontent.com/u/14075359?s=96" alt="Avatar of Malte Bünz" />
 					</figure>
 					<span class="team-name">Malte Bünz</span>
 					<span class="team-user">mltbnz</span>
@@ -92,9 +92,9 @@
 				</a>
 			</li>
 			<li>
-				<a href="https://github.com/kibotu" target="_blank">
+				<a href="https://github.com/kibotu" target="_blank" rel="noopener">
 					<figure class="team-avatar">
-						<img src="https://avatars3.githubusercontent.com/u/3336447?s=96" />
+						<img src="https://avatars3.githubusercontent.com/u/3336447?s=96" alt="Avatar of Jan Rabe" />
 					</figure>
 					<span class="team-name">Jan Rabe</span>
 					<span class="team-user">kibotu</span>
@@ -102,7 +102,7 @@
 				</a>
 			</li>
 			<li class="contribute">
-				<a href="https://github.com/criticalmaps" target="_blank">
+				<a href="https://github.com/criticalmaps" target="_blank" rel="noopener">
 					<span class="contribute-title">Critical Maps is Open Source</span>
 					<span class="contribute-copy">We’re always looking for more people to help making this project even better!</span>
 					<span class="contribute-link">See Project</span>
