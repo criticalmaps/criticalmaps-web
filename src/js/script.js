@@ -23,5 +23,6 @@ $().ready( function () {
 		$('html').addClass('ios');
 	} else if(isMobile.Android()) {
 		$('html').addClass('android');
+		$('.front-image img').attr('src','/assets/images/app-android.jpg')
 	}
 });
