@@ -11,9 +11,9 @@ body {
 
 .inner {
   position: relative;
-  max-width: 720px;
+  max-width: 72rem;
   margin: auto;
-  padding: 0 40px;
+  padding: 0 4rem;
 
   &::after {
     clear: both;
@@ -25,15 +25,15 @@ body {
 #wrapper {
   position: relative;
   z-index: 10;
-  padding: 80px 0;
+  padding: 8rem 0;
 
   @media only screen and (max-width: $breakpoint) {
-      padding-top: 40px;
+      padding-top: 4rem;
   }
 }
 
 .info #wrapper {
-  padding-bottom: 240px;
+  padding-bottom: 24rem;
 }
 
 
@@ -49,7 +49,7 @@ body {
     flex-direction: row;
 
     .inner {
-      max-width: 1280px;
+      max-width: 128rem;
       display: flex;
       flex-grow: 1;
       padding: 0;
@@ -60,7 +60,7 @@ body {
     }
 
     .nav-logo {
-        width: 160px;
+        width: 16rem;
         flex-shrink: 0;
         margin-left: 0;
         margin-right: auto;
@@ -84,7 +84,7 @@ body {
 
     .nav-menu {
         margin: 0 auto;
-        padding: 0 20px;
+        padding: 0 2rem;
 
         @media only screen and (max-width: $breakpoint) {
           order: 3;
@@ -95,17 +95,17 @@ body {
     .nav-social {
         margin-left: auto;
         margin-right: 0;
-        padding: 0 12px;
+        padding: 0 1.2rem;
 
         @media only screen and (max-width: $breakpoint) {
           order: 2;
         }
 
         a {
-            font-size: 16px;
-            width: 40px;
-            padding-left: 12px;
-            padding-right: 12px;
+            font-size: 1.6rem;
+            width: 4rem;
+            padding-left: 1.2rem;
+            padding-right: 1.2rem;
 
             i:before {
                 margin: 0;
@@ -126,9 +126,9 @@ body {
       a {
         position: relative;
         display: block;
-        font-size: 14px;
-        line-height: 16px;
-        padding: 32px 20px;
+        font-size: 1.4rem;
+        line-height: 1.6rem;
+        padding: 3.2rem 2rem;
         font-weight: 500;
         text-decoration: none;
         text-align: center;
@@ -171,7 +171,7 @@ body {
 //============================================================
 
 .index .inner {
-  max-width: 960px;
+  max-width: 96rem;
   padding: 0;
 }
 
@@ -191,7 +191,7 @@ body {
 
   @media only screen and (max-width: $breakpoint) {
     width: 75%;
-    margin: -64px 12.5% 0;
+    margin: -6.4rem 12.5% 0;
   }
 
   img {
@@ -204,25 +204,25 @@ body {
   width: 50%;
   z-index: 10;
   align-self: center;
-  padding-right: 40px;
-  margin-left: -80px;
+  padding-right: 4rem;
+  margin-left: -8rem;
   box-sizing: border-box;
 
   @media only screen and (max-width: $breakpoint) {
     width: auto;
     margin: 0;
-    padding: 0 40px;
+    padding: 0 4rem;
     text-align: center;
   }
 
   .front-title {
     position: relative;
     margin-top: 0;
-    margin-bottom: 8px;
+    margin-bottom: 0.8rem;
 
     @media only screen and (max-width: $breakpoint) {
-      font-size: 24px;
-      line-height: 32px;
+      font-size: 2.4rem;
+      line-height: 3.2rem;
     }
   }
 
@@ -231,28 +231,28 @@ body {
     margin-top: 0;
 
     @media only screen and (max-width: $breakpoint) {
-      font-size: 16px;
-      line-height: 24px;
+      font-size: 1.6rem;
+      line-height: 2.4rem;
     }
   }
 
   .download {
     display: block;
     z-index: 3;
-    margin: 0 -4px;
+    margin: 0 -0.4rem;
 
     .button {
       display: inline-block;
-      padding: 10px 24px;
-      margin: 4px;
+      padding: 1rem 2.4rem;
+      margin: 0.4rem;
       width: auto;
-      font-size: 14px;
-      line-height: 24px;
+      font-size: 1.4rem;
+      line-height: 2.4rem;
       background: $color-yellow100;
       color: #000;
       font-weight: 700;
       text-decoration: none;
-      border-radius: 3em;
+      border-radius: 2.4rem;
 
       span {
           display: block;
@@ -261,9 +261,9 @@ body {
                 position: relative;
                 content: '';
                 display: inline-block;
-                width: 16px;
-                height: 16px;
-                margin: -2px 0 -2px 8px;
+                width: 1.6rem;
+                height: 1.6rem;
+                margin: -0.2rem 0 -0.2rem 0.8rem;
                 background: url('../images/icon-arrow.svg') center center / contain transparent;
                 transform-style: preserve-3d;
                 transform: translate3d(0,0,0);
@@ -297,7 +297,7 @@ html.android .download .button-ios {
 .content ul.team-list {
     list-style: none;
     padding: 0;
-    margin: -8px;
+    margin: -0.8rem;
 
     &::after {
         clear: both;
@@ -308,7 +308,7 @@ html.android .download .button-ios {
     li {
         width: 33.334%;
         float: left;
-        padding: 8px;
+        padding: 0.8rem;
         box-sizing: border-box;
 
         @media only screen and (max-width: $breakpoint) {
@@ -322,10 +322,10 @@ html.android .download .button-ios {
 
         a {
             display: block;
-            height: 80px;
-            padding: 16px;
+            height: 8rem;
+            padding: 1.6rem;
             border: 1px solid $color-gray500;
-            border-radius: 3px;
+            border-radius: 0.3rem;
             box-sizing: border-box;
 
             &:hover,
@@ -343,58 +343,58 @@ html.android .download .button-ios {
             position: relative;
             overflow: hidden;
             height: auto;
-            padding: 24px;
+            padding: 2.4rem;
             padding-right: 33%;
             border: 0;
-            border-radius: 6px;
-            background: url('../images/icon-github.svg') no-repeat scroll right 24px bottom -16px / contain $color-yellow100;
+            border-radius: 0.6rem;
+            background: url('../images/icon-github.svg') no-repeat scroll right 2.4rem bottom -1.6rem / contain $color-yellow100;
             color: $color-gray100;
 
             @media only screen and (max-width: $breakpoint) {
-              background-position: right -64px bottom -16px;
-              padding-right: 24px;
+              background-position: right -6.4rem bottom -1.6rem;
+              padding-right: 2.4rem;
             }
         }
 
         .contribute-title {
             display: block;
-            margin-bottom: 8px;
+            margin-bottom: 0.8rem;
             font-weight: 800;
-            font-size: 24px;
-            line-height: 32px;
+            font-size: 2.4rem;
+            line-height: 3.2rem;
         }
 
         .contribute-copy {
             display: block;
-            margin-bottom: 16px;
+            margin-bottom: 1.6rem;
             font-weight: 400;
-            font-size: 16px;
-            line-height: 24px;
+            font-size: 1.6rem;
+            line-height: 2.4rem;
         }
 
         .contribute-link {
             display: block;
             font-weight: 700;
-            font-size: 18px;
-            line-height: 28px;
+            font-size: 1.8rem;
+            line-height: 2.8rem;
 
             &::after {
                 content: '';
                 display: inline-block;
-                width: 16px;
-                height: 16px;
-                margin: -2px 8px;
+                width: 1.6rem;
+                height: 1.6rem;
+                margin: -0.2rem 0.8rem;
                 background: url('../images/icon-arrow.svg') center center / contain transparent;
             }
         }
     }
 
     .team-avatar {
-        width: 48px;
-        height: 48px;
-        margin: 0 8px 0 0;
+        width: 4.8rem;
+        height: 4.8rem;
+        margin: 0 0.8rem 0 0;
         float: left;
-        border-radius: 2px;
+        border-radius: 0.2rem;
         overflow: hidden;
         background: $color-gray500;
 
@@ -408,22 +408,22 @@ html.android .download .button-ios {
 
     .team-name {
         font-weight: 700;
-        font-size: 14px;
-        line-height: 18px;
+        font-size: 1.4rem;
+        line-height: 1.8rem;
         color: $color-gray200;
     }
 
     .team-user {
         font-weight: 400;
-        font-size: 12px;
-        line-height: 16px;
+        font-size: 1.2rem;
+        line-height: 1.6rem;
         color: $color-gray300;
     }
 
     .team-project {
         font-weight: 500;
-        font-size: 10px;
-        line-height: 14px;
+        font-size: 1rem;
+        line-height: 1.4rem;
         color: $color-gray400;
     }
 
@@ -454,8 +454,8 @@ html.android .download .button-ios {
 
 .popupimage {
   display: block;
-  width: 160px;
-  margin: 20px auto;
+  width: 16rem;
+  margin: 2rem auto;
 }
 
 // ============================================================
@@ -478,13 +478,13 @@ html.android .download .button-ios {
   height: 32px;
   left: 0;
   bottom: 0;
-  margin-left: 46px;
-  margin-bottom: 96px;
-  padding: 8px 12px;
-  border-radius: 4px;
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.65);
-  font-size: 14px;
-  line-height: 16px;
+  margin-left: 4.6rem;
+  margin-bottom: 9.6rem;
+  padding: 0.8rem 1.2rem;
+  border-radius: 0.4rem;
+  box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.65);
+  font-size: 1.4rem;
+  line-height: 1.6rem;
   font-weight: 400;
   background: rgba(255,255,255,0.8);
   -webkit-backdrop-filter: blur(10px);
@@ -502,16 +502,16 @@ html.android .download .button-ios {
   position: fixed;
   left: 0;
   bottom: 0;
-  width: calc(100vw - 56px);
-  max-width: 480px;
-  margin-left: 46px;
-  margin-right: 10px;
-  margin-bottom: 10px;
-  padding: 8px 12px 0;
-  border-radius: 4px;
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.65);
-  font-size: 14px;
-  line-height: 16px;
+  width: calc(100vw - 5.6rem);
+  max-width: 48rem;
+  margin-left: 4.6rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  padding: 0.8rem 1.2rem 0;
+  border-radius: 0.4rem;
+  box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.65);
+  font-size: 1.4rem;
+  line-height: 1.6rem;
   font-weight: 400;
   background: rgba(255,255,255,0.8);
   -webkit-backdrop-filter: blur(10px);
@@ -525,17 +525,17 @@ html.android .download .button-ios {
   }
 
   p {
-    margin-top: 0.25em;
+    margin-top: 0.4rem;
   }
 
   pre {
     color: $color-gray300;
-    margin: -4px -12px 0;
-    padding: 12px;
+    margin: -0.4rem -1.2rem 0;
+    padding: 1.2rem;
     overflow-x: scroll;
     overflow-y: hidden;
     background: #FFF;
-    border-radius: 0 0 4px 4px;
+    border-radius: 0 0 0.4rem 0.4rem;
   }
 }
 
