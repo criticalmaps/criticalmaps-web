@@ -15,7 +15,7 @@ body {
   margin: auto;
   padding: 0 40px;
 
-  &:after {
+  &::after {
     clear: both;
     content: '';
     display: table;
@@ -257,7 +257,7 @@ body {
       span {
           display: block;
 
-            &:after {
+            &::after {
                 position: relative;
                 content: '';
                 display: inline-block;
@@ -299,7 +299,7 @@ html.android .download .button-ios {
     padding: 0;
     margin: -8px;
 
-    &:after {
+    &::after {
         clear: both;
         content: '';
         display: table;
@@ -316,7 +316,7 @@ html.android .download .button-ios {
             float: none;
         }
 
-        &:before {
+        &::before {
             display: none;
         }
 
@@ -378,7 +378,7 @@ html.android .download .button-ios {
             font-size: 18px;
             line-height: 28px;
 
-            &:after {
+            &::after {
                 content: '';
                 display: inline-block;
                 width: 16px;
@@ -548,7 +548,7 @@ html.android .download .button-ios {
 .video-post {
   margin: 2.5em auto;
 
-  &:after {
+  &::after {
     clear: both;
     content: '';
     display: table;

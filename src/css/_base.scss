@@ -79,7 +79,7 @@ body {
 
   ol > li,
   ul > li {
-    &:before {
+    &::before {
       position: absolute;
       width: 16px;
       margin-left: -32px;
@@ -90,7 +90,7 @@ body {
   }
 
   ul > li {
-    &:before {
+    &::before {
       content: '•';
     }
   }
@@ -99,7 +99,7 @@ body {
     list-style-type: none;
     counter-reset: item;
 
-    &:before {
+    &::before {
       content: counter(item) '. ' !important;
       counter-increment: item;
     }
