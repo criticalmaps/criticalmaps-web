@@ -6,4 +6,4 @@ services:
 script: docker build .
 
 notifications:
-  slack: criticalmaps:2y9ZNnVGwTV68d47IUPXzlRB
+  slack: criticalmaps:$SLACK_TOKEN
