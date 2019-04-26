@@ -4,6 +4,3 @@ services:
   - docker
 
 script: docker build .
-
-notifications:
-  slack: criticalmaps:2y9ZNnVGwTV68d47IUPXzlRB
