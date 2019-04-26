@@ -1,5 +1,5 @@
 <!doctype html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-EN">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-EN" class="<?php echo $pagetype; ?>">
 	<head profile="http://gmpg.org/xfn/11">
 
 		<title><?php echo $title; ?></title>
@@ -18,7 +18,7 @@
 		<meta property="og:url" content="http://criticalmaps.net/"/>
 		<meta property="og:description" content="An open source Android and iOS App to organise the monthly critical mass movement around the world."/>
 		<meta property="og:site_name" content="Critical Maps"/>
-		<meta property="og:image" content="http://criticalmaps.net/assets/images/facebook-og-image.png?<?php echo date("Y-m-d"); ?>" />
+		<meta property="og:image" content="http://criticalmaps.net/assets/images/logo-opengraph.png?<?php echo date("Y-m-d"); ?>" />
 
 		<meta name="twitter:card" content="app">
 		<meta name="twitter:site" content="@CriticalMaps">
@@ -36,7 +36,7 @@
 		  "name": "Critical Maps",
 		  "description": "An open source Android and iOS App to organise the monthly critical mass movement around the world.",
 		  "url": "https://criticalmaps.net",
-		  "image": "http://criticalmaps.net/assets/images/facebook-og-image.png",
+		  "image": "http://criticalmaps.net/assets/images/logo-opengraph.png",
 		  "sameAs": [
 			  "https://github.com/criticalmaps",
 			  "https://twitter.com/criticalmaps",
@@ -48,8 +48,14 @@
 		<link rel="stylesheet" href="/assets/css/libs.css" type="text/css"/>
 		<link rel="stylesheet" href="/assets/css/style.css" type="text/css"/>
 
-		<link href="/assets/images/logo-favicon.png" rel="icon" type="image/png">
-		<link href="/assets/images/logo-touchicon.png" rel="apple-touch-icon">
+		<link rel="apple-touch-icon-precomposed" sizes="76x76" href="/assets/images/logo-touch-icon-76.png">
+		<link rel="apple-touch-icon-precomposed" sizes="120x120" href="/assets/images/logo-touch-icon-120.png">
+		<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/assets/images/logo-touch-icon-152.png">
+		<link rel="apple-touch-icon-precomposed" sizes="167x167" href="/assets/images/logo-touch-icon-167.png">
+		<link rel="apple-touch-icon-precomposed" sizes="180x180" href="/assets/images/logo-touch-icon-180.png">
+		<link rel="icon" sizes="192x192" href="/assets/images/logo-icon-192.png">
+		<link rel="mask-icon" color="#000000" href="/assets/images/logo-mask-icon.svg">
+		<link rel="shortcut icon" type="image/png" href="/assets/images/logo-favicon.png">
 
 		<script src="/assets/js/libs.js"></script>
 		<script src="/assets/js/script.js"></script>
@@ -57,34 +63,39 @@
 	</head>
 	<body>
 
-		<header id="header">
+		<header id="navigation">
 			<div class="inner">
-				<div id="logo">
-					<span class="label">
-						<a href="/">Critical Maps</a>
-					</span>
+				<div class="nav-logo">
+					<a href="/"><img src="/assets/images/logo.svg" alt="Critical Maps" /></a>
 				</div>
-				<div id="navigation">
-			        <ul>
-			            <li class="label">
-			                <a href="/map">Map</a>
-			            </li>
-			            <li class="label">
-			                <a href="/gallery">Gallery</a>
-			            </li>
-			            <li class="label">
-			            	<a href="/info">About</a>
+				<div class="nav-menu">
+					<ul>
+						<li class="label">
+							<a class="<?php if ($index) echo "active"; ?>" href="/">App</a>
 						</li>
-			            <li class="icon">
-			            	<a class="facebook" href="https://www.facebook.com/criticalmaps" target="_blank"><i class="icon-facebook"></i></a>
+						<li class="label">
+							<a class="<?php if ($map) echo "active"; ?>" href="/map">Map</a>
 						</li>
-			            <li class="icon">
-			            	<a class="twitter" href="https://twitter.com/criticalmaps" target="_blank"><i class="icon-twitter"></i></a>
+						<li class="label">
+							<a class="<?php if ($gallery) echo "active"; ?>" href="/gallery">Gallery</a>
+						</li>
+						<li class="label">
+							<a class="<?php if ($info) echo "active"; ?>" href="/info">Info</a>
+						</li>
+					</ul>
+				</div>
+				<div class="nav-social">
+			    <ul>
+			      <li class="icon">
+			        <a class="facebook" href="https://www.facebook.com/criticalmaps" target="_blank" rel="noopener" title="Critical Maps on Facebook"><i class="icon-facebook"></i></a>
+						</li>
+			      <li class="icon">
+			        <a class="twitter" href="https://twitter.com/criticalmaps" target="_blank" rel="noopener" title="Critical Maps on Twitter"><i class="icon-twitter"></i></a>
 						</li>
 						<li class="icon">
-			            	<a class="twitter" href="https://github.com/criticalmaps" target="_blank"><i class="icon-github"></i></a>
+			        <a class="twitter" href="https://github.com/criticalmaps" target="_blank" rel="noopener" title="Critical Maps on GitHub"><i class="icon-github"></i></a>
 						</li>
-			        </ul>
+			    </ul>
 				</div>
 			</div>
 		</header>

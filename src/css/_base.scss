@@ -3,17 +3,17 @@ html {
 }
 
 body {
-  color: #999;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
-  font-size: 1.5em;
-  line-height: 1.334em;
+  color: $color-gray300;
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,Arial,sans-serif;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
 }
 
 .content {
   a {
-    font-weight: 400;
-    color: #ccc;
+    font-weight: 500;
+    color: $color-blue100;
     text-decoration: none;
     transition: all ease-out 0.2s;
 
@@ -30,43 +30,43 @@ body {
   h5,
   h6 {
     text-rendering: optimizeLegibility;
-    color: #fff;
+    color: $color-gray100;
 
     a {
       font-weight: inherit;
+      color: inherit;
+
+      &:focus,
+      &:hover {
+        text-decoration: none;
+      }
     }
   }
 
-  h1 {
-    font-size: 2em;
-    line-height: 1em;
-    margin: 2em 0 -0.5em;
-    font-weight: 700;
-  }
-
+  h1,
   h2 {
-    font-size: 1.75em;
-    line-height: 1.143em;
-    margin: 2.286em 0 -0.571em;
+    font-size: 3.2rem;
+    line-height: 4.8rem;
+    margin: 4rem 0 2.4rem;
     font-weight: 700;
   }
 
   h3 {
-    font-size: 1.5em;
-    line-height: 1.334em;
-    margin: 2em 0 -0.667em;
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    margin: 2.4rem 0;
     font-weight: 600;
   }
 
   h4 {
-    font-size: 1.25em;
-    line-height: 1.2em;
-    margin: 2.4em 0 -0.8em;
+    font-size: 2rem;
+    line-height: 2.8rem;
+    margin: 1.6rem 0;
     font-weight: 600;
   }
 
   p {
-    margin: 2em auto;
+    margin: 1.6rem 0;
   }
 
   ul {
@@ -79,22 +79,19 @@ body {
 
   ol > li,
   ul > li {
-    &:before {
+    &::before {
       position: absolute;
-      width: 2em;
-      margin-left: -3em;
-      font-size: 1em;
+      width: 1.6rem;
+      margin-left: -3.2rem;
       font-weight: 400;
-      line-height: 1.5em;
-      text-align: right;
-      color: $color-primary;
+      text-align: center;
+      color: $color-gray300;
     }
   }
 
   ul > li {
-    &:before {
-      margin-top: 0.125em;
-      content: '*';
+    &::before {
+      content: '•';
     }
   }
 
@@ -102,7 +99,7 @@ body {
     list-style-type: none;
     counter-reset: item;
 
-    &:before {
+    &::before {
       content: counter(item) '. ' !important;
       counter-increment: item;
     }
@@ -110,18 +107,17 @@ body {
 
   ol,
   ul {
-    padding-left: 3em;
-    margin: 2em auto;
+    padding-left: 3.2rem;
+    margin: 1.6rem 0;
 
     ol,
     ul {
-      padding-left: 1.5em;
-      margin: 1em auto;
+      margin: 0.8rem 0;
     }
   }
 
   dl {
-    margin: 2em auto;
+    margin: 1.6rem 0;
 
     dt {
       font-size: 0.875em;
@@ -140,25 +136,24 @@ body {
   hr {
     display: block;
     height: 1px;
-    margin: 2em 0;
+    margin: 1.6rem 0;
     padding: 0;
     background: rgba(255, 255, 255, 0.25);
     border: 0;
   }
 
   blockquote {
-    margin: 2em auto;
-    padding: 0 1em;
-    -moz-box-sizing: border-box; // sass-lint:disable-line no-vendor-prefixes
+    margin: 1.6rem 0;
+    padding: 0 1.6rem;
     box-sizing: border-box;
-    border-left: 0.25em solid rgba(255, 255, 255, 0.25);
+    border-left: 4px solid rgba(255, 255, 255, 0.25);
     font-style: italic;
     font-weight: 400;
-    color: #666;
+    color: $color-gray400;
     background: transparent;
 
     * {
-      margin: 1em auto;
+      margin: 0.8rem auto;
 
       &:first-child {
         margin-top: 0;
@@ -174,21 +169,25 @@ body {
   i {
     font-weight: 400;
     font-style: italic;
-    color: #fff;
   }
 
   b,
   strong {
     font-weight: 700;
-    color: #fff;
+    color: $color-gray200;
   }
 
   small {
-    font-size: 0.9em;
+    font-size: inherit;
+    color: $color-gray400;
   }
 
   mark {
-    background-color: $color-primary;
+    background-color: $color-yellow100;
+  }
+
+  pre {
+    color: $color-gray300;
   }
 
   code,
@@ -203,7 +202,6 @@ body {
     line-height: 1.143em;
     white-space: pre;
     background: rgba(255, 255, 255, 0.1);
-    color: #fff;
     font-weight: 400;
     border-radius: 2px;
   }
@@ -211,25 +209,23 @@ body {
   table {
     width: 100%;
     max-width: 100%;
-    margin: 2em 0;
+    margin: 1.6rem 0;
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.25);
 
     td,
     th {
       position: relative;
-      padding: 1em;
-      line-height: 1em;
+      padding: 1.2rem;
       text-align: left;
       border: 1px solid rgba(255, 255, 255, 0.25);
     }
 
     th {
       font-weight: 700;
-      font-size: 0.75em;
-      line-height: 1.334em;
-      padding: 1.334em;
-      color: #fff;
+      font-size: 1.2rem;
+      line-height: 1.6rem;
+      padding: 1.2rem;
     }
   }
 
@@ -237,14 +233,10 @@ body {
     display: block;
     max-width: 100%;
     height: auto;
-    margin: 2.5em auto;
+    margin: 1.6rem 0;
   }
 
   iframe {
-    margin: 2.5em auto;
+    margin: 1.6rem 0;
   }
-}
-
-.map-marker-bike {
-  opacity: 0.8;
 }

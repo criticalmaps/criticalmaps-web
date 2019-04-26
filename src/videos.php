@@ -1,8 +1,10 @@
-<?php $title = "Videos | Critical Maps"; ?>
+<?php
+	$title = "Videos | Critical Maps";
+	$pagetype = "videos";
+	$videos = true;
+?>
 
 <?php require("wrapper_head.php"); ?>
-
-<div id="page-id" class="videos"></div>
 
 <div id="wrapper">
 	<div class="inner content">

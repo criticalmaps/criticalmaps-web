@@ -20,7 +20,8 @@
 }
 */
 
-[class^="icon-"]:before, [class*=" icon-"]:before {
+[class^="icon-"]::before,
+[class*=" icon-"]::before {
     font-family: "icons";
     font-style: normal;
     font-weight: normal;
@@ -55,28 +56,22 @@
     /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
 
-.icon-github:before {
+.icon-github::before {
     content: '\e800';
 }
 
-/* '' */
-.icon-facebook:before {
+.icon-facebook::before {
     content: '\e801';
 }
 
-/* '' */
-.icon-ios:before {
+.icon-ios::before {
     content: '\e802';
 }
 
-/* '' */
-.icon-twitter:before {
+.icon-twitter::before {
     content: '\e803';
 }
 
-/* '' */
-.icon-android:before {
+.icon-android::before {
     content: '\e804';
 }
-
-/* '' */

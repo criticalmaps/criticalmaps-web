@@ -1,8 +1,12 @@
-<?php $title = "Live Map | Critical Maps"; ?>
+<?php
+	$title = "Live Map | Critical Maps";
+	$pagetype = "map";
+	$map = true;
+?>
 
 <?php require("wrapper_head.php"); ?>
 
-<div id="page-id" class="map"></div>
+<div id="map-count">Online: <span id="activeusers"></span></div>
 
 <div id="map-share">
 	<p>Embed this map on your website:</p>
@@ -17,15 +21,15 @@
 
 	    var bikeIcon = L.icon( {
 	        iconUrl: '/assets/images/marker-bike.png',
-	        iconSize: [40, 40],
-	        iconAnchor: [20, 20],
+	        iconSize: [48, 48],
+	        iconAnchor: [24, 24],
 					className: 'map-marker-bike',
 	    } );
 
 	    var bikeMap = new L.map( 'map', { zoomControl: false } ).setView( [52.468209, 13.425995], 3 );
 
-	    L.tileLayer( 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-	        attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+	    L.tileLayer( 'https://maps.wikimedia.org/osm-intl/{z}/{x}/{y}.png', {
+	        attribution: '<a href="https://foundation.wikimedia.org/wiki/Maps_Terms_of_Use">Wikimedia maps</a> | &copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
 	    } ).addTo( bikeMap );
 
 	    new L.Control.Zoom( { position: 'bottomleft' } ).addTo( bikeMap );
@@ -45,6 +49,18 @@
 
 	        } );
 	    }
+
+			function countMarkerInView() {
+			  var counter = 0;
+			  bikeMap.eachLayer( function(layer) {
+			    if(layer instanceof L.Marker) {
+			      if(bikeMap.getBounds().contains(layer.getLatLng())) {
+			        counter++;
+			      }
+			    }
+			  });
+			  return counter;
+			};
 
 	    var refreshLocationsFromServer = function () {
 	        $.getJSON( "https://api.criticalmaps.net/postv2", function ( data ) {
@@ -78,6 +94,13 @@
 	            alert( "ab geht die post!" );
 	        }
 	    } );
+
+			setInterval( function () {
+			    refreshLocationsFromServer();
+			    var nBikes = countMarkerInView();
+			    document.getElementById("activeusers").innerHTML = nBikes;
+			  }, 2000 );
+
     } );
 </script>
 

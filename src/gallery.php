@@ -1,8 +1,10 @@
-<?php $title = "Gallery | Critical Maps"; ?>
+<?php
+  $title = "Gallery | Critical Maps";
+  $pagetype = "gallery";
+  $gallery = true;
+?>
 
 <?php require("wrapper_head.php"); ?>
-
-<div id="page-id" class="gallery"></div>
 
 <div id="gallerymap"></div>
 
@@ -10,15 +12,15 @@
     $().ready(function () {
         var cameraIcon = L.icon({
             iconUrl: '/assets/images/marker-photo.png',
-            iconSize: [40, 40],
-            iconAnchor: [20, 20]
+            iconSize: [48, 48],
+            iconAnchor: [24, 24]
         });
 
         var cameraMap = new L.map('gallerymap', {zoomControl: false}).setView([52.468209, 13.425995], 3);
 
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-        }).addTo(cameraMap);
+        L.tileLayer( 'https://maps.wikimedia.org/osm-intl/{z}/{x}/{y}.png', {
+            attribution: '<a href="https://foundation.wikimedia.org/wiki/Maps_Terms_of_Use">Wikimedia maps</a> | &copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+        } ).addTo( cameraMap );
 
         new L.Control.Zoom({position: 'bottomleft'}).addTo(cameraMap);
         new L.Hash(cameraMap);

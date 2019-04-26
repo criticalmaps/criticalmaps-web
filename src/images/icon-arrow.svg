@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>arrow</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="info-1440" transform="translate(-576.000000, -750.000000)">
+            <g id="banner" transform="translate(440.000000, 616.000000)">
+                <g id="icon" transform="translate(136.000000, 134.000000)">
+                    <rect id="bounds" x="0" y="0" width="16" height="16"></rect>
+                    <polygon id="Path" fill="#1A1A1A" fill-rule="nonzero" points="12.0857864 7 8.08578644 3 9.5 1.58578644 15.9142136 8 9.5 14.4142136 8.08578644 13 12.0857864 9 -9.76996262e-15 9 -9.76996262e-15 7"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
