@@ -6,7 +6,7 @@
 
 <?php require("wrapper_head.php"); ?>
 
-<div id="map-count">Online: <span id="activeusers"></span></div>
+<div id="map-count">Online in visible area: <span id="activeusers"></span></div>
 
 <div id="map-share">
 	<p>Embed this map on your website:</p>
