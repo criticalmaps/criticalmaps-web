@@ -20,10 +20,6 @@
     "test"
   ],
   "devDependencies": {
-    "jquery": "~3.3.1",
-    "lazyloadxt": "~1.0.5",
-    "leaflet": "~0.7.7",
-    "leaflet-hash": "*",
     "modernizer": "~2.8.2",
     "normalize-css": "normalize.css#~3.0.3"
   }

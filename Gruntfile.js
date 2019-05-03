@@ -21,39 +21,6 @@ module.exports = function(grunt) {
       ]
     },
     copy: {
-      dev: {
-        files: [{
-          dest: 'assets/images/',
-          src: [
-            '*.png',
-            '*.jpg',
-            '*.svg'
-          ],
-          cwd: 'src/images/',
-          expand: true
-        }, {
-          dest: 'assets/font/',
-          src: [
-            '*.eot',
-            '*.svg',
-            '*.ttf',
-            '*.woff'
-          ],
-          cwd: 'src/font/',
-          expand: true
-        }, {
-          dest: '',
-          src: [
-            '*.php',
-            '*.txt',
-            '*.xml',
-            '.htaccess'
-          ],
-          cwd: 'src/',
-          expand: true,
-          dot: true
-        }]
-      },
       dist: {
         files: [{
           dest: 'upload/assets/images/',
@@ -96,15 +63,6 @@ module.exports = function(grunt) {
       },
     },
     sass: {
-      dev: {
-        options: {
-          includePaths: ['src/css'],
-          sourceMaps: true
-        },
-        files: {
-          'assets/css/style.css': 'src/css/style.scss'
-        }
-      },
       dist: {
         options: {
           outputStyle: 'compressed'
@@ -115,21 +73,6 @@ module.exports = function(grunt) {
       }
     },
     cssmin: {
-      dev: {
-        options: {
-          shorthandCompacting: false,
-          roundingPrecision: -1,
-          sourceMap: false
-        },
-        files: {
-          'assets/css/style.css': [
-            'assets/css/style.css'
-          ],
-          'assets/css/libs.css': [
-            '<%= config.cssDependencies %>'
-          ]
-        }
-      },
       dist: {
         options: {
           shorthandCompacting: false,
@@ -147,19 +90,6 @@ module.exports = function(grunt) {
       }
     },
     postcss: {
-      dev: {
-        options: {
-          map: true,
-          processors: [
-            require('autoprefixer-core')({
-              browsers: ['last 2 versions']
-            })
-          ]
-        },
-        src: [
-          'assets/css/style.css'
-        ]
-      },
       dist: {
         options: {
           map: false,
@@ -230,13 +160,6 @@ module.exports = function(grunt) {
       target: ['src/css/*.scss']
     }
   });
-  grunt.registerTask('default', [
-    'sass:dev',
-    'postcss:dev',
-    'cssmin:dev',
-    'copy:dev',
-    'watch'
-  ]);
   grunt.registerTask('build', [
     'uglify:dist',
     'sass:dist',
@@ -248,3 +171,4 @@ module.exports = function(grunt) {
   ]);
   grunt.registerTask('lint', ['sasslint']);
 };
+

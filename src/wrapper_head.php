@@ -57,7 +57,20 @@
 		<link rel="mask-icon" color="#000000" href="/assets/images/logo-mask-icon.svg">
 		<link rel="shortcut icon" type="image/png" href="/assets/images/logo-favicon.png">
 
-		<script src="/assets/js/libs.js"></script>
+		<script
+		  src="https://code.jquery.com/jquery-3.3.1.min.js"
+		  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+		  crossorigin="anonymous"></script>
+
+		<link rel="stylesheet" href="https://unpkg.com/leaflet@0.7.7/dist/leaflet.css"
+		  integrity="sha384-99ZJFcuBCh9c/V/+8YwDX/TUGG8JWMG+gKFJWzk0BZP3IoDMN+pLGd3/H0yjg4oa"
+		  crossorigin=""/>
+		<script src="https://unpkg.com/leaflet@0.7.7/dist/leaflet.js"
+		  integrity="sha384-Lh7SNUss9JoImCvc96eCUnLX3HvY4kb0UZCWZbYWvceJ+o5CJeOJqqNoheaGkNHT"
+		  crossorigin=""></script>
+
+		<script src="/assets/js/leaflet-hash.js"></script>
+
 		<script src="/assets/js/script.js"></script>
 
 	</head>
