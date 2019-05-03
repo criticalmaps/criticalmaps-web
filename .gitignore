@@ -5,11 +5,3 @@ node_modules/
 bower_components/
 upload/
 assets/
-
-/*.php
-/*.xml
-/*.txt
-!/*/.php
-!/*/.xml
-!/*/.txt
-!/*/.htaccess
