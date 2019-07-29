@@ -1,40 +1,31 @@
-FROM php:7.2.6-apache as builder
+FROM gobuffalo/buffalo:v0.14.6 as builder
 
-RUN apt-get update -y && \
-    apt-get install -y build-essential  -my wget gnupg
-RUN curl -sL https://deb.nodesource.com/setup_9.x | bash -
+RUN mkdir -p $GOPATH/src/github.com/criticalmaps/criticalmaps-web
+WORKDIR $GOPATH/src/github.com/criticalmaps/criticalmaps-web
 
-RUN apt-get update -y && \
-        apt-get install -y git \
-                       ruby-full \
-                       nodejs \
-                       npm \
-                       automake \
-                       libtool
+ADD package.json .
+ADD yarn.lock .
+RUN yarn install --no-progress
+ADD . .
 
-RUN gem update --system && \
-    gem install compass
-RUN npm install -g grunt-cli bower
+RUN go get $(go list ./... | grep -v /vendor/)
+RUN buffalo build --static -o /bin/app
 
-RUN mkdir /dist
-WORKDIR /dist
+FROM alpine
+RUN apk add --no-cache bash
+RUN apk add --no-cache ca-certificates
 
-COPY package.json /dist
-RUN npm install node-sass request@2.81.0
+WORKDIR /bin/
 
-RUN npm install
+COPY --from=builder /bin/app .
 
-RUN echo '{ "allow_root": true }' > /root/.bowerrc
-COPY bower.json /dist
-RUN bower install
+# The following two env vars have to be overridden when running in production:
+ENV GO_ENV=development
+ENV SESSION_SECRET=topsecret
 
-COPY . /dist
-RUN grunt build
+ENV ADDR=0.0.0.0
+EXPOSE 3000
 
-FROM php:7.2.6-apache
-
-RUN ln -s /etc/apache2/mods-available/rewrite.load /etc/apache2/mods-enabled/rewrite.load
-
-COPY --from=builder /var/www/html/ /var/www/html/
-
-WORKDIR /var/www/html/
+# Uncomment to run the migrations before running the binary:
+# CMD /bin/app migrate; /bin/app
+CMD exec /bin/app
