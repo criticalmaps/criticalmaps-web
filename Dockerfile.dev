@@ -1,0 +1,19 @@
+FROM gobuffalo/buffalo:v0.14.6 as builder
+
+RUN mkdir -p $GOPATH/src/github.com/criticalmaps/criticalmaps-web
+WORKDIR $GOPATH/src/github.com/criticalmaps/criticalmaps-web
+
+ADD package.json .
+ADD yarn.lock .
+RUN yarn install --no-progress
+ADD . .
+
+RUN go get $(go list ./... | grep -v /vendor/)
+
+ENV GO_ENV=development
+ENV SESSION_SECRET=topsecret
+
+ENV ADDR=0.0.0.0
+EXPOSE 3000
+
+CMD rm -rf node_modules && buffalo dev

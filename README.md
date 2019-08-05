@@ -4,23 +4,8 @@
 
 Website repository for [criticalmaps.net](http://criticalmaps.net/)
 
-## Contribute
+## Run in development mode
 
-__Note:__ Make sure to place this project at root, else it won’t work. In detail your dev url has to look like `localhost/` and not `localhost/criticalmaps-web/`.
-
-Checkout project
-
-	$ git clone REPO-URL
-	$ cd criticalmaps-web
-
-Install Modules
-
-	$ npm install
-
-Install Components
-
-	$ bower install
-
-Compile sources and start watch task
-
-	$ grunt
+```
+docker build -f Dockerfile.dev -t criticalmaps-web . && docker run -v $(pwd):/go/src/github.com/criticalmaps/criticalmaps-web/ -p 3000:3000 criticalmaps-web
+```
