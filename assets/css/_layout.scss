@@ -277,11 +277,16 @@ body {
               transform: translate3d(4px,0,0);
           }
       }
+
+      &.button-fdroid {
+          background: transparent;
+      }
     }
   }
 }
 
-html.ios .download .button-android {
+html.ios .download .button-android,
+html.ios .download .button-fdroid {
   display: none;
 }
 
