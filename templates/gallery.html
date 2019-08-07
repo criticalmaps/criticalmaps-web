@@ -19,10 +19,8 @@
 
         $.get("https://api.criticalmaps.net/gallery/",
             function (response) {
-                console.log(response)
                 for (var i = 0; i < response.length; i++) {
                     var currentImageObject = response[i]
-                    console.log(currentImageObject);
 
                     L.marker([
                         criticalMapsUtils.convertCoordinateFormat(currentImageObject.latitude),
