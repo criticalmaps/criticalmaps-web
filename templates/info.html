@@ -1,7 +1,7 @@
 <div id="wrapper">
 	<div class="inner content">
 
-		<h2><a name="Team">Team</a></h2>
+		<h2><a name="Team"><%= t("team") %></a></h2>
 		<ul class="team-list">
 			<li>
 				<a href="https://github.com/stephanlindauer" target="_blank" rel="noopener">
@@ -98,15 +98,14 @@
 			</li>
 			<li class="contribute">
 				<a href="https://github.com/criticalmaps" target="_blank" rel="noopener">
-					<span class="contribute-title">Critical Maps is Open Source</span>
-					<span class="contribute-copy">We’re always looking for more people to help making this project even
-						better!</span>
-					<span class="contribute-link">See Project</span>
+					<span class="contribute-title"><%= t("open_source_title") %></span>
+					<span class="contribute-copy"><%= t("open_source_copy") %></span>
+					<span class="contribute-link"><%= t("open_source_link") %></span>
 				</a>
 			</li>
 		</ul>
 
-		<h2><a name="Contributors">Contributors</a></h2>
+		<h2><a name="Contributors"><%= t("contributors") %></a></h2>
 		<ul>
 			<li>Gitti la Mar <small>(First Logo)</small></li>
 			<li>Caner Ba&#351;aran <small>(Translation)</small></li>
@@ -117,7 +116,7 @@
 			<li>Alban Sagouis <small>(Translation)</small></li>
 		</ul>
 
-		<h2><a name="Impressum">Impressum</a></h2>
+		<h2><a name="Impressum"><%= t("imprint") %></a></h2>
 
 		<p>Angaben gemäß § 5 TMG</p>
 		<pre>Stephan Lindauer

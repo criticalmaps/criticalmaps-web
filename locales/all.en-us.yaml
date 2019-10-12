@@ -1,3 +1,27 @@
 # For more information on using i18n see: https://github.com/nicksnyder/go-i18n
-- id: welcome_greeting
-  translation: "Welcome to Buffalo (EN)"
+- id: critical_maps
+  translation: "Critical Maps"
+- id: info
+  translation: "An open source Android and iOS App to organise the monthly critical mass movement around the world."
+- id: app_store
+  translation: "App Store"
+- id: google_play
+  translation: "Google Play"
+- id: f-droid
+  translation: "F-Droid"
+- id: critical_maps_on_iphone
+  translation: "Critical Maps on iPhone"
+- id: title
+  translation: "Critical Mass App for Android and iOS"
+- id: team
+  translation: "Team"
+- id: open_source_title
+  translation: "Critical Maps is Open Source"
+- id: open_source_copy
+  translation: "We’re always looking for more people to help making this project even better!"
+- id: open_source_link
+  translation: "See Project"
+- id: contributors
+  translation: "Contributors"
+- id: imprint
+  translation: "Imprint"
