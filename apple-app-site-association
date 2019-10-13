@@ -1,0 +1,9 @@
+{
+    "applinks": {
+        "apps": [],
+        "details": [{
+            "appID": "de.pokuslabs.criticalmassberlin",
+            "paths": ["/follow"]
+        }]
+    }
+}
