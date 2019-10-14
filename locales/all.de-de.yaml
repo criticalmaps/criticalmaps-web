@@ -25,3 +25,13 @@
   translation: "Beitragende"
 - id: imprint
   translation: "Impressum"
+- id: nav_app
+  translation: "App"
+- id: nav_map
+  translation: "Karte"
+- id: nav_gallery
+  translation: "Galerie"
+- id: nav_info
+  translation: "Info"
+- id: nav_on
+  translation: "auf"

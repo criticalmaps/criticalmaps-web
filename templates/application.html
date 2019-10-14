@@ -85,16 +85,16 @@
       <div class="nav-menu">
         <ul>
           <li class="label">
-            <a class="<%= if (current_route.PathName == "rootPath") { %>active<% } %>" href="/">App</a>
+            <a class="<%= if (current_route.PathName == "rootPath") { %>active<% } %>" href="/"><%= t("nav_app") %></a>
           </li>
           <li class="label">
-            <a class="<%= if (current_route.PathName == "mapPath") { %>active<% } %>" href="/map">Map</a>
+            <a class="<%= if (current_route.PathName == "mapPath") { %>active<% } %>" href="/map"><%= t("nav_map") %></a>
           </li>
           <li class="label">
-            <a class="<%= if (current_route.PathName == "galleryPath") { %>active<% } %>" href="/gallery">Gallery</a>
+            <a class="<%= if (current_route.PathName == "galleryPath") { %>active<% } %>" href="/gallery"><%= t("nav_gallery") %></a>
           </li>
           <li class="label">
-            <a class="<%= if (current_route.PathName == "infoPath") { %>active<% } %>" href="/info">Info</a>
+            <a class="<%= if (current_route.PathName == "infoPath") { %>active<% } %>" href="/info"><%= t("nav_info") %></a>
           </li>
         </ul>
       </div>
@@ -102,15 +102,15 @@
         <ul>
           <li class="icon">
             <a class="facebook" href="https://www.facebook.com/criticalmaps" target="_blank" rel="noopener"
-              title="Critical Maps on Facebook"><i class="icon-facebook"></i></a>
+              title="<%= t("critical_maps") %> <%= t("nav_on") %> Facebook"><i class="icon-facebook"></i></a>
           </li>
           <li class="icon">
             <a class="twitter" href="https://twitter.com/criticalmaps" target="_blank" rel="noopener"
-              title="Critical Maps on Twitter"><i class="icon-twitter"></i></a>
+              title="<%= t("nav_info") %> <%= t("nav_on") %> Twitter"><i class="icon-twitter"></i></a>
           </li>
           <li class="icon">
             <a class="twitter" href="https://github.com/criticalmaps" target="_blank" rel="noopener"
-              title="Critical Maps on GitHub"><i class="icon-github"></i></a>
+              title="<%= t("nav_info") %> <%= t("nav_on") %> GitHub"><i class="icon-github"></i></a>
           </li>
         </ul>
       </div>
