@@ -25,3 +25,13 @@
   translation: "Contributors"
 - id: imprint
   translation: "Imprint"
+- id: nav_app
+  translation: "App"
+- id: nav_map
+  translation: "Map"
+- id: nav_gallery
+  translation: "Gallery"
+- id: nav_info
+  translation: "Info"
+- id: nav_on
+  translation: "on"
