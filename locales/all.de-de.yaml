@@ -16,13 +16,13 @@
 - id: team
   translation: "Team"
 - id: open_source_title
-  translation: "Critical Maps ist Open Source"
+  translation: "Mach mit!"
 - id: open_source_copy
-  translation: "Wir schauen uns immer nach Leuten um, die uns helfen dieses Projekt besser zu manchen!"
+  translation: "Critical Maps ist Open Source und wir freuen uns über jede Person, die an Critical Maps mitarbeiten will."
 - id: open_source_link
   translation: "Zum Projekt"
 - id: contributors
-  translation: "Beitragende"
+  translation: "Mitwirkende"
 - id: imprint
   translation: "Impressum"
 - id: nav_app
