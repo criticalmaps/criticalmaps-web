@@ -80,7 +80,12 @@
   <header id="navigation">
     <div class="inner">
       <div class="nav-logo">
-        <a href="/"><img src="/assets/images/logo.svg" alt="<%= t("critical_maps") %>" /></a>
+        <a href="/">
+          <picture>
+              <source srcset="/assets/images/logo-dark.svg" media="(prefers-color-scheme: dark)">
+              <img src="/assets/images/logo.svg" alt="<%= t("critical_maps") %>" />
+          </picture>
+        </a>
       </div>
       <div class="nav-menu">
         <ul>

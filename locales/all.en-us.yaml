@@ -7,6 +7,8 @@
   translation: "App Store"
 - id: google_play
   translation: "Google Play"
+- id: f-droid_info
+  translation: "Or download on"
 - id: f-droid
   translation: "F-Droid"
 - id: critical_maps_on_iphone

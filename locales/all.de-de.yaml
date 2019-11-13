@@ -2,11 +2,13 @@
 - id: critical_maps
   translation: "Critical Maps"
 - id: info
-  translation: "Eine Open Source Android und iOS App, die hilft die monatliche Critical Mass Bewegung weltweit zu organisieren."
+  translation: "Eine Open Source App für Android und iOS zur Organisation der weltweit stattfindenden Critical Mass."
 - id: app_store
   translation: "App Store"
 - id: google_play
   translation: "Google Play"
+- id: f-droid_info
+  translation: "Oder auf"
 - id: f-droid
   translation: "F-Droid"
 - id: critical_maps_on_iphone

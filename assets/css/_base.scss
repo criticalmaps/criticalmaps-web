@@ -8,6 +8,10 @@ body {
   font-weight: 400;
   font-size: 1.8rem;
   line-height: 2.8rem;
+
+  @media (prefers-color-scheme: dark) {
+    color: $color-gray400;
+  }
 }
 
 .content {
@@ -16,6 +20,10 @@ body {
     color: $color-blue100;
     text-decoration: none;
     transition: all ease-out 0.2s;
+
+    @media (prefers-color-scheme: dark) {
+      color: $color-yellow100;
+    }
 
     &:focus,
     &:hover {
@@ -31,6 +39,10 @@ body {
   h6 {
     text-rendering: optimizeLegibility;
     color: $color-gray100;
+
+    @media (prefers-color-scheme: dark) {
+      color: #FFF;
+    }
 
     a {
       font-weight: inherit;
@@ -86,6 +98,10 @@ body {
       font-weight: 400;
       text-align: center;
       color: $color-gray300;
+
+      @media (prefers-color-scheme: dark) {
+        color: $color-gray400;
+      }
     }
   }
 
@@ -124,7 +140,7 @@ body {
       line-height: 1.143em;
       font-weight: 700;
       margin-bottom: 0.571em;
-      color: #fff;
+      color: #FFF;
     }
 
     dd {
@@ -140,6 +156,10 @@ body {
     padding: 0;
     background: $color-gray500;
     border: 0;
+
+    @media (prefers-color-scheme: dark) {
+      background: $color-gray300;
+    }
   }
 
   blockquote {
@@ -175,11 +195,19 @@ body {
   strong {
     font-weight: 700;
     color: $color-gray200;
+
+    @media (prefers-color-scheme: dark) {
+      color: $color-gray600;
+    }
   }
 
   small {
     font-size: inherit;
     color: $color-gray400;
+
+    @media (prefers-color-scheme: dark) {
+      color: $color-gray300;
+    }
   }
 
   mark {
@@ -188,6 +216,10 @@ body {
 
   pre {
     color: $color-gray300;
+
+    @media (prefers-color-scheme: dark) {
+      color: $color-gray400;
+    }
   }
 
   code,
