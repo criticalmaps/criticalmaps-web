@@ -3,10 +3,14 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
-  background: #FFFFFF;
+  background: #FFF;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
+
+  @media (prefers-color-scheme: dark) {
+    background: $color-gray100;
+  }
 }
 
 .inner {
@@ -134,17 +138,27 @@ body {
         text-align: center;
         color: $color-gray400;
 
+
+
         transition: all ease-out 0.2s;
         box-sizing: border-box;
 
         &:hover,
         &:focus {
           color: $color-gray300;
+
+          @media (prefers-color-scheme: dark) {
+            color: #FFF;
+          }
         }
 
         &.active {
           font-weight: 700;
           color: $color-gray200;
+
+          @media (prefers-color-scheme: dark) {
+            color: #FFF;
+          }
         }
       }
     }
@@ -159,10 +173,14 @@ body {
         top: 0;
         left: 0;
         width: 100%;
-        background: linear-gradient(#FFFFFF,rgba(255,255,255,.7));
+        background: linear-gradient(#FFF,rgba(255,255,255,.7));
         -webkit-backdrop-filter: blur(10px);
         backdrop-filter: blur(10px);
         box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+
+        @media (prefers-color-scheme: dark) {
+          background: linear-gradient(rgba(26,26,26,.9),rgba(26,26,26,.8));
+        }
     }
 }
 
@@ -277,22 +295,48 @@ body {
               transform: translate3d(4px,0,0);
           }
       }
+    }
+  }
 
-      &.button-fdroid {
-          background: transparent;
+  .f-droid {
+    color: $color-gray400;
+    font-size: 1.4rem;
+
+    a {
+      color: inherit;
+      background: $color-gray600;
+      border: 1px solid $color-gray500;
+      padding: 0.2rem 0.8rem;
+      border-radius: 2rem;
+      margin-left: 0.2rem;
+      text-decoration: none;
+
+      @media (prefers-color-scheme: dark) {
+        background: $color-gray200;
+        border-color: $color-gray300;
+      }
+
+      &:hover,
+      &:focus {
+        background: $color-gray500;
+
+        @media (prefers-color-scheme: dark) {
+          background: $color-gray300;
+        }
       }
     }
   }
 }
 
 html.ios .download .button-android,
-html.ios .download .button-fdroid {
+html.ios .f-droid {
   display: none;
 }
 
 html.android .download .button-ios {
   display: none;
 }
+
 
 //============================================================
 // Info
@@ -311,7 +355,7 @@ html.android .download .button-ios {
     }
 
     li {
-        width: 33.334%;
+        width: 33.33333%;
         float: left;
         padding: 0.8rem;
         box-sizing: border-box;
@@ -332,6 +376,10 @@ html.android .download .button-ios {
             border: 1px solid $color-gray500;
             border-radius: 0.3rem;
             box-sizing: border-box;
+
+            @media (prefers-color-scheme: dark) {
+              border-color: $color-gray300;
+            }
 
             &:hover,
             &:focus {
@@ -403,6 +451,10 @@ html.android .download .button-ios {
         overflow: hidden;
         background: $color-gray500;
 
+        @media (prefers-color-scheme: dark) {
+          background: $color-gray200;
+        }
+
         img {
             display: block;
             width: 100%;
@@ -416,6 +468,10 @@ html.android .download .button-ios {
         font-size: 1.4rem;
         line-height: 1.8rem;
         color: $color-gray200;
+
+        @media (prefers-color-scheme: dark) {
+          color: #FFF;
+        }
     }
 
     .team-user {
@@ -423,6 +479,10 @@ html.android .download .button-ios {
         font-size: 1.2rem;
         line-height: 1.6rem;
         color: $color-gray300;
+
+        @media (prefers-color-scheme: dark) {
+          color: $color-gray400;
+        }
     }
 
     .team-project {
@@ -430,6 +490,10 @@ html.android .download .button-ios {
         font-size: 1rem;
         line-height: 1.4rem;
         color: $color-gray400;
+
+        @media (prefers-color-scheme: dark) {
+          color: $color-gray500;
+        }
     }
 
     .team-name,
@@ -497,6 +561,11 @@ html.android .download .button-ios {
   color: $color-gray200;
   z-index: 100;
   box-sizing: border-box;
+
+  @media (prefers-color-scheme: dark) {
+    background: rgba(26,26,26,0.8);
+    color: #FFF;
+  }
 
   @media only screen and (max-width: $breakpoint) {
     display: none;

@@ -16,25 +16,22 @@
 
   <meta name="google-site-verification" content="T8DYfxSVjZO9-CyDCt4OHUfykrd0HNSCB6sGYGWec98" />
 
-  <meta name="description"
-    content="An open source Android and iOS App to organise the monthly critical mass movement around the world." />
+  <meta name="description" content="<%= t("info") %>" />
   <meta name="keywords" content="critical maps, app, android, ios, iphone, critical mass, bike app" />
   <meta name="robots" content="index, follow" />
 
   <meta property="og:title" content="<%= t("critical_maps") %>" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="http://criticalmaps.net/" />
-  <meta property="og:description"
-    content="An open source Android and iOS App to organise the monthly critical mass movement around the world." />
+  <meta property="og:description" content="<%= t("info") %>" />
   <meta property="og:site_name" content="<%= t("critical_maps") %>" />
 
   <meta property="og:image" content="http://criticalmaps.net/assets/images/logo-opengraph.png" />
 
   <meta name="twitter:card" content="app">
   <meta name="twitter:site" content="@CriticalMaps">
-  <meta name="twitter:title" content="Critical Maps for iOS and Android">
-  <meta name="twitter:description"
-    content="An open source Android and iOS App to organise the monthly critical mass movement around the world.">
+  <meta name="twitter:title" content="<%= t("critical_maps") %>">
+  <meta name="twitter:description" content="<%= t("info") %>">
   <meta name="twitter:app:name:iphone" content="<%= t("critical_maps") %>">
   <meta name="twitter:app:id:iphone" content="918669647">
   <meta name="twitter:app:name:googleplay" content="<%= t("critical_maps") %>">
@@ -45,7 +42,7 @@
       "@context": "http://schema.org/",
       "@type": "WebSite",
       "name": "<%= t("critical_maps") %>",
-      "description": "An open source Android and iOS App to organise the monthly critical mass movement around the world.",
+      "description": "<%= t("info") %>",
       "url": "https://criticalmaps.net",
       "image": "http://criticalmaps.net/assets/images/logo-opengraph.png",
       "sameAs": [
@@ -80,7 +77,12 @@
   <header id="navigation">
     <div class="inner">
       <div class="nav-logo">
-        <a href="/"><img src="/assets/images/logo.svg" alt="<%= t("critical_maps") %>" /></a>
+        <a href="/">
+          <picture>
+              <source srcset="/assets/images/logo-dark.svg" media="(prefers-color-scheme: dark)">
+              <img src="/assets/images/logo.svg" alt="<%= t("critical_maps") %>" />
+          </picture>
+        </a>
       </div>
       <div class="nav-menu">
         <ul>
