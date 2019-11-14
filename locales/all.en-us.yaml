@@ -11,16 +11,16 @@
   translation: "Or download on"
 - id: f-droid
   translation: "F-Droid"
-- id: critical_maps_on_iphone
-  translation: "Critical Maps on iPhone"
+- id: critical_maps_on_device
+  translation: "Screenshot of Critical Maps on a smartphone"
 - id: title
-  translation: "Critical Mass App for Android and iOS"
+  translation: "Critical Mass app for Android and iOS"
 - id: team
   translation: "Team"
 - id: open_source_title
   translation: "Get involved!"
 - id: open_source_copy
-  translation: "Critical Maps is opsen source and we’re always looking for more people to help making this project even better!"
+  translation: "Critical Maps is open source and we’re always looking for more people to help making this project even better!"
 - id: open_source_link
   translation: "See Project"
 - id: contributors

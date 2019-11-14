@@ -11,8 +11,8 @@
   translation: "Oder auf"
 - id: f-droid
   translation: "F-Droid"
-- id: critical_maps_on_iphone
-  translation: "Critical Maps auf einem iPhone"
+- id: critical_maps_on_device
+  translation: "Screenshot von Critical Maps auf einem Smartphone"
 - id: title
   translation: "Critical Mass App für Android und iOS"
 - id: team
