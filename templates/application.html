@@ -84,7 +84,7 @@
           </picture>
         </a>
       </div>
-      <div class="nav-menu">
+      <nav class="nav-primary">
         <ul>
           <li class="label">
             <a class="<%= if (current_route.PathName == "rootPath") { %>active<% } %>" href="/"><%= t("nav_app") %></a>
@@ -99,8 +99,8 @@
             <a class="<%= if (current_route.PathName == "infoPath") { %>active<% } %>" href="/info"><%= t("nav_info") %></a>
           </li>
         </ul>
-      </div>
-      <div class="nav-social">
+      </nav>
+      <nav class="nav-secondary">
         <ul>
           <li class="icon">
             <a class="facebook" href="https://www.facebook.com/criticalmaps" target="_blank" rel="noopener"
@@ -115,7 +115,7 @@
               title="<%= t("nav_info") %> <%= t("nav_on") %> GitHub"><i class="icon-github"></i></a>
           </li>
         </ul>
-      </div>
+      </nav>
     </div>
   </header>
 
