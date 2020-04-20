@@ -86,7 +86,7 @@ body {
         }
     }
 
-    .nav-menu {
+    .nav-primary {
         margin: 0 auto;
         padding: 0 2rem;
 
@@ -96,7 +96,7 @@ body {
         }
     }
 
-    .nav-social {
+    .nav-secondary {
         margin-left: auto;
         margin-right: 0;
         padding: 0 1.2rem;
@@ -301,30 +301,6 @@ body {
   .f-droid {
     color: $color-gray400;
     font-size: 1.4rem;
-
-    a {
-      color: inherit;
-      background: $color-gray600;
-      border: 1px solid $color-gray500;
-      padding: 0.2rem 0.8rem;
-      border-radius: 2rem;
-      margin-left: 0.2rem;
-      text-decoration: none;
-
-      @media (prefers-color-scheme: dark) {
-        background: $color-gray200;
-        border-color: $color-gray300;
-      }
-
-      &:hover,
-      &:focus {
-        background: $color-gray500;
-
-        @media (prefers-color-scheme: dark) {
-          background: $color-gray300;
-        }
-      }
-    }
   }
 }
 
