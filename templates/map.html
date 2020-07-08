@@ -25,22 +25,35 @@
         }).addTo(bikeMap);
 
         new L.Control.Zoom({ position: 'bottomleft' }).addTo(bikeMap);
-        new L.Hash(bikeMap);
+        var hash = new L.Hash(bikeMap);
+
+        function saveHashToElements() {
+            $(".hash-append").each(function (index) {
+                $(this).attr("href", $(this).data("template").replace('${hash}', hash.lastHash));
+            });
+        }
+        bikeMap.on("moveend", function () {
+            saveHashToElements()
+        }, this);
+        bikeMap.on("zoomend", function () {
+            saveHashToElements()
+        }, this);
 
         function setNewLocations(locationsArray) {
-
             //remove old markers
             currentMarkers.forEach(function (marker) {
                 bikeMap.removeLayer(marker)
             });
+            currentMarkers = []
 
             //add new markes
             locationsArray.forEach(function (coordinate) {
                 var marker = L.marker([coordinate.latitude, coordinate.longitude], { icon: bikeIcon }).addTo(bikeMap);
                 currentMarkers.push(marker);
-
             });
         }
+
+
 
         function countMarkerInView() {
             var counter = 0;
@@ -69,7 +82,6 @@
                             longitude: criticalMapsUtils.convertCoordinateFormat(currentLocation.longitude)
                         }
                         locationsArray.push(coordinate);
-                        /* console.log("new coords: " + JSON.stringify(coordinate) + " " + new Date().toString()); */
                     }
                 }
 

@@ -91,10 +91,10 @@
             <a class="<%= if (current_route.PathName == "rootPath") { %>active<% } %>" href="/"><%= t("nav_app") %></a>
           </li>
           <li class="label">
-            <a class="<%= if (current_route.PathName == "mapPath") { %>active<% } %>" href="/map"><%= t("nav_map") %></a>
+            <a class="<%= if (current_route.PathName == "mapPath") { %>active<% } %> hash-append" href="/map" data-template="/map${hash}"><%= t("nav_map") %></a>
           </li>
           <li class="label">
-            <a class="<%= if (current_route.PathName == "galleryPath") { %>active<% } %>" href="/gallery"><%= t("nav_gallery") %></a>
+            <a class="<%= if (current_route.PathName == "galleryPath") { %>active<% } %> hash-append" href="/gallery" data-template="/gallery${hash}"><%= t("nav_gallery") %></a>
           </li>
           <li class="label">
             <a class="<%= if (current_route.PathName == "infoPath") { %>active<% } %>" href="/info"><%= t("nav_info") %></a>

@@ -15,7 +15,20 @@
         }).addTo(cameraMap);
 
         new L.Control.Zoom({ position: 'bottomleft' }).addTo(cameraMap);
-        new L.Hash(cameraMap);
+        var hash = new L.Hash(cameraMap);
+
+        function saveHashToElements() {
+            $(".hash-append").each(function (index) {
+                $(this).attr("href", $(this).data("template").replace('${hash}', hash.lastHash));
+            });
+        }
+        cameraMap.on("moveend", function () {
+            saveHashToElements()
+        }, this);
+        cameraMap.on("zoomend", function () {
+            saveHashToElements()
+        }, this);
+
 
         $.get("https://api.criticalmaps.net/gallery/",
             function (response) {
