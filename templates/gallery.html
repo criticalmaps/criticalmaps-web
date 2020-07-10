@@ -18,9 +18,11 @@
         var hash = new L.Hash(cameraMap);
 
         function saveHashToElements() {
-            $(".hash-append").each(function (index) {
-                $(this).attr("href", $(this).data("template").replace('${hash}', hash.lastHash));
-            });
+            if (hash.lastHash) {
+                $(".hash-append").each(function (index) {
+                    $(this).attr("href", $(this).data("template").replace('${hash}', hash.lastHash));
+                });
+            }
         }
         cameraMap.on("moveend", function () {
             saveHashToElements()

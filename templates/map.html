@@ -28,9 +28,11 @@
         var hash = new L.Hash(bikeMap);
 
         function saveHashToElements() {
-            $(".hash-append").each(function (index) {
-                $(this).attr("href", $(this).data("template").replace('${hash}', hash.lastHash));
-            });
+            if (hash.lastHash) {
+                $(".hash-append").each(function (index) {
+                    $(this).attr("href", $(this).data("template").replace('${hash}', hash.lastHash));
+                });
+            }
         }
         bikeMap.on("moveend", function () {
             saveHashToElements()
