@@ -20,8 +20,9 @@
 
         var bikeMap = new L.map('map', { zoomControl: false }).setView([52.468209, 13.425995], 3);
 
-        L.tileLayer('https://api.maptiler.com/maps/basic/256/{z}/{x}/{y}@2x.png?key=BF1ZtxvN8zHG9Wc6omQn', {
-            attribution: '<a href="https://www.maptiler.com/copyright/">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright">&copy; OpenStreetMap contributors</a>'
+        L.mapboxGL({
+            attribution: '<a href="https://www.maptiler.com/copyright/">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright">&copy; OpenStreetMap contributors</a>',
+            style: 'https://api.maptiler.com/maps/basic/style.json?key=BF1ZtxvN8zHG9Wc6omQn'
         }).addTo(bikeMap);
 
         new L.Control.Zoom({ position: 'bottomleft' }).addTo(bikeMap);
